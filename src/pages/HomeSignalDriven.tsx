@@ -1,6 +1,7 @@
-import { ArrowRight, Database, User, Briefcase, CheckCircle2, Linkedin, FileText, Code2, Terminal, Layers, Lock, Zap, Sliders, GitMerge, BrainCircuit } from 'lucide-react';
-// IMPORT THE NEW IMAGE HERE
+import { ArrowRight, Database, Briefcase, CheckCircle2, Linkedin, FileText, Code2, Terminal, Layers, Lock, Zap, Sliders, GitMerge, BrainCircuit } from 'lucide-react';
 import idigPreview from '../assets/idig_attractor_preview.png';
+// UPDATED PROFILE PIC IMPORT
+import profilePic from '../assets/paul_idig_profile.jpg';
 
 export default function HomeSignalDriven() {
   
@@ -89,7 +90,7 @@ export default function HomeSignalDriven() {
                   <div className="relative z-10">
                     <div className="w-32 h-32 mx-auto bg-white rounded-full p-1 border border-slate-200 shadow-sm mb-4">
                        <div className="w-full h-full rounded-full bg-slate-100 flex items-center justify-center overflow-hidden">
-                          <User size={64} className="text-slate-300" />
+                          <img src={profilePic} alt="Paul Duplantis" className="w-full h-full object-cover" />
                        </div>
                     </div>
 
@@ -98,7 +99,7 @@ export default function HomeSignalDriven() {
                     <p className="text-slate-600 text-sm leading-relaxed mb-8 px-2">Based in Phoenix, AZ. Bridging the gap between talent insight and technical signal.</p>
 
                     <div className="space-y-3">
-                      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full px-4 py-3 bg-[#0A66C2] text-white rounded-lg hover:bg-[#004182] transition font-medium text-sm group">
+                      <a href="https://www.linkedin.com/in/paulduplantis/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full px-4 py-3 bg-[#0A66C2] text-white rounded-lg hover:bg-[#004182] transition font-medium text-sm group">
                         <Linkedin size={18} className="mr-2" /> Connect on LinkedIn <ArrowRight size={16} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                       </a>
                       <a href="/path-to-your-resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full px-4 py-3 bg-white text-slate-700 border border-slate-300 rounded-lg hover:bg-slate-50 transition font-medium text-sm">
