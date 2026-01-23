@@ -1,4 +1,7 @@
 import { ArrowRight, Database, User, Briefcase, CheckCircle2, Linkedin, FileText, Code2, Terminal, Layers, Lock, Zap, Sliders, GitMerge, BrainCircuit } from 'lucide-react';
+// IMPORT THE NEW IMAGE HERE
+import idigPreview from '../assets/idig_attractor_preview.png';
+
 export default function HomeSignalDriven() {
   
   const scrollToSection = (id: string) => {
@@ -215,12 +218,13 @@ export default function HomeSignalDriven() {
                   </div>
                 </div>
 
-                {/* SIGNAL DRIVEN FRAMEWORK CARD */}
+                {/* SIGNAL DRIVEN FRAMEWORK CARD - WITH NEW IMAGE */}
                 <div className="bg-slate-800/30 rounded-xl border border-slate-700/50 p-6 flex flex-col items-start justify-between opacity-90 h-full">
                    <div className="flex w-full justify-between items-center mb-4"><div className="flex items-center space-x-2"><Lock size={16} className="text-slate-500" /><h4 className="text-slate-300 font-medium">Signal-Driven Framework</h4></div><div className="px-3 py-1 bg-slate-900 border border-slate-700 rounded text-xs text-blue-400 font-mono">COMING SOON</div></div>
                    
+                   {/* UPDATED IMAGE TAG */}
                    <div className="w-full border border-slate-700 rounded-md mb-6 overflow-hidden">
-                     <img src="image_0.png" alt="iDIG Signal-Driven Discovery Interface" className="w-full object-cover opacity-80"/>
+                     <img src={idigPreview} alt="iDIG Signal-Driven Discovery Interface" className="w-full object-cover opacity-80"/>
                    </div>
 
                    <div className="space-y-4 w-full">
