@@ -19,11 +19,18 @@ export default function HomeSignalDriven() {
       <nav className="fixed w-full bg-white/90 backdrop-blur-md border-b border-slate-200 z-50">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           
+          {/* UPDATED LOGO & TAGLINE */}
           <div 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="font-bold text-xl tracking-tight text-slate-800 hover:opacity-80 transition cursor-pointer select-none"
+            className="flex items-center cursor-pointer select-none group"
           >
-            i-dig<span className="text-blue-600">.io</span>
+            <div className="font-bold text-xl tracking-tight text-slate-800 group-hover:opacity-80 transition">
+              i-dig<span className="text-blue-600">.io</span>
+            </div>
+            {/* Tagline - Hidden on mobile, visible on medium screens and up */}
+            <span className="hidden md:block ml-4 pl-4 border-l border-slate-300 text-sm text-slate-500 font-medium">
+              Signal-Driven Discovery & Matching
+            </span>
           </div>
 
           <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
