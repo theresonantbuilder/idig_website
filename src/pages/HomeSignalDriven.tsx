@@ -1,4 +1,4 @@
-import { Database, User, Briefcase, CheckCircle2, Linkedin, FileText, Code2, Terminal, Layers, Play, Lock, Zap, Sliders, GitMerge, BrainCircuit, ArrowRight } from 'lucide-react';
+import { ArrowRight, Database, User, Briefcase, CheckCircle2, Linkedin, FileText, Code2, Terminal, Layers, Play, Lock, Zap, Sliders, GitMerge, BrainCircuit } from 'lucide-react';
 
 export default function HomeSignalDriven() {
   
@@ -25,7 +25,7 @@ export default function HomeSignalDriven() {
 
           <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
             <button onClick={() => scrollToSection('about')} className="hover:text-blue-600 transition">About Paul</button>
-            <button onClick={() => scrollToSection('work')} className="hover:text-blue-600 transition">How I Work</button>
+            <button onClick={() => scrollToSection('work')} className="hover:text-blue-600 transition">My Process</button>
             <button onClick={() => scrollToSection('lab')} className="hover:text-blue-600 transition">The Lab</button>
           </div>
         </div>
@@ -37,16 +37,16 @@ export default function HomeSignalDriven() {
         <div className="max-w-6xl mx-auto px-6 mb-20 pt-10">
           <div className="max-w-3xl">
             <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-100 rounded-full px-3 py-1 mb-6">
-              <span className="text-xs font-semibold text-blue-600 tracking-wide uppercase">Paul Duplantis | Senior Technical Recruiter & Builder</span>
+              <span className="text-xs font-semibold text-blue-600 tracking-wide uppercase">Paul Duplantis | Recruiting Technologist</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-light text-slate-900 mb-8 leading-tight">
-              I am a Recruiter <br />
-              <span className="font-semibold text-slate-900">who builds.</span>
+              Cut the noise <br />
+              <span className="font-semibold text-slate-900">Amplify the signal</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mb-10">
-              Hiring has a noise problem. I can help teams —whether by running your search, auditing your workflow, or identifying/building the tools to reduce the noise in the signal.
+              Most teams treat "Recruiting" and "Engineering" as separate silos. I bridge them. I work reqs to understand your technical bottlenecks, then I identify the tools and/or processes to remove them.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -54,7 +54,7 @@ export default function HomeSignalDriven() {
                 onClick={() => scrollToSection('work')}
                 className="inline-flex items-center justify-center px-6 py-3 bg-slate-900 text-white font-medium rounded-lg hover:bg-slate-800 transition shadow-lg shadow-slate-200/50"
               >
-                Work With Me
+                See My Process
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
@@ -66,19 +66,18 @@ export default function HomeSignalDriven() {
           </div>
         </div>
 
-        {/* BIO SECTION */}
+        {/* BIO / DEFINITION SECTION */}
         <section id="about" className="py-20 bg-white border-y border-slate-200">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-12 gap-12 items-center">
               
               <div className="md:col-span-7 prose prose-lg prose-slate">
-                <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">The Practitioner</h3>
-                <h2 className="text-3xl font-light text-slate-900 mb-6">Context comes first.</h2>
+                <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">The Definition</h3>
+                <h2 className="text-3xl font-light text-slate-900 mb-6">What is a Recruiting Technologist?</h2>
                 <div className="space-y-6 text-lg text-slate-600">
-                  <p>I’m not a career consultant. I’m a <strong>Technical Recruiter and Workflow Catalyst</strong> who has spent over 20 years inside real business systems.</p>
-                  <p>From <strong>Technical Recruiting</strong> to <strong>Construction Licensing</strong>, <strong>PEO Services</strong>, and <strong>Dealership Operations</strong>, I’ve worked at the intersection of people, process, and systems.</p>
-                  <p>I saw a pattern everywhere I went: <strong>Signal Loss.</strong></p>
-                  <p>Teams drowning in data but starved for insight. That frustration drove me to become a builder—creating <em>i-dig.io</em> to solve the problems standard software ignored.</p>
+                  <p>It is the intersection of <strong>Full-Cycle Recruiting</strong> and <strong>Workflow Automation</strong>.</p>
+                  <p>For 20 years, I have worked inside business systems—from Construction Licensing to Dealership Ops to Recruiting for Fortune 100 companies—witnessing the same problem: <strong>Signal Loss.</strong> Teams are drowning in data but starving for insight because their tools don't match their reality.</p>
+                  <p>A standard recruiter is trained to operate within the limitations of your software. A Recruiting Technologist identifies those limitations and finds a way through them. While others accept noise as the cost of doing business, I view it as a system failure that can be diagnosed, optimized, and solved.</p>
                 </div>
               </div>
 
@@ -93,8 +92,8 @@ export default function HomeSignalDriven() {
                     </div>
 
                     <h4 className="text-2xl font-bold text-slate-900 mb-1">Paul Duplantis</h4>
-                    <p className="text-blue-600 font-medium text-sm mb-6">Senior Technical Recruiter, Builder, and Workflow Catalyst</p>
-                    <p className="text-slate-600 text-sm leading-relaxed mb-8 px-2">Based in Phoenix, AZ. Bridging the gap between human intuition and technical signal for over 20 years.</p>
+                    <p className="text-blue-600 font-medium text-sm mb-6">Recruiting Technologist</p>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-8 px-2">Based in Phoenix, AZ. Bridging the gap between talent insight and technical signal.</p>
 
                     <div className="space-y-3">
                       <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full px-4 py-3 bg-[#0A66C2] text-white rounded-lg hover:bg-[#004182] transition font-medium text-sm group">
@@ -115,35 +114,49 @@ export default function HomeSignalDriven() {
         {/* WORK SECTION */}
         <section id="work" className="pt-24 pb-10 max-w-6xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-light text-slate-900 mb-4">How I Can Help</h2>
-            <p className="text-lg text-slate-600">I engage with teams in two ways: as an embedded recruiter, and/or as a strategic workflow partner.</p>
+            <h2 className="text-3xl md:text-4xl font-light text-slate-900 mb-4">How I Deliver Value</h2>
+            <p className="text-lg text-slate-600">My process is circular: I work the job to find the flaw, then I identify the tech to fix the flaw.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Recruiter Card */}
+            
+            {/* Card 1: The Audit */}
             <div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-blue-500 transition cursor-pointer group relative overflow-hidden">
-               <div className="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">CONTRACT</div>
+               <div className="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">PHASE 1: AUDIT</div>
               <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6"><Briefcase className="text-blue-600" size={24} /></div>
-              <h3 className="text-2xl font-semibold mb-3">Senior Technical Recruiter</h3>
-              <p className="text-slate-600 leading-relaxed mb-6">I work upstream of traditional recruiting—partnering with leaders to clarify role intent and reduce noise before engagement. I combine full-cycle expertise with AI-assisted workflows to accelerate insight generation.</p>
+              <h3 className="text-2xl font-semibold mb-3">Embedded Recruiting</h3>
+              <p className="text-slate-600 leading-relaxed mb-6">I don't just advise from the sidelines. I embed with your team and <strong>work your live requisitions</strong>. This allows me to stress-test your current stack, identifying exactly where signal is being lost to noise.</p>
               <ul className="space-y-3 text-sm text-slate-500">
-                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Talent Alignment:</strong> Clarifying "Role Intent" upstream to reduce sourcing noise.</span></li>
-                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>BIM & Construction Tech:</strong> Specialized in building teams for Tesla, Brycon Construction, and Delta Diversified.</span></li>
-                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Strategic Placements:</strong> Successfully placed talent with Intel, TriWest, Wells Fargo, Ford Motors, and Circle K.</span></li>
-                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>AI-Assisted Workflows:</strong> Using modern tools to streamline discovery (Human-in-the-Loop).</span></li>
+                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Operational Audit:</strong> Using live searches to map your intake and sourcing bottlenecks.</span></li>
+                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Role Alignment:</strong> Clarifying "Role Intent" with hiring managers to reduce upstream noise.</span></li>
+                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Pipeline Stress Testing:</strong> I run full-cycle searches on your toughest roles to identify the specific friction points where candidates—and data—are falling through the cracks.</span></li>
+                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Signal Verification:</strong> I execute a 'control group' search to prove what talent is actually available, validating whether your current lack of results is a market problem or a method problem.</span></li>
               </ul>
             </div>
 
-            {/* Consultant Card */}
+            {/* Card 2: The Build */}
             <div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-emerald-500 transition cursor-pointer group">
+               <div className="absolute top-0 right-0 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">PHASE 2: BUILD</div>
               <div className="w-12 h-12 bg-emerald-50 rounded-lg flex items-center justify-center mb-6"><Database className="text-emerald-600" size={24} /></div>
-              <h3 className="text-2xl font-semibold mb-3">Workflow Catalyst</h3>
-              <p className="text-slate-600 leading-relaxed mb-6">For teams looking to optimize their discovery process. I review your current implementation to determine where the bottleneck lies, then help you select the appropriate AI/Tech to address the specific concern.</p>
+              <h3 className="text-2xl font-semibold mb-3">Technical Implementation</h3>
+              <p className="text-slate-600 leading-relaxed mb-6">Once the gaps are identified, I identify solutions to bridge the gap between Recruiting and Engineering to select, configure, and build the tools necessary to automate discovery and recover signal.</p>
               <ul className="space-y-3 text-sm text-slate-500">
-                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/> <span><strong>Bottleneck Analysis:</strong> Mapping your intake and sourcing process to identify where signal is lost to noise.</span></li>
-                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/> <span><strong>AI/Tech Selection:</strong> Cutting through the marketing hype to select tools that solve specific workflow problems.</span></li>
-                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/> <span><strong>Discovery Gap Analysis:</strong> Tuning search queries and prompts to uncover the talent you are currently missing.</span></li>
-                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/> <span><strong>Implementation & Calibration:</strong> Helping teams adopt new tools and calibrating filters to match reality.</span></li>
+                <li className="flex items-start">
+                  <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/> 
+                  <span><strong>Technology Selection:</strong> Identifying exactly where your standard tools are failing and selecting the specific, high-leverage software solutions to fill those gaps.</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/> 
+                  <span><strong>Workflow Architecture:</strong> Designing the data flow between your systems to ensure candidate context is preserved, moving beyond simple keyword matching.</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/> 
+                  <span><strong>Stack Rationalization:</strong> Cutting through the marketing hype to eliminate redundant tools and select the *right* tech for your specific workflow.</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/> 
+                  <span><strong>Signal Calibration:</strong> Tuning your discovery parameters to block noise upstream, ensuring your team only reviews high-probability profiles.</span>
+                </li>
               </ul>
             </div>
           </div>
