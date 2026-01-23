@@ -1,5 +1,4 @@
-import React from 'react';
-import { ArrowRight, Activity, Search, ShieldCheck, Database, LayoutTemplate, Cpu, User, Briefcase, ChevronRight, CheckCircle2, Linkedin, FileText, Download, Code2, Terminal, Layers, Play, Lock, Zap, Sliders, GitMerge, BrainCircuit } from 'lucide-react';
+import { Database, User, Briefcase, CheckCircle2, Linkedin, FileText, Code2, Terminal, Layers, Play, Lock, Zap, Sliders, GitMerge, BrainCircuit, ArrowRight } from 'lucide-react';
 
 export default function HomeSignalDriven() {
   
@@ -13,6 +12,7 @@ export default function HomeSignalDriven() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-blue-100">
 
+      {/* Navigation */}
       <nav className="fixed w-full bg-white/90 backdrop-blur-md border-b border-slate-200 z-50">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           
@@ -33,6 +33,7 @@ export default function HomeSignalDriven() {
 
       <main className="pt-24 pb-20">
         
+        {/* HERO SECTION */}
         <div className="max-w-6xl mx-auto px-6 mb-20 pt-10">
           <div className="max-w-3xl">
             <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-100 rounded-full px-3 py-1 mb-6">
@@ -65,6 +66,7 @@ export default function HomeSignalDriven() {
           </div>
         </div>
 
+        {/* BIO SECTION */}
         <section id="about" className="py-20 bg-white border-y border-slate-200">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-12 gap-12 items-center">
@@ -110,6 +112,7 @@ export default function HomeSignalDriven() {
           </div>
         </section>
 
+        {/* WORK SECTION */}
         <section id="work" className="pt-24 pb-10 max-w-6xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-light text-slate-900 mb-4">How I Can Help</h2>
@@ -117,6 +120,7 @@ export default function HomeSignalDriven() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Recruiter Card */}
             <div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-blue-500 transition cursor-pointer group relative overflow-hidden">
                <div className="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">CONTRACT</div>
               <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6"><Briefcase className="text-blue-600" size={24} /></div>
@@ -130,6 +134,7 @@ export default function HomeSignalDriven() {
               </ul>
             </div>
 
+            {/* Consultant Card */}
             <div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-emerald-500 transition cursor-pointer group">
               <div className="w-12 h-12 bg-emerald-50 rounded-lg flex items-center justify-center mb-6"><Database className="text-emerald-600" size={24} /></div>
               <h3 className="text-2xl font-semibold mb-3">Workflow Catalyst</h3>
@@ -144,6 +149,7 @@ export default function HomeSignalDriven() {
           </div>
         </section>
 
+        {/* LAB SECTION */}
         <section id="lab" className="bg-slate-900 text-slate-300 pt-10 pb-24">
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-slate-700 pb-8">
