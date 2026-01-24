@@ -1,7 +1,8 @@
-import { ArrowRight, Database, Briefcase, CheckCircle2, Linkedin, FileText, Code2, Terminal, Layers, Lock, Zap, Sliders, GitMerge, BrainCircuit } from 'lucide-react';
+import { ArrowRight, Database, Briefcase, CheckCircle2, Linkedin, FileText, Code2, Terminal, Layers, Lock, Zap, Sliders, GitMerge, BrainCircuit, Download } from 'lucide-react';
 import idigPreview from '../assets/idig_attractor_preview.png';
-// UPDATED PROFILE PIC IMPORT
 import profilePic from '../assets/paul_idig_profile.jpg';
+// IMPORT RESUME FILE
+import resumeFile from '../assets/paul_idig_resume.pdf';
 
 export default function HomeSignalDriven() {
   
@@ -109,7 +110,7 @@ export default function HomeSignalDriven() {
                       <a href="https://www.linkedin.com/in/paulduplantis/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full px-4 py-3 bg-[#0A66C2] text-white rounded-lg hover:bg-[#004182] transition font-medium text-sm group">
                         <Linkedin size={18} className="mr-2" /> Connect on LinkedIn <ArrowRight size={16} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                       </a>
-                      <a href="/path-to-your-resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full px-4 py-3 bg-white text-slate-700 border border-slate-300 rounded-lg hover:bg-slate-50 transition font-medium text-sm">
+                      <a href={resumeFile} download="Paul_Duplantis_Resume.pdf" className="flex items-center justify-center w-full px-4 py-3 bg-white text-slate-700 border border-slate-300 rounded-lg hover:bg-slate-50 transition font-medium text-sm">
                         <FileText size={18} className="mr-2 text-slate-500" /> Download Resume
                       </a>
                     </div>
@@ -117,6 +118,88 @@ export default function HomeSignalDriven() {
                 </div>
               </div>
 
+            </div>
+          </div>
+        </section>
+
+        {/* DIGITAL RESUME SECTION (NEW) */}
+        <section id="resume" className="py-20 bg-slate-50 border-b border-slate-200">
+          <div className="max-w-6xl mx-auto px-6">
+            
+            <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+              <div>
+                <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">The Track Record</h3>
+                <h2 className="text-3xl font-light text-slate-900">Experience & Capabilities</h2>
+              </div>
+              <a 
+                href={resumeFile} 
+                download="Paul_Duplantis_Resume.pdf"
+                className="mt-6 md:mt-0 inline-flex items-center px-6 py-3 bg-white text-slate-700 border border-slate-300 font-medium rounded-lg hover:bg-white hover:text-blue-600 hover:border-blue-400 transition shadow-sm"
+              >
+                <Download size={18} className="mr-2" /> Download Full PDF
+              </a>
+            </div>
+
+            <div className="grid md:grid-cols-12 gap-12">
+              
+              {/* Left Column: Skills & Tech */}
+              <div className="md:col-span-4 space-y-8">
+                <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                  <h4 className="font-bold text-slate-900 mb-4 flex items-center"><Terminal size={18} className="mr-2 text-blue-500"/> Technical Stack</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {['TypeScript', 'React', 'Vite', 'Node.js', 'Tailwind CSS', 'PostgreSQL', 'Python', 'Anthropic API', 'OpenAI API'].map(skill => (
+                      <span key={skill} className="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">{skill}</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                  <h4 className="font-bold text-slate-900 mb-4 flex items-center"><Briefcase size={18} className="mr-2 text-emerald-500"/> Recruiting Expertise</h4>
+                  <ul className="space-y-2 text-sm text-slate-600">
+                    <li className="flex items-start"><CheckCircle2 size={14} className="mr-2 text-emerald-500 mt-1"/> Full-Cycle Technical Recruiting</li>
+                    <li className="flex items-start"><CheckCircle2 size={14} className="mr-2 text-emerald-500 mt-1"/> Executive Search & Sourcing</li>
+                    <li className="flex items-start"><CheckCircle2 size={14} className="mr-2 text-emerald-500 mt-1"/> RPO & Agency Management</li>
+                    <li className="flex items-start"><CheckCircle2 size={14} className="mr-2 text-emerald-500 mt-1"/> ATS Optimization (Greenhouse/Lever)</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Right Column: Work History */}
+              <div className="md:col-span-8 space-y-8">
+                
+                {/* Role 1 */}
+                <div className="relative pl-8 border-l-2 border-blue-100">
+                  <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-500 border-4 border-slate-50"></div>
+                  <div className="mb-1 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                    <h3 className="text-xl font-bold text-slate-900">Recruiting Technologist & Consultant</h3>
+                    <span className="text-sm font-mono text-slate-500">2024 — Present</span>
+                  </div>
+                  <div className="text-blue-600 font-medium text-sm mb-3">Independent | i-DIG.io</div>
+                  <p className="text-slate-600 leading-relaxed mb-4">
+                    Bridging the gap between Engineering and Talent Acquisition. Building custom tooling to automate sourcing workflows and implementing AI-driven discovery frameworks.
+                  </p>
+                </div>
+
+                {/* Role 2 */}
+                <div className="relative pl-8 border-l-2 border-slate-200">
+                  <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-300 border-4 border-slate-50"></div>
+                  <div className="mb-1 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                    <h3 className="text-xl font-bold text-slate-900">Senior Technical Recruiter</h3>
+                    <span className="text-sm font-mono text-slate-500">2012 — 2024</span>
+                  </div>
+                  <div className="text-slate-500 font-medium text-sm mb-3">Contract & Consultant</div>
+                  <p className="text-slate-600 leading-relaxed mb-4">
+                    Delivered high-volume, high-complexity hiring results for major technical organizations. Specialized in Engineering, Construction Tech, and Manufacturing.
+                  </p>
+                  <ul className="grid grid-cols-2 gap-2 text-sm text-slate-500 mt-3">
+                    <li className="flex items-center"><ArrowRight size={12} className="mr-2"/> Tesla</li>
+                    <li className="flex items-center"><ArrowRight size={12} className="mr-2"/> Intel</li>
+                    <li className="flex items-center"><ArrowRight size={12} className="mr-2"/> Brycon Construction</li>
+                    <li className="flex items-center"><ArrowRight size={12} className="mr-2"/> Delta Diversified</li>
+                  </ul>
+                </div>
+
+              </div>
             </div>
           </div>
         </section>
