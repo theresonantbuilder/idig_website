@@ -16,25 +16,28 @@ export default function HomeSignalDriven() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-blue-100">
 
-      {/* Navigation */}
+     {/* Navigation - Increased height to h-20 and font sizes */}
       <nav className="fixed w-full bg-white/90 backdrop-blur-md border-b border-slate-200 z-50">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           
           {/* LOGO & TAGLINE */}
           <div 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center cursor-pointer select-none group"
           >
-            <div className="font-bold text-xl tracking-tight text-slate-800 group-hover:opacity-80 transition">
+            {/* Logo increased to text-2xl (mobile) and text-3xl (desktop) */}
+            <div className="font-bold text-2xl md:text-3xl tracking-tight text-slate-800 group-hover:opacity-80 transition">
               i-dig<span className="text-blue-600">.io</span>
             </div>
-            {/* Tagline - Hidden on mobile, visible on medium screens and up */}
-            <span className="hidden md:block ml-4 pl-4 border-l border-slate-300 text-sm text-slate-500 font-medium">
+            
+            {/* Tagline increased to text-lg */}
+            <span className="hidden md:block ml-6 pl-6 border-l-2 border-slate-300 text-lg text-slate-500 font-medium">
               Signal-Driven Discovery & Matching
             </span>
           </div>
 
-          <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+          {/* Menu Links increased to text-base (16px) */}
+          <div className="hidden md:flex space-x-8 text-base font-medium text-slate-600">
             <button onClick={() => scrollToSection('about')} className="hover:text-blue-600 transition">About Paul</button>
             <button onClick={() => scrollToSection('work')} className="hover:text-blue-600 transition">My Process</button>
             <button onClick={() => scrollToSection('lab')} className="hover:text-blue-600 transition">The Lab</button>
