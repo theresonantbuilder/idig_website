@@ -1,5 +1,16 @@
 # React + TypeScript + Vite
 
+In powershell
+npm run build
+
+Instructions to push to github
+git add .
+git commit -m "Fix unused import"
+git push
+
+This build is on vite that is function hosted on Vercel. The domain is hosted on godaddy with dns pointing to Vercel. 
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
