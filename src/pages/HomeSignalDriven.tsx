@@ -144,7 +144,7 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
 
   <h3 className="text-2xl font-semibold mb-3">Embedded Discovery</h3>
 
-  <p className="text-slate-600 leading-relaxed mb-6">
+<p className="text-slate-600 leading-normal mb-4">
     I don’t advise from the sidelines. I embed into real work to understand how opportunity is actually pursued—not how it’s documented.
     By working directly inside live processes, I stay close to the work as it unfolds, noticing where things lose clarity or momentum.
     iDIG is the discovery tool I use to help surface those patterns and reflect them back in a way the business can engage with and act on.
