@@ -130,7 +130,7 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
         <section id="work" className="pt-24 pb-10 max-w-6xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-light text-slate-900 mb-4">How I Deliver Value</h2>
-            <p className="text-lg text-slate-600">My process is circular: I work the job to find the flaw, then I identify the tech to fix the flaw.</p>
+            <p className="text-lg text-slate-600">My process is circular: I step into the work to uncover where opportunity breaks down, then apply the right technology to remove friction and recover signal.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -139,13 +139,14 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
             <div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-blue-500 transition cursor-pointer group relative overflow-hidden">
                <div className="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">PHASE 1: AUDIT</div>
               <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6"><Briefcase className="text-blue-600" size={24} /></div>
-              <h3 className="text-2xl font-semibold mb-3">Embedded Recruiting</h3>
-              <p className="text-slate-600 leading-relaxed mb-6">I don't just advise from the sidelines. I embed with your team and <strong>work your live requisitions</strong>. This allows me to stress-test your current stack, identifying exactly where signal is being lost to noise.</p>
+              <h3 className="text-2xl font-semibold mb-3">Embedded Discovery</h3>
+              <p className="text-slate-600 leading-relaxed mb-6">I don’t advise from the sidelines. I embed into real work to understand how opportunity is actually pursued—not how it’s documented.</p><p>By working directly inside live processes, I stay close to the work as it unfolds, noticing where things lose clarity or momentum. iDIG is the discovery tool I use to help surface those patterns and reflect them back in a way the business can engage with and act on.
+</p>
               <ul className="space-y-3 text-sm text-slate-500">
-                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Operational Audit:</strong> Using live searches to map your intake and sourcing bottlenecks.</span></li>
-                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Role Alignment:</strong> Clarifying "Role Intent" with hiring managers to reduce upstream noise.</span></li>
-                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Pipeline Stress Testing:</strong> I run full-cycle searches on your toughest roles to identify the specific friction points where candidates—and data—are falling through the cracks.</span></li>
-                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Signal Verification:</strong> I execute a 'control group' search to prove what talent is actually available, validating whether your current lack of results is a market problem or a method problem.</span></li>
+                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Signal Surfacing:</strong> I spend time inside real work to notice where meaningful signals show up—and where they quietly disappear. iDIG gives us a way to capture those moments as they happen, especially the ones that don’t live cleanly in systems or reports, so patterns that usually stay hidden can be seen and explored together.</span></li>
+                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Decision Context:</strong> I work to understand how decisions are actually made in practice—not how they’re described in process docs. Using iDIG, we can reflect those decision contexts back in a shared space, helping clarify what “good” really means, which signals carry weight, and where assumptions are creating unnecessary noise.</span></li>
+                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Working the Edges:</strong> Rather than focusing only on ideal scenarios, I pay attention to where work feels awkward, slow, or uncertain—the edges where things tend to break down. iDIG helps hold onto those edge cases, making it easier to see where opportunities, customers, or candidates fall out of view and why.</span></li>
+                <li className="flex items-start"><CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/> <span><strong>Signal Reality Check:</strong> When results aren’t showing up, I help separate what’s outside the business’s control from what isn’t. By looking at surfaced signals together—market conditions, timing, filters, and methods—we can see whether the issue is demand, approach, or something in between, and adjust with intention instead of guesswork.</span></li>
               </ul>
             </div>
 
