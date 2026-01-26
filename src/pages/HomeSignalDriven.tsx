@@ -241,7 +241,8 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
     <li className="flex items-start">
       <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/>
       <span>
-        <strong>Managers ↔ Jobs:</strong> Clarifying role intent and decision authority so hiring efforts focus on the right problems, not just open reqs.
+       <strong>Managers ↔ Jobs:</strong> Identifying decision authority and role intent so talent aligns to the real need—not just the posted role.
+
       </span>
     </li>
 
@@ -268,6 +269,13 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
         <strong>Consultants ↔ Projects:</strong> Mapping expertise and availability against active or emerging needs, making it easier to see where fit already exists.
       </span>
     </li>
+    
+<li className="flex items-start">
+  <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/>
+  <span>
+    <strong>Signals ↔ Decisions:</strong> Making the signals that influence decisions visible, so choices are grounded in real context rather than habit, hierarchy, or incomplete data.
+  </span>
+</li>
 
 
   </ul>
