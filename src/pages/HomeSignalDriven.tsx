@@ -1,5 +1,4 @@
-import { ArrowRight, Database, Briefcase, CheckCircle2, Linkedin, Code2, Terminal, Layers, Lock, Zap, Sliders, GitMerge, BrainCircuit } from 'lucide-react';
-import idigPreview from '../assets/idig_attractor_preview.png';
+import { ArrowRight, Database, Briefcase, CheckCircle2, Linkedin, Code2, Terminal, Layers, Lock, Sliders, GitMerge, BrainCircuit } from 'lucide-react';
 import profilePic from '../assets/paul_idig_profile.jpg';
 
 
@@ -313,45 +312,21 @@ I use AI to help surface those signals—patterns of intent, timing, authority, 
               </div>
              
               <div className="flex flex-col gap-6">
-               
-                {/* YOUTUBE VIDEO CARD */}
-                <div className="bg-slate-800 rounded-xl border border-slate-700 overflow-hidden group hover:border-blue-500/50 transition duration-300">
-                  <div className="p-4 border-b border-slate-700 bg-slate-800/50 flex justify-between items-center">
-                    <div className="flex items-center space-x-2">
-                      <Zap size={16} className="text-amber-400" />
-                      <span className="text-slate-200 font-medium text-sm">Research Tool Demo</span>
-                    </div>
-                    <span className="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">Chrome Extension</span>
-                  </div>
 
+                {/* SIGNAL DRIVEN FRAMEWORK CARD - WITH YOUTUBE VIDEO */}
+                <div className="bg-slate-800/30 rounded-xl border border-slate-700/50 p-6 flex flex-col items-start justify-between opacity-90 h-full">
+                   <div className="flex w-full justify-between items-center mb-4"><div className="flex items-center space-x-2"><Lock size={16} className="text-slate-500" /><h4 className="text-slate-300 font-medium">Signal-Driven Framework</h4></div><div className="px-3 py-1 bg-slate-900 border border-slate-700 rounded text-xs text-blue-400 font-mono">COMING SOON</div></div>
 
-                  <div className="aspect-video bg-slate-900 relative overflow-hidden group">
+                   {/* YOUTUBE VIDEO */}
+                   <div className="w-full aspect-video bg-slate-900 rounded-md mb-6 overflow-hidden">
                      <iframe
-                       className="w-full h-full absolute inset-0"
+                       className="w-full h-full"
                        src="https://www.youtube.com/embed/BBAg-98_UBU"
-                       title="Research Tool Demo"
+                       title="Signal-Driven Framework Demo"
                        frameBorder="0"
                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                        allowFullScreen
                      ></iframe>
-                  </div>
-
-
-                  <div className="p-4 bg-slate-800/80">
-                    <p className="text-slate-400 text-sm">
-                      <strong>Proof of Build:</strong> A custom Chrome Extension demonstrating multi-color DOM highlighting and "microlinking"—enabling precise context sharing across unstructured web data.
-                    </p>
-                  </div>
-                </div>
-
-
-                {/* SIGNAL DRIVEN FRAMEWORK CARD - WITH NEW IMAGE */}
-                <div className="bg-slate-800/30 rounded-xl border border-slate-700/50 p-6 flex flex-col items-start justify-between opacity-90 h-full">
-                   <div className="flex w-full justify-between items-center mb-4"><div className="flex items-center space-x-2"><Lock size={16} className="text-slate-500" /><h4 className="text-slate-300 font-medium">Signal-Driven Framework</h4></div><div className="px-3 py-1 bg-slate-900 border border-slate-700 rounded text-xs text-blue-400 font-mono">COMING SOON</div></div>
-                   
-                   {/* UPDATED IMAGE TAG */}
-                   <div className="w-full border border-slate-700 rounded-md mb-6 overflow-hidden">
-                     <img src={idigPreview} alt="iDIG Signal-Driven Discovery Interface" className="w-full object-cover opacity-80"/>
                    </div>
 
 
