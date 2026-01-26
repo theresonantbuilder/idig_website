@@ -1,8 +1,6 @@
-import { ArrowRight, Database, Briefcase, CheckCircle2, Linkedin, FileText, Code2, Terminal, Layers, Lock, Zap, Sliders, GitMerge, BrainCircuit } from 'lucide-react';
+import { ArrowRight, Database, Briefcase, CheckCircle2, Linkedin, Code2, Terminal, Layers, Lock, Zap, Sliders, GitMerge, BrainCircuit } from 'lucide-react';
 import idigPreview from '../assets/idig_attractor_preview.png';
 import profilePic from '../assets/paul_idig_profile.jpg';
-// IMPORT RESUME FILE
-import resumeFile from '../assets/paul_idig_resume.pdf';
 
 export default function HomeSignalDriven() {
   
@@ -111,19 +109,15 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
                     </div>
 
                     <h4 className="text-2xl font-bold text-slate-900 mb-1">Paul Duplantis</h4>
-                    <p className="text-blue-600 font-medium text-sm mb-6">Recruiting Technologist</p>
-                    <p className="text-slate-600 text-sm leading-relaxed mb-8 px-2">Based in Phoenix, AZ. Bridging the gap between talent insight and technical signal.</p>
+                    <p className="text-blue-600 font-medium text-sm mb-6">Consultant</p>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-8 px-2">Based in Phoenix, AZ. Helping businesses surface the signals that drive opportunity.</p>
 
                     <div className="space-y-3">
                       <a href="https://www.linkedin.com/in/paulduplantis/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full px-4 py-3 bg-[#0A66C2] text-white rounded-lg hover:bg-[#004182] transition font-medium text-sm group">
                         <Linkedin size={18} className="mr-2" /> Connect on LinkedIn <ArrowRight size={16} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                       </a>
                       
-                      {/* DOWNLOAD BUTTON LINKED TO PDF */}
-                      <a href={resumeFile} download="Paul_Duplantis_Resume.pdf" className="flex items-center justify-center w-full px-4 py-3 bg-white text-slate-700 border border-slate-300 rounded-lg hover:bg-slate-50 transition font-medium text-sm">
-                        <FileText size={18} className="mr-2 text-slate-500" /> Download Resume
-                      </a>
-                    </div>
+                     </div>
                   </div>
                 </div>
               </div>
