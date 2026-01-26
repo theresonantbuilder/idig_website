@@ -269,7 +269,7 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
         <strong>Consultants ↔ Projects:</strong> Mapping expertise and availability against active or emerging needs, making it easier to see where fit already exists.
       </span>
     </li>
-    
+
 <li className="flex items-start">
   <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/>
   <span>
@@ -296,9 +296,13 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
 
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div className="space-y-8">
-                <div><h3 className="text-white text-lg font-medium mb-3">Background</h3><p className="text-lg leading-relaxed text-slate-400">This isn't a startup pivot. It is the culmination of 20 years of observation. I have a library of written essays and a graveyard of "failed" prototypes that paved the way for iDIG. Every broken build taught me what <em>doesn't</em> work in signal detection, leading to the architecture I use today.</p></div>
-                <div><h3 className="text-white text-lg font-medium mb-3">Philosophy</h3><p className="text-lg leading-relaxed text-slate-400"><strong>i-dig.io</strong> is my personal "skunkworks" project. It is a Progressive Web App (PWA) built to test how LLMs can structure unstructured candidate data. This research keeps me honest—ensuring I understand the difference between marketing hype and actual signal.</p></div>
-                <div><h3 className="text-white text-lg font-medium mb-3">Methodology</h3><p className="text-base leading-relaxed text-slate-400">I am a <strong>"vibe coder"</strong> who leans heavily on spec-driven development. I use Trello to manage sprints and NotebookLM to maintain deep context. By bringing <strong>Claude Code</strong> and <strong>Gemini AI</strong> directly into VS Code via MCP servers, I treat the IDE as a collaborative partner, not just a text editor.</p></div>
+                <div><h3 className="text-white text-lg font-medium mb-3">Background</h3><p className="text-lg leading-relaxed text-slate-400">This work didn’t start as a product idea. It grew out of two decades spent inside real operating environments—where decisions are made under pressure, information moves imperfectly, and intent often gets lost between people, tools, and process.
+
+Across industries, I kept encountering the same pattern: capable teams, plenty of data, and yet persistent misalignment. <br />Over time, I documented these breakdowns through writing, experimentation, and repeated attempts to model what was actually happening beneath the surface. Many of those early attempts failed—but each one clarified what doesn’t capture signal, eventually shaping the architecture behind iDIG.</p></div>
+                <div><h3 className="text-white text-lg font-medium mb-3">Philosophy</h3><p className="text-lg leading-relaxed text-slate-400"><strong>i-dig.io</strong> is built around a simple belief: most opportunity is lost not because of missing data, but because meaningful signals in communication are overlooked or flattened by traditional tools.
+
+I use AI to help surface those signals—patterns of intent, timing, authority, and context that exist across conversations, content, and workflows, but rarely show up cleanly in systems or reports. <br></br>Rather than replacing human judgment, the framework is designed to support it, giving people a clearer view of what’s already happening so better decisions can emerge naturally.</p></div>
+                <div><h3 className="text-white text-lg font-medium mb-3">Methodology</h3><p className="text-base leading-relaxed text-slate-400">My work blends intuition with structure. I build iteratively, staying close to real signals as they emerge, while anchoring decisions in spec-driven development and clear validation loops. I use Trello to manage sprints and NotebookLM to maintain deep context. By bringing Claude Code and Gemini AI directly into VS Code via MCP servers, I treat the IDE as a collaborative partner, not just a text editor.</p></div>
                
                 <div className="bg-slate-800/50 rounded-lg p-6 border border-slate-700">
                   <h3 className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-4">Technical Environment</h3>
