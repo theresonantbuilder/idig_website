@@ -60,7 +60,7 @@ export default function HomeSignalDriven() {
             </h1>
             
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mb-10">
-             Many businesses operate in functional silos that make it hard to see where work, decisions, and opportunities are getting stuck.
+             Businesses can operate in functional silos that make it hard to see where work, decisions, and opportunities are getting stuck.<br></br>
 
 I work alongside them to understand real bottlenecks, then use a purpose-built discovery tool I created to surface patterns, relationships, and opportunities that are easy to miss in day-to-day work.
             </p>
@@ -89,11 +89,14 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
               
               <div className="md:col-span-7 prose prose-lg prose-slate">
                 <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">The Definition</h3>
-                <h2 className="text-3xl font-light text-slate-900 mb-6">What is a Recruiting Technologist?</h2>
+                <h2 className="text-3xl font-light text-slate-900 mb-6">What does a consultant like this actually do?
+</h2>
                 <div className="space-y-6 text-lg text-slate-600">
-                  <p>It is the intersection of <strong>Full-Cycle Recruiting</strong> and <strong>Workflow Automation</strong>.</p>
-                  <p>For 20 years, I have worked inside business systems—from Construction Licensing to Dealership Ops to Recruiting for Fortune 100 companies—witnessing the same problem: <strong>Signal Loss.</strong> Teams are drowning in data but starving for insight because their tools don't match their reality.</p>
-                  <p>A standard recruiter is trained to operate within the limitations of your software. A Recruiting Technologist identifies those limitations and finds a way through them. While others accept noise as the cost of doing business, I view it as a system failure that can be diagnosed, optimized, and solved.</p>
+                  <p>It sits at the intersection of real-world operations and discovery-driven tooling.</p>
+                  <p>For over 20 years, I’ve worked inside business systems—ranging from construction licensing and dealership operations to technical recruiting for large enterprises—often embedded close enough to see where work actually breaks down. Across industries, I’ve seen the same pattern repeat: signal loss. Businesses accumulate data, tools, and process, but struggle to translate any of it into clear action because those systems don’t reflect how decisions are really made.
+</p>
+                  <p>Most consultants work within the limits of existing software and workflows. I built a purpose-built discovery tool to expose where those limits hide opportunity and to give businesses more control over how opportunity is defined. Instead of relying on fixed reports or one-size-fits-all models, the tool is designed to surface insights by working from a business’s own signals and understanding of its domain.
+</p>
                 </div>
               </div>
 
