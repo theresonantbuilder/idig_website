@@ -51,7 +51,7 @@ export default function HomeSignalDriven() {
         <div className="max-w-6xl mx-auto px-6 mb-20 pt-10">
           <div className="max-w-3xl">
             <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-100 rounded-full px-3 py-1 mb-6">
-              <span className="text-xs font-semibold text-blue-600 tracking-wide uppercase">Paul Duplantis | Recruiting Technologist</span>
+              <span className="text-xs font-semibold text-blue-600 tracking-wide uppercase">Paul Duplantis | Consultant</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-light text-slate-900 mb-8 leading-tight">
@@ -60,7 +60,9 @@ export default function HomeSignalDriven() {
             </h1>
             
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mb-10">
-              Most teams treat "Recruiting" and "Engineering" as separate silos. I bridge them. I work reqs to understand your technical bottlenecks, then I identify the tools and/or processes to remove them.
+             Many businesses operate in functional silos that make it hard to see where work, decisions, and opportunities are getting stuck.
+
+I work alongside them to understand real bottlenecks, then use a purpose-built discovery tool I created to surface patterns, relationships, and opportunities that are easy to miss in day-to-day work.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
