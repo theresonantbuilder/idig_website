@@ -143,6 +143,7 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-light text-slate-900 mb-4">How I Deliver Value</h2>
             <p className="text-lg text-slate-600">My process is circular: I step into the work to uncover where opportunity breaks down, then apply the right technology to remove friction and recover signal.</p>
+            <p className="text-base text-slate-500 italic mt-4">The result isn't more automation. <span className="ml-2">It's providing a clearer signal to surface opportunities where conventional tools might not look.</span></p>
           </div>
 
 
