@@ -315,7 +315,7 @@ I use AI to help surface those signals—patterns of intent, timing, authority, 
 
                 {/* SIGNAL DRIVEN FRAMEWORK CARD - WITH YOUTUBE VIDEO */}
                 <div className="bg-slate-800/30 rounded-xl border border-slate-700/50 p-6 flex flex-col items-start justify-between opacity-90 h-full">
-                   <div className="flex w-full justify-between items-center mb-4"><div className="flex items-center space-x-2"><Lock size={16} className="text-slate-500" /><h4 className="text-slate-300 font-medium">Signal-Driven Framework</h4></div><div className="px-3 py-1 bg-slate-900 border border-slate-700 rounded text-xs text-blue-400 font-mono">COMING SOON</div></div>
+                   <div className="flex w-full justify-between items-center mb-4"><div className="flex items-center space-x-2"><Lock size={16} className="text-slate-500" /><h4 className="text-slate-300 font-medium">Signal-Driven Framework</h4></div></div>
 
                    {/* YOUTUBE VIDEO */}
                    <div className="w-full aspect-video bg-slate-900 rounded-md mb-6 overflow-hidden">
@@ -331,14 +331,13 @@ I use AI to help surface those signals—patterns of intent, timing, authority, 
 
 
                    <div className="space-y-4 w-full">
-                      <p className="text-slate-400 text-sm leading-relaxed">The core discovery engine designed to align unstructured profile data with complex job requirements.</p>
+                      <p className="text-slate-400 text-sm leading-relaxed">A discovery engine designed to surface meaningful signals across people, needs, and decisions—especially where intent, authority, and context are easy to miss.</p>
                       <div className="border-t border-slate-700/50 pt-4 space-y-3">
-                        <div className="flex items-start"><Sliders size={16} className="text-blue-500 mt-1 mr-3 shrink-0" /><p className="text-sm text-slate-500"><strong>Dynamic Tuning:</strong> Adjustable signal thresholds allow for "fuzzy" matching based on signal strength rather than binary keywords.</p></div>
-                        <div className="flex items-start"><GitMerge size={16} className="text-purple-500 mt-1 mr-3 shrink-0" /><p className="text-sm text-slate-500"><strong>Multi-Source Alignment:</strong> Triangulating data between [My Profile], [Candidates], and [Job Requirements] to find hidden overlaps.</p></div>
-                         <div className="flex items-start"><BrainCircuit size={16} className="text-emerald-500 mt-1 mr-3 shrink-0" /><p className="text-sm text-slate-500"><strong>Vector-Based Logic:</strong> Moving beyond text matching to semantic understanding of skills and experience context.</p></div>
+                        <div className="flex items-start"><Sliders size={16} className="text-blue-500 mt-1 mr-3 shrink-0" /><p className="text-sm text-slate-500"><strong>Signal Tuning:</strong> Instead of binary matches, signals can be adjusted and explored based on strength, relevance, and timing—allowing nuance to emerge where rigid criteria usually flatten it.</p></div>
+                        <div className="flex items-start"><GitMerge size={16} className="text-purple-500 mt-1 mr-3 shrink-0" /><p className="text-sm text-slate-500"><strong>Contextual Alignment:</strong> Signals are examined across multiple perspectives—profiles, roles, opportunities, and stated needs—making it easier to see where real alignment exists beneath surface descriptions.</p></div>
+                        <div className="flex items-start"><BrainCircuit size={16} className="text-emerald-500 mt-1 mr-3 shrink-0" /><p className="text-sm text-slate-500"><strong>Semantic Understanding:</strong> Rather than relying on keywords alone, the framework works with meaning—capturing how experience, intent, and capability show up in context, not just in text.</p></div>
                       </div>
                    </div>
-                   <div className="mt-6 pt-4 border-t border-slate-700/50 w-full"><p className="text-slate-500 text-xs italic">* I am in the final phases of wrapping up the initial live demo of the Signal-Driven Framework.</p></div>
                 </div>
 
 
