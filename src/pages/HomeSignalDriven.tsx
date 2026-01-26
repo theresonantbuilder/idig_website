@@ -152,7 +152,9 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
          {/* Panel 1: Embedded Discovery */}
 <div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-blue-500 transition cursor-pointer group relative overflow-hidden">
 
-
+<div className="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+    PHASE 1: RESEARCH
+  </div>
   <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
     <Briefcase className="text-blue-600" size={24} />
   </div>
