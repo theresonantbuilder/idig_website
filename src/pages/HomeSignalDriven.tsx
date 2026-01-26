@@ -137,8 +137,7 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
             
             {/* Card 1: The Audit */}
             <div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-blue-500 transition cursor-pointer group relative overflow-hidden">
-               <div className="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">PHASE 1: AUDIT</div>
-              <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6"><Briefcase className="text-blue-600" size={24} /></div>
+               <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6"><Briefcase className="text-blue-600" size={24} /></div>
               <h3 className="text-2xl font-semibold mb-3">Embedded Discovery</h3>
               <p className="text-slate-600 leading-relaxed mb-6">I don’t advise from the sidelines. I embed into real work to understand how opportunity is actually pursued—not how it’s documented.</p><p>By working directly inside live processes, I stay close to the work as it unfolds, noticing where things lose clarity or momentum. iDIG is the discovery tool I use to help surface those patterns and reflect them back in a way the business can engage with and act on.
 </p>
