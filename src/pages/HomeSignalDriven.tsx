@@ -289,7 +289,6 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-slate-700 pb-8">
               <div><h3 className="text-blue-400 font-bold tracking-widest text-sm mb-2">MY LAB</h3><h2 className="text-3xl text-white font-light">The i-DIG Framework</h2></div>
-              <div className="mt-4 md:mt-0"><span className="inline-flex items-center px-3 py-1 rounded bg-blue-900/50 border border-blue-700 text-blue-200 text-xs font-mono">CURRENT STATUS: R&D</span></div>
             </div>
 
 
