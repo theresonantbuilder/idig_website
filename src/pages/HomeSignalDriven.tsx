@@ -2,8 +2,9 @@ import { ArrowRight, Database, Briefcase, CheckCircle2, Linkedin, Code2, Termina
 import idigPreview from '../assets/idig_attractor_preview.png';
 import profilePic from '../assets/paul_idig_profile.jpg';
 
+
 export default function HomeSignalDriven() {
-  
+ 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -11,15 +12,17 @@ export default function HomeSignalDriven() {
     }
   };
 
+
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-blue-100">
+
 
      {/* Navigation - Increased height to h-20 and font sizes */}
       <nav className="fixed w-full bg-white/90 backdrop-blur-md border-b border-slate-200 z-50">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-          
+         
           {/* LOGO & TAGLINE */}
-          <div 
+          <div
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center cursor-pointer select-none group"
           >
@@ -27,12 +30,13 @@ export default function HomeSignalDriven() {
             <div className="font-bold text-2xl md:text-3xl tracking-tight text-slate-800 group-hover:opacity-80 transition">
               i-dig<span className="text-blue-600">.io</span>
             </div>
-            
+           
             {/* Tagline increased to text-lg */}
             <span className="hidden md:block ml-6 pl-6 border-l-2 border-slate-300 text-lg text-slate-500 font-medium">
               Signal-Driven Discovery & Matching
             </span>
           </div>
+
 
           {/* Menu Links increased to text-base (16px) */}
           <div className="hidden md:flex space-x-8 text-base font-medium text-slate-600">
@@ -43,34 +47,37 @@ export default function HomeSignalDriven() {
         </div>
       </nav>
 
+
       <main className="pt-24 pb-20">
-        
+       
         {/* HERO SECTION */}
         <div className="max-w-6xl mx-auto px-6 mb-20 pt-10">
           <div className="max-w-3xl">
             <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-100 rounded-full px-3 py-1 mb-6">
               <span className="text-xs font-semibold text-blue-600 tracking-wide uppercase">Paul Duplantis | Consultant</span>
             </div>
-            
+           
             <h1 className="text-5xl md:text-7xl font-light text-slate-900 mb-8 leading-tight">
               Cut the noise <br />
               <span className="font-semibold text-slate-900">Amplify the signal</span>
             </h1>
-            
+           
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mb-10">
              Businesses can operate in functional silos that make it hard to see where work, decisions, and opportunities are getting stuck.<br></br>
+
 
 I work alongside them to understand real bottlenecks, then use a purpose-built discovery tool I created to surface patterns, relationships, and opportunities that are easy to miss in day-to-day work.
             </p>
 
+
             <div className="flex flex-col sm:flex-row gap-4">
-              <button 
+              <button
                 onClick={() => scrollToSection('work')}
                 className="inline-flex items-center justify-center px-6 py-3 bg-slate-900 text-white font-medium rounded-lg hover:bg-slate-800 transition shadow-lg shadow-slate-200/50"
               >
                 See My Process
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('about')}
                 className="inline-flex items-center justify-center px-6 py-3 bg-white text-slate-700 border border-slate-200 font-medium rounded-lg hover:bg-slate-50 transition"
               >
@@ -80,11 +87,12 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
           </div>
         </div>
 
+
         {/* BIO / DEFINITION SECTION */}
         <section id="about" className="py-20 bg-white border-y border-slate-200">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-12 gap-12 items-center">
-              
+             
               <div className="md:col-span-7 prose prose-lg prose-slate">
                 <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">The Definition</h3>
                 <h2 className="text-3xl font-light text-slate-900 mb-6">What does a consultant like this actually do?
@@ -98,6 +106,7 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
                 </div>
               </div>
 
+
               <div className="md:col-span-5">
                 <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-xl shadow-slate-200/50 text-center relative overflow-hidden">
                   <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-blue-50 to-white"></div>
@@ -108,23 +117,27 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
                        </div>
                     </div>
 
+
                     <h4 className="text-2xl font-bold text-slate-900 mb-1">Paul Duplantis</h4>
                     <p className="text-blue-600 font-medium text-sm mb-6">Consultant</p>
                     <p className="text-slate-600 text-sm leading-relaxed mb-8 px-2">Based in Phoenix, AZ. Helping businesses surface the signals that drive opportunity.</p>
+
 
                     <div className="space-y-3">
                       <a href="https://www.linkedin.com/in/paulduplantis/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full px-4 py-3 bg-[#0A66C2] text-white rounded-lg hover:bg-[#004182] transition font-medium text-sm group">
                         <Linkedin size={18} className="mr-2" /> Connect on LinkedIn <ArrowRight size={16} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                       </a>
-                      
+                     
                      </div>
                   </div>
                 </div>
               </div>
 
+
             </div>
           </div>
         </section>
+
 
         {/* WORK SECTION */}
         <section id="work" className="pt-24 pb-10 max-w-6xl mx-auto px-6">
@@ -133,16 +146,20 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
             <p className="text-lg text-slate-600">My process is circular: I step into the work to uncover where opportunity breaks down, then apply the right technology to remove friction and recover signal.</p>
           </div>
 
+
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            
+           
          {/* Panel 1: Embedded Discovery */}
 <div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-blue-500 transition cursor-pointer group relative overflow-hidden">
+
 
   <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
     <Briefcase className="text-blue-600" size={24} />
   </div>
 
+
   <h3 className="text-2xl font-semibold mb-3">Embedded Discovery</h3>
+
 
 <p className="text-slate-600 leading-normal mb-4">
     I don’t advise from the sidelines. I embed into real work to understand how opportunity is actually pursued—not how it’s documented.
@@ -150,8 +167,9 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
     iDIG is the discovery tool I use to help surface those patterns and reflect them back in a way the business can engage with and act on.
   </p>
 
+
   <ul className="space-y-3 text-sm text-slate-500">
-    
+   
     <li className="flex items-start">
       <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/>
       <span>
@@ -159,6 +177,7 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
         iDIG helps capture those moments so hidden patterns can be explored together.
       </span>
     </li>
+
 
     <li className="flex items-start">
       <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/>
@@ -168,6 +187,7 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
       </span>
     </li>
 
+
     <li className="flex items-start">
       <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/>
       <span>
@@ -175,6 +195,7 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
         iDIG helps hold onto those moments so nothing important slips by.
       </span>
     </li>
+
 
     <li className="flex items-start">
       <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/>
@@ -184,37 +205,75 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
       </span>
     </li>
 
+
   </ul>
 </div>
 
 
-            {/* Card 2: The Build */}
-            <div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-emerald-500 transition cursor-pointer group">
-               <div className="absolute top-0 right-0 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">PHASE 2: BUILD</div>
-              <div className="w-12 h-12 bg-emerald-50 rounded-lg flex items-center justify-center mb-6"><Database className="text-emerald-600" size={24} /></div>
-              <h3 className="text-2xl font-semibold mb-3">Technical Implementation</h3>
-              <p className="text-slate-600 leading-relaxed mb-6">Once the gaps are identified, I identify solutions to bridge the gap between Recruiting and Engineering to select, configure, and build the tools necessary to automate discovery and recover signal.</p>
-              <ul className="space-y-3 text-sm text-slate-500">
-                <li className="flex items-start">
-                  <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/> 
-                  <span><strong>Technology Selection:</strong> Identifying exactly where your standard tools are failing and selecting the specific, high-leverage software solutions to fill those gaps.</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/> 
-                  <span><strong>Workflow Architecture:</strong> Designing the data flow between your systems to ensure candidate context is preserved, moving beyond simple keyword matching.</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/> 
-                  <span><strong>Stack Rationalization:</strong> Cutting through the marketing hype to eliminate redundant tools and select the *right* tech for your specific workflow.</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/> 
-                  <span><strong>Signal Calibration:</strong> Tuning your discovery parameters to block noise upstream, ensuring your team only reviews high-probability profiles.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+{/* Card 2: Applied Discovery */}
+<div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-emerald-500 transition cursor-pointer group relative overflow-hidden">
+
+
+  <div className="absolute top-0 right-0 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+    PHASE 2: APPLY
+  </div>
+
+
+  <div className="w-12 h-12 bg-emerald-50 rounded-lg flex items-center justify-center mb-6">
+    <Database className="text-emerald-600" size={24} />
+  </div>
+
+
+  <h3 className="text-2xl font-semibold mb-3">Applied Discovery</h3>
+
+
+  <p className="text-sm text-slate-600 leading-normal mb-4">
+    Once meaningful signals are surfaced, iDIG becomes a way to explore how people, needs, and opportunities could align more clearly.
+    Rather than enforcing a single workflow, the tool adapts to different domains—helping businesses see connections that are often there, but rarely visible at the same time.
+  </p>
+
+
+  <ul className="space-y-3 text-sm text-slate-500">
+
+
+    <li className="flex items-start">
+      <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/>
+      <span>
+        <strong>Managers ↔ Jobs:</strong> Clarifying role intent and decision authority so hiring efforts focus on the right problems, not just open reqs.
+      </span>
+    </li>
+
+
+    <li className="flex items-start">
+      <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/>
+      <span>
+        <strong>Prospects ↔ Services:</strong> Identifying which prospects are best aligned with specific offerings, based on real signals instead of generic outreach.
+      </span>
+    </li>
+
+
+    <li className="flex items-start">
+      <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/>
+      <span>
+        <strong>Customers ↔ Products:</strong> Surfacing customers who may be ready for an upgrade or adjacent product by noticing timing, behavior, and context.
+      </span>
+    </li>
+
+
+    <li className="flex items-start">
+      <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/>
+      <span>
+        <strong>Consultants ↔ Projects:</strong> Mapping expertise and availability against active or emerging needs, making it easier to see where fit already exists.
+      </span>
+    </li>
+
+
+  </ul>
+</div>
+</div>
+</section>
+         
+
 
         {/* LAB SECTION */}
         <section id="lab" className="bg-slate-900 text-slate-300 pt-10 pb-24">
@@ -224,12 +283,13 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
               <div className="mt-4 md:mt-0"><span className="inline-flex items-center px-3 py-1 rounded bg-blue-900/50 border border-blue-700 text-blue-200 text-xs font-mono">CURRENT STATUS: R&D</span></div>
             </div>
 
+
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div className="space-y-8">
                 <div><h3 className="text-white text-lg font-medium mb-3">Background</h3><p className="text-lg leading-relaxed text-slate-400">This isn't a startup pivot. It is the culmination of 20 years of observation. I have a library of written essays and a graveyard of "failed" prototypes that paved the way for iDIG. Every broken build taught me what <em>doesn't</em> work in signal detection, leading to the architecture I use today.</p></div>
                 <div><h3 className="text-white text-lg font-medium mb-3">Philosophy</h3><p className="text-lg leading-relaxed text-slate-400"><strong>i-dig.io</strong> is my personal "skunkworks" project. It is a Progressive Web App (PWA) built to test how LLMs can structure unstructured candidate data. This research keeps me honest—ensuring I understand the difference between marketing hype and actual signal.</p></div>
                 <div><h3 className="text-white text-lg font-medium mb-3">Methodology</h3><p className="text-base leading-relaxed text-slate-400">I am a <strong>"vibe coder"</strong> who leans heavily on spec-driven development. I use Trello to manage sprints and NotebookLM to maintain deep context. By bringing <strong>Claude Code</strong> and <strong>Gemini AI</strong> directly into VS Code via MCP servers, I treat the IDE as a collaborative partner, not just a text editor.</p></div>
-                
+               
                 <div className="bg-slate-800/50 rounded-lg p-6 border border-slate-700">
                   <h3 className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-4">Technical Environment</h3>
                   <div className="grid grid-cols-2 gap-6 text-sm">
@@ -239,9 +299,9 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
                   </div>
                 </div>
               </div>
-              
+             
               <div className="flex flex-col gap-6">
-                
+               
                 {/* YOUTUBE VIDEO CARD */}
                 <div className="bg-slate-800 rounded-xl border border-slate-700 overflow-hidden group hover:border-blue-500/50 transition duration-300">
                   <div className="p-4 border-b border-slate-700 bg-slate-800/50 flex justify-between items-center">
@@ -252,16 +312,18 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
                     <span className="text-xs text-slate-500 bg-slate-900 px-2 py-1 rounded">Chrome Extension</span>
                   </div>
 
+
                   <div className="aspect-video bg-slate-900 relative overflow-hidden group">
-                     <iframe 
+                     <iframe
                        className="w-full h-full absolute inset-0"
-                       src="https://www.youtube.com/embed/BBAg-98_UBU" 
+                       src="https://www.youtube.com/embed/BBAg-98_UBU"
                        title="Research Tool Demo"
                        frameBorder="0"
-                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                        allowFullScreen
                      ></iframe>
                   </div>
+
 
                   <div className="p-4 bg-slate-800/80">
                     <p className="text-slate-400 text-sm">
@@ -269,6 +331,7 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
                     </p>
                   </div>
                 </div>
+
 
                 {/* SIGNAL DRIVEN FRAMEWORK CARD - WITH NEW IMAGE */}
                 <div className="bg-slate-800/30 rounded-xl border border-slate-700/50 p-6 flex flex-col items-start justify-between opacity-90 h-full">
@@ -278,6 +341,7 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
                    <div className="w-full border border-slate-700 rounded-md mb-6 overflow-hidden">
                      <img src={idigPreview} alt="iDIG Signal-Driven Discovery Interface" className="w-full object-cover opacity-80"/>
                    </div>
+
 
                    <div className="space-y-4 w-full">
                       <p className="text-slate-400 text-sm leading-relaxed">The core discovery engine designed to align unstructured profile data with complex job requirements.</p>
@@ -290,18 +354,21 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
                    <div className="mt-6 pt-4 border-t border-slate-700/50 w-full"><p className="text-slate-500 text-xs italic">* I am in the final phases of wrapping up the initial live demo of the Signal-Driven Framework.</p></div>
                 </div>
 
+
               </div>
+
 
             </div>
           </div>
         </section>
-        
+       
         <footer className="bg-white py-12 border-t border-slate-200">
           <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0"><span className="font-bold text-slate-900">i-DIG.io</span><p className="text-slate-500 text-sm mt-1">Signal-Driven Discovery & Matching</p></div>
             <div className="text-sm text-slate-500">&copy; 2026 i-DIG.io. All rights reserved.</div>
           </div>
         </footer>
+
 
       </main>
     </div>
