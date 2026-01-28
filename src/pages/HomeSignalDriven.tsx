@@ -111,7 +111,7 @@ I work alongside them to understand real bottlenecks, then use a purpose-built d
                   <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-blue-50 to-white z-0"></div>
                   <div className="relative z-10">
                     <div className="w-32 h-32 mx-auto bg-white rounded-full p-1 border border-slate-200 shadow-sm mb-4">
-                       <div className="w-full h-full rounded-full bg-slate-100 flex items-center justify-center overflow-hidden">
+                       <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
                           <img src={profilePic} alt="Paul Duplantis" className="w-full h-full object-cover" />
                        </div>
                     </div>
