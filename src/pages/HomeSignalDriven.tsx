@@ -1,4 +1,4 @@
-import { ArrowRight, Database, Briefcase, CheckCircle2, Linkedin, Code2, Terminal, Layers, Lock, Sliders, GitMerge, BrainCircuit } from 'lucide-react';
+import { ArrowRight, Database, Briefcase, CheckCircle2, Linkedin, Code2, Terminal, Layers, Lock, Sliders, GitMerge, BrainCircuit, Eye, Compass, Orbit, Scale } from 'lucide-react';
 import profilePic from '../assets/paul_idig_profile.jpg';
 
 
@@ -314,7 +314,7 @@ I use AI to help surface those signals—patterns of intent, timing, authority, 
               <div className="flex flex-col gap-6">
 
                 {/* SIGNAL DRIVEN FRAMEWORK CARD - WITH YOUTUBE VIDEO */}
-                <div className="bg-slate-800/30 rounded-xl border border-slate-700/50 p-6 flex flex-col items-start justify-between opacity-90 h-full">
+                <div className="bg-slate-800/30 rounded-xl border border-slate-700/50 p-6 flex flex-col items-start justify-between opacity-90">
                    <div className="flex w-full justify-between items-center mb-4"><div className="flex items-center space-x-2"><Lock size={16} className="text-slate-500" /><h4 className="text-slate-300 font-medium">Signal-Driven Framework</h4></div></div>
 
                    {/* YOUTUBE VIDEO */}
@@ -337,6 +337,33 @@ I use AI to help surface those signals—patterns of intent, timing, authority, 
                         <div className="flex items-start"><GitMerge size={16} className="text-purple-500 mt-1 mr-3 shrink-0" /><p className="text-sm text-slate-500"><strong>Contextual Alignment:</strong> Signals are examined across multiple perspectives—profiles, roles, opportunities, and stated needs—making it easier to see where real alignment exists beneath surface descriptions.</p></div>
                         <div className="flex items-start"><BrainCircuit size={16} className="text-emerald-500 mt-1 mr-3 shrink-0" /><p className="text-sm text-slate-500"><strong>Semantic Understanding:</strong> Rather than relying on keywords alone, the framework works with meaning—capturing how experience, intent, and capability show up in context, not just in text.</p></div>
                       </div>
+                   </div>
+                </div>
+
+                {/* THE iDIG DIFFERENCE CARD */}
+                <div className="bg-slate-800/30 rounded-xl border border-slate-700/50 p-6">
+                   <div className="flex items-center space-x-2 mb-6">
+                     <Scale size={16} className="text-amber-500" />
+                     <h4 className="text-slate-300 font-medium">The iDIG Difference</h4>
+                   </div>
+
+                   <div className="space-y-4">
+                     <div className="flex items-start">
+                       <Eye size={16} className="text-blue-400 mt-1 mr-3 shrink-0" />
+                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Signal Visibility:</strong> Rather than collapsing inputs into a single score, signals remain visible and inspectable—allowing teams to understand alignment, tension, and absence before decisions are made.</p>
+                     </div>
+                     <div className="flex items-start">
+                       <Compass size={16} className="text-emerald-400 mt-1 mr-3 shrink-0" />
+                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Signal Stewardship:</strong> Signals are defined and refined by the teams responsible for outcomes, evolving deliberately over time based on real observer experience—not opaque algorithmic retraining.</p>
+                     </div>
+                     <div className="flex items-start">
+                       <Orbit size={16} className="text-purple-400 mt-1 mr-3 shrink-0" />
+                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Relational Geometry:</strong> Signals behave as vectors in a relational space, where meaning emerges from interaction, reinforcement, and interference—not isolated features weighted in isolation.</p>
+                     </div>
+                     <div className="flex items-start">
+                       <Scale size={16} className="text-amber-400 mt-1 mr-3 shrink-0" />
+                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Judgment-Centered Design:</strong> The system strengthens human judgment by holding ambiguity long enough for clarity to emerge, prioritizing understanding and trust over speed and premature closure.</p>
+                     </div>
                    </div>
                 </div>
 
