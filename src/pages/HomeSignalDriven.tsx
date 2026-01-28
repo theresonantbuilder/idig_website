@@ -362,7 +362,7 @@ I use AI to help surface those signals—patterns of intent, timing, authority, 
                      </div>
                      <div className="flex items-start">
                        <Scale size={16} className="text-amber-400 mt-1 mr-3 shrink-0" />
-                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Judgment-Centered Design:</strong> The system strengthens human judgment by holding ambiguity long enough for clarity to emerge, prioritizing understanding and trust over speed and premature closure.</p>
+                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Deliberate Decision-Making:</strong> Unlike BI dashboards that surface metrics without modeling alignment, the framework exposes underlying signals so teams can reason through alignment before acting.</p>
                      </div>
                    </div>
                 </div>
