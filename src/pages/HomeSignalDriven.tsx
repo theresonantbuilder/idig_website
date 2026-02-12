@@ -1,4 +1,4 @@
-import { ArrowRight, Database, Briefcase, CheckCircle2, Linkedin, Code2, Terminal, Layers, Lock, Sliders, GitMerge, BrainCircuit, Eye, Compass, Orbit, Scale } from 'lucide-react';
+import { ArrowRight, Briefcase, CheckCircle2, Linkedin, Code2, Terminal, Layers, Lock, Sliders, GitMerge, BrainCircuit, Eye, Compass, Orbit, Scale } from 'lucide-react';
 import profilePic from '../assets/paul_idig_profile.jpg';
 
 
