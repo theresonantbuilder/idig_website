@@ -62,10 +62,9 @@ export default function HomeSignalDriven() {
             </h1>
 
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mb-10">
-             Businesses can operate in functional silos that make it hard to see where work, decisions, and opportunities are getting stuck.<br></br>
-
-
-I work alongside them to understand real bottlenecks, then use a purpose-built discovery tool I created to surface patterns, relationships, and opportunities that are easy to miss in day-to-day work.
+              I help growing businesses identify operational bottlenecks and apply practical technology solutions to improve workflow.
+              <br /><br />
+              With experience implementing CRM systems, evaluating POS platforms, and customizing recruiting tools, I work at the intersection of operations and technology — making systems clearer, simpler, and more aligned with how teams actually work.
             </p>
 
 
