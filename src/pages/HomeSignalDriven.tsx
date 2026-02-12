@@ -194,7 +194,14 @@ export default function HomeSignalDriven() {
 
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div className="space-y-8">
-                <div><h3 className="text-white text-lg font-medium mb-3">Background</h3><p className="text-lg leading-relaxed text-slate-400">This work didn't begin as a product idea. It grew out of two decades spent inside real operating environments—where decisions are made under pressure and intent often gets lost between people, tools, and process. Across industries, I saw the same pattern repeat: capable teams, plenty of data, and persistent misalignment. Through writing, experimentation, and many failed attempts to model what was actually happening beneath the surface, I learned what doesn't capture signal. Those lessons ultimately shaped the architecture behind iDIG.</p></div>
+                <div>
+                  <h3 className="text-white text-lg font-medium mb-3">Background</h3>
+                  <div className="text-lg leading-relaxed text-slate-400 space-y-4">
+                    <p>iDIG did not begin as a product idea. It emerged from years of observing how capable teams struggle with misalignment between intent, tools, and decision-making.</p>
+                    <p>After working inside operational systems across multiple industries, I began experimenting with structured models to better understand where workflow clarity breaks down — and how emerging AI tools might responsibly help surface what traditional systems miss.</p>
+                    <p>Many iterations failed. Some revealed meaningful insight. Those lessons evolved into the iDIG framework — an ongoing applied research effort that informs how I analyze workflow, test assumptions, and explore thoughtful uses of AI within my consulting work.</p>
+                  </div>
+                </div>
                 <div><h3 className="text-white text-lg font-medium mb-3">Philosophy</h3><p className="text-lg leading-relaxed text-slate-400"><strong>i-dig.io</strong> is built around a simple belief: most opportunity is lost not because of missing data, but because meaningful signals in communication are overlooked or flattened by traditional tools.
 
 I use AI to help surface those signals—patterns of intent, timing, authority, and context that exist across conversations, content, and workflows, but rarely show up cleanly in systems or reports. <br></br>Rather than replacing human judgment, the framework is designed to support it, giving people a clearer view of what's already happening so better decisions can emerge naturally.</p></div>
