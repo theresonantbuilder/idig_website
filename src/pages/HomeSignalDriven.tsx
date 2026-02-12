@@ -145,11 +145,12 @@ export default function HomeSignalDriven() {
           <div className="max-w-4xl mx-auto mb-12">
             {/* Panel 1: Embedded & Applied Discovery */}
             <div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-blue-500 transition cursor-pointer group relative overflow-hidden">
-              <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
-                <Briefcase className="text-blue-600" size={24} />
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mr-4 shrink-0">
+                  <Briefcase className="text-blue-600" size={24} />
+                </div>
+                <h3 className="text-2xl font-semibold">Embedded & Applied Discovery</h3>
               </div>
-
-              <h3 className="text-2xl font-semibold mb-3">Embedded & Applied Discovery</h3>
 
               <div className="text-slate-600 leading-relaxed space-y-4">
                 <p>Small and mid-sized businesses often face enterprise-level complexity — without enterprise-level budgets.</p>
