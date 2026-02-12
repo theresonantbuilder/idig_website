@@ -93,9 +93,7 @@ export default function HomeSignalDriven() {
 
               <div className="md:col-span-7 prose prose-lg prose-slate">
                 <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">What I do</h3>
-                <h2 className="text-3xl font-light text-slate-900 mb-6">What does a consultant like this actually do?
-</h2>
-                <div className="space-y-6 text-lg text-slate-600">
+              <div className="space-y-6 text-lg text-slate-600">
                   <p>For more than 20 years, I’ve worked inside growing businesses where process, technology, and decision-making intersect.</p>
                   <p>I’ve learned that operational friction rarely comes from lack of effort — it comes from systems that no longer reflect how work actually moves.</p>
                   <p>I focus on small to mid-sized organizations that need practical improvements but don’t have the time or budget for large enterprise consulting engagements. I help teams uncover workflow gaps and realign operations with the right structure and tools — creating clarity that supports smarter, faster decisions without unnecessary overhead.</p>
