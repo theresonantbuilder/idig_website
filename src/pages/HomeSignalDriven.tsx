@@ -92,15 +92,13 @@ export default function HomeSignalDriven() {
             <div className="grid md:grid-cols-12 gap-12 items-center">
 
               <div className="md:col-span-7 prose prose-lg prose-slate">
-                <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">The Definition</h3>
+                <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">What I do</h3>
                 <h2 className="text-3xl font-light text-slate-900 mb-6">What does a consultant like this actually do?
 </h2>
                 <div className="space-y-6 text-lg text-slate-600">
-                  <p>It sits at the intersection of real-world operations and discovery-driven tooling.</p>
-                  <p>For over 20 years, I've worked inside business systems—ranging from construction licensing and dealership operations to technical recruiting for large enterprises—often embedded close enough to see where work actually breaks down. Across industries, I've seen the same pattern repeat: signal loss. Businesses accumulate data, tools, and process, but struggle to translate any of it into clear action because those systems don't reflect how decisions are really made.
-</p>
-                  <p>Most consultants work within the limits of existing software and workflows. I built a purpose-built discovery tool to expose where those limits hide opportunity and to give businesses more control over how opportunity is defined. Instead of relying on fixed reports or one-size-fits-all models, the tool is designed to surface insights by working from a business's own signals and understanding of its domain.
-</p>
+                  <p>For more than 20 years, I’ve worked inside growing businesses where process, technology, and decision-making intersect.</p>
+                  <p>I’ve learned that operational friction rarely comes from lack of effort — it comes from systems that no longer reflect how work actually moves.</p>
+                  <p>I focus on small to mid-sized organizations that need practical improvements but don’t have the time or budget for large enterprise consulting engagements. I help teams uncover workflow gaps and realign operations with the right structure and tools — creating clarity that supports smarter, faster decisions without unnecessary overhead.</p>
                 </div>
               </div>
 
