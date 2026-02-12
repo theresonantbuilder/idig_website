@@ -142,140 +142,43 @@ export default function HomeSignalDriven() {
           </div>
 
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="max-w-4xl mx-auto mb-12">
+            {/* Panel 1: Embedded & Applied Discovery */}
+            <div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-blue-500 transition cursor-pointer group relative overflow-hidden">
+              <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
+                <Briefcase className="text-blue-600" size={24} />
+              </div>
 
-         {/* Panel 1: Embedded Discovery */}
-<div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-blue-500 transition cursor-pointer group relative overflow-hidden">
+              <h3 className="text-2xl font-semibold mb-3">Embedded & Applied Discovery</h3>
 
-<div className="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
-    PHASE 1: RESEARCH
-  </div>
-  <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
-    <Briefcase className="text-blue-600" size={24} />
-  </div>
-
-
-  <h3 className="text-2xl font-semibold mb-3">Embedded Discovery</h3>
-
-
-<p className="text-slate-600 leading-normal mb-4">
-    I don't advise from the sidelines. I embed into real work to understand how opportunity is actually pursued—not how it's documented.
-    By working directly inside live processes, I stay close to the work as it unfolds, noticing where things lose clarity or momentum.
-    iDIG is the discovery tool I use to help surface those patterns and reflect them back in a way the business can engage with and act on.
-  </p>
-
-
-  <ul className="space-y-3 text-sm text-slate-500">
-
-    <li className="flex items-start">
-      <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/>
-      <span>
-        <strong>Signal Surfacing:</strong> I stay close to real work to notice where meaningful signals appear—and where they quietly disappear.
-        iDIG helps capture those moments so hidden patterns can be explored together.
-      </span>
-    </li>
-
-
-    <li className="flex items-start">
-      <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/>
-      <span>
-        <strong>Decision Context:</strong> I focus on how decisions are actually made in practice, not how they're described.
-        iDIG reflects those contexts back so assumptions and noise are easier to see.
-      </span>
-    </li>
-
-
-    <li className="flex items-start">
-      <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/>
-      <span>
-        <strong>Working the Edges:</strong> I pay attention to where work feels awkward or uncertain—the edges where things tend to break down.
-        iDIG helps hold onto those moments so nothing important slips by.
-      </span>
-    </li>
-
-
-    <li className="flex items-start">
-      <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-0.5 shrink-0"/>
-      <span>
-        <strong>Signal Reality Check:</strong> When outcomes stall, I help separate market conditions from internal methods.
-        Looking at surfaced signals together makes it easier to adjust with intent instead of guesswork.
-      </span>
-    </li>
-
-
-  </ul>
-</div>
-
-
-{/* Card 2: Applied Discovery */}
-<div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-emerald-500 transition cursor-pointer group relative overflow-hidden">
-
-
-  <div className="absolute top-0 right-0 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
-    PHASE 2: APPLY
-  </div>
-
-
-  <div className="w-12 h-12 bg-emerald-50 rounded-lg flex items-center justify-center mb-6">
-    <Database className="text-emerald-600" size={24} />
-  </div>
-
-
-  <h3 className="text-2xl font-semibold mb-3">Applied Discovery</h3>
-
-
-  <p className="text-sm text-slate-600 leading-normal mb-4">
-    Once meaningful signals are surfaced, iDIG becomes a way to explore how people, needs, and opportunities could align more clearly.
-    Rather than enforcing a single workflow, the tool adapts to different domains—helping businesses see connections that are often there, but rarely visible at the same time.
-  </p>
-
-
-  <ul className="space-y-3 text-sm text-slate-500">
-
-
-    <li className="flex items-start">
-      <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/>
-      <span>
-       <strong>Managers ↔ Jobs:</strong> Identifying decision authority and role intent so talent aligns to the real need—not just the posted role.
-
-      </span>
-    </li>
-
-
-    <li className="flex items-start">
-      <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/>
-      <span>
-        <strong>Prospects ↔ Services:</strong> Identifying which prospects are best aligned with specific offerings, based on real signals instead of generic outreach.
-      </span>
-    </li>
-
-
-    <li className="flex items-start">
-      <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/>
-      <span>
-        <strong>Customers ↔ Products:</strong> Surfacing customers who may be ready for an upgrade or adjacent product by noticing timing, behavior, and context.
-      </span>
-    </li>
-
-
-    <li className="flex items-start">
-      <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/>
-      <span>
-        <strong>Consultants ↔ Projects:</strong> Mapping expertise and availability against active or emerging needs, making it easier to see where fit already exists.
-      </span>
-    </li>
-
-<li className="flex items-start">
-  <CheckCircle2 size={16} className="mr-2 text-emerald-500 mt-0.5 shrink-0"/>
-  <span>
-    <strong>Signals ↔ Decisions:</strong> Making the signals that influence decisions visible, so choices are grounded in real context rather than habit, hierarchy, or incomplete data.
-  </span>
-</li>
-
-
-  </ul>
-</div>
-</div>
+              <div className="text-slate-600 leading-relaxed space-y-4">
+                <p>Small and mid-sized businesses often face enterprise-level complexity — without enterprise-level budgets.</p>
+                <p>I offer embedded operational consulting that delivers senior-level systems insight without the overhead, layers, or pricing structure of large firms. My focus is simple: clarify how work actually moves, identify where friction hides, and align the right tools to restore efficiency and momentum.</p>
+                <p>Over the past two decades, I’ve worked inside growing organizations where process, technology, and decision-making intersect. I’ve consistently seen the same challenge: teams invest in tools and reporting layers, yet decision-making still depends on fragmented context and informal workarounds. The issue is rarely effort or capability — it’s misalignment between workflow and the systems meant to support it.</p>
+                <p>My work centers on reducing that structural noise.</p>
+                <p className="font-medium text-slate-900">I help businesses:</p>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-1 shrink-0" />
+                    <span><strong>Diagnose workflow friction</strong> by mapping how work actually flows from intake to decision, identifying bottlenecks and unclear ownership.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-1 shrink-0" />
+                    <span><strong>Optimize existing tools</strong> (CRM, ATS, POS, internal systems) so they better reflect how teams truly operate — reducing manual workarounds and reporting confusion.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-1 shrink-0" />
+                    <span><strong>Clarify opportunity alignment</strong> by improving how roles, prospects, customers, and projects are defined and prioritized in practice — not just on paper.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-1 shrink-0" />
+                    <span><strong>Apply focused automation and AI</strong> where it creates real leverage, ensuring technology simplifies operations instead of adding complexity.</span>
+                  </li>
+                </ul>
+                <p>The goal isn’t transformation for its own sake. It’s practical clarity — restoring visibility, improving momentum, and strengthening how decisions are made inside the business.</p>
+              </div>
+            </div>
+          </div>
 </section>
 
 
