@@ -134,7 +134,7 @@ export default function HomeSignalDriven() {
 
 
         {/* WORK SECTION */}
-        <section id="work" className="pt-24 pb-10 max-w-6xl mx-auto px-6">
+        <section id="work" className="pt-12 pb-10 max-w-6xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-light text-slate-900 mb-4">How I Deliver Value</h2>
             <p className="text-lg text-slate-600">My process is circular: I step into the work to uncover where opportunity breaks down, then apply the right technology to remove friction and recover signal.</p>
