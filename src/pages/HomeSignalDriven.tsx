@@ -50,7 +50,7 @@ export default function HomeSignalDriven() {
       <main className="pt-24 pb-20">
 
         {/* HERO SECTION */}
-        <div className="max-w-6xl mx-auto px-6 mb-20 pt-10">
+        <div className="max-w-6xl mx-auto px-6 mb-10 pt-10">
           <div className="max-w-3xl">
             <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-100 rounded-full px-3 py-1 mb-6">
               <span className="text-xs font-semibold text-blue-600 tracking-wide uppercase">Paul Duplantis | Consultant</span>
@@ -87,7 +87,7 @@ export default function HomeSignalDriven() {
 
 
         {/* BIO / DEFINITION SECTION */}
-        <section id="about" className="py-20 bg-white border-y border-slate-200">
+        <section id="about" className="py-12 bg-white border-y border-slate-200">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-12 gap-12 items-center">
 
