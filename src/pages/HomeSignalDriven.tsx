@@ -227,7 +227,7 @@ I use AI to help surface those signals—patterns of intent, timing, authority, 
                    <div className="w-full aspect-video bg-slate-900 rounded-md mb-6 overflow-hidden">
                      <iframe
                        className="w-full h-full"
-                       src="https://www.youtube.com/watch?v=vC8IAOuTczg"
+                       src="https://www.youtube.com/embed/vC8IAOuTczg"
                        title="Signal-Driven Framework Demo"
                        frameBorder="0"
                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
