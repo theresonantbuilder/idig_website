@@ -9,7 +9,7 @@ git commit -m "Fix unused import"
 git push
 
 This build is on vite that is function hosted on Vercel. The domain is hosted on godaddy with dns pointing to Vercel. 
-When the build is pushed to Github it automatically updates Vercel which pushed to the live site. 
+When the build is pushed to Github it automatically updates Vercel which pushed to the live site.  
 ---------------
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
