@@ -56,18 +56,13 @@ export default function HomeSignalDriven() {
 
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div className="space-y-8">
-                <div>
-                  <h3 className="text-white text-lg font-medium mb-3">Background</h3>
-                  <div className="text-lg leading-relaxed text-slate-400 space-y-4">
-                    <p>iDIG did not begin as a product idea. It emerged from years of observing how capable teams struggle with misalignment between intent, tools, and decision-making.</p>
-                    <p>After working inside operational systems across multiple industries, I began experimenting with structured models to better understand where workflow clarity breaks down — and how emerging AI tools might responsibly help surface what traditional systems miss.</p>
-                    <p>Many iterations failed. Some revealed meaningful insight. Those lessons evolved into the iDIG framework — an ongoing applied research effort that informs how I analyze workflow, test assumptions, and explore thoughtful uses of AI within my consulting work.</p>
-                  </div>
+                <div className="text-base leading-relaxed text-slate-400 space-y-4">
+                  <p>For over 20 years I've been drawn to a central question: why do the tools people use to communicate so rarely give them a sense of agency over what they're actually saying — or resonance with who they're saying it to?</p>
+                  <p>That question led me toward <strong className="text-slate-300">Quantum Social Science</strong> — a field exploring how concepts from quantum mechanics, including superposition, entanglement, and interference, map onto the way meaning actually behaves in human communication. Unlike classical models that treat language as fixed data, quantum-inspired frameworks treat it as something alive: context-dependent, relational, and irreducibly ambiguous until observed.</p>
+                  <p>That discovery became the foundation for <strong className="text-slate-300">i-DIG.io</strong> — an applied experiment in representing communication signals as Hilbert space vectors, where meaning isn't extracted but modeled as direction, magnitude, and interference across a shared semantic field.</p>
+                  <p><strong className="text-slate-300">iDIG Movies</strong> extends this into a new dimension: exploring how people engage with passages of moving content — testing whether the signals embedded in film and narrative can create the same kind of resonance the framework is designed to surface in text and data.</p>
+                  <p>I'm also exploring what it would mean to move iDIG beyond a product and into a <strong className="text-slate-300">protocol</strong> — a shared layer others could build on to help surface resonance in the tools and systems where human communication already lives.</p>
                 </div>
-                <div><h3 className="text-white text-lg font-medium mb-3">Philosophy</h3><p className="text-lg leading-relaxed text-slate-400"><strong>i-dig.io</strong> is built around a simple belief: most opportunity is lost not because of missing data, but because meaningful signals in communication are overlooked or flattened by traditional tools.
-
-I use AI to help surface those signals—patterns of intent, timing, authority, and context that exist across conversations, content, and workflows, but rarely show up cleanly in systems or reports. <br></br>Rather than replacing human judgment, the framework is designed to support it, giving people a clearer view of what's already happening so better decisions can emerge naturally.</p></div>
-                <div><h3 className="text-white text-lg font-medium mb-3">Methodology</h3><p className="text-base leading-relaxed text-slate-400">My work blends intuition with structure. I build iteratively, staying close to real signals as they emerge, while anchoring decisions in spec-driven development and clear validation loops. I use Trello to manage sprints and NotebookLM to maintain deep context. By bringing Claude Code and Gemini AI directly into VS Code via MCP servers, I treat the IDE as a collaborative partner, not just a text editor.</p></div>
 
                 <div className="bg-slate-800/50 rounded-lg p-6 border border-slate-700">
                   <h3 className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-4">Technical Environment</h3>
