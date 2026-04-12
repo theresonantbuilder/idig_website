@@ -71,7 +71,12 @@ export default function HomeSignalDriven() {
                     <h3 className="text-amber-400 text-xs font-bold uppercase tracking-widest">The Resonant Builders</h3>
                   </div>
                   <p className="text-sm leading-relaxed text-slate-400 mb-3">I'm building iDIG because I believe a quantum-informed model of communication signals can create real impact — commercially, in how organizations discover and align with opportunity, and socially, in how communities surface the people and needs that traditional systems overlook.</p>
-                  <p className="text-sm leading-relaxed text-slate-400 mb-3">One early signal of that social potential: applying this framework to how social workers identify and connect with the families most at risk — where the gap between intent and outcome is widest, and where better signal fidelity could genuinely change lives.</p>
+                  <ul className="text-sm text-slate-400 space-y-2 mb-3 ml-1">
+                    <li className="flex items-start"><span className="text-amber-500 mr-2 mt-0.5 shrink-0">→</span><span>Aligning social workers with first responders to surface the right support for the right person at the right moment</span></li>
+                    <li className="flex items-start"><span className="text-amber-500 mr-2 mt-0.5 shrink-0">→</span><span>Cutting hiring noise by matching talent to opportunity through signal — not keyword filters</span></li>
+                    <li className="flex items-start"><span className="text-amber-500 mr-2 mt-0.5 shrink-0">→</span><span>Helping people resonate with stories — through film, books, and content that genuinely reflects who they are</span></li>
+                    <li className="flex items-start"><span className="text-amber-500 mr-2 mt-0.5 shrink-0">→</span><span>Giving people real agency over the products and services they engage with, rather than being matched by opaque algorithms</span></li>
+                  </ul>
                   <p className="text-sm leading-relaxed text-slate-500">I'll be exploring these ideas — and inviting others to build alongside — through the <strong className="text-slate-400">TheResonantBuilders</strong> blog, coming to this site. If this resonates with you, the conversation is open.</p>
                 </div>
 
