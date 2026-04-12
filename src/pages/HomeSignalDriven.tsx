@@ -1,5 +1,4 @@
-import { ArrowRight, Briefcase, CheckCircle2, Linkedin, Code2, Terminal, Layers, Lock, Sliders, GitMerge, BrainCircuit, Eye, Compass, Orbit, Scale } from 'lucide-react';
-import profilePic from '../assets/paul_idig_profile.jpg';
+import { Code2, Terminal, Layers, Lock, Sliders, GitMerge, BrainCircuit, Eye, Compass, Orbit, Scale } from 'lucide-react';
 
 
 export default function HomeSignalDriven() {
@@ -39,150 +38,13 @@ export default function HomeSignalDriven() {
 
           {/* Menu Links increased to text-base (16px) */}
           <div className="hidden md:flex space-x-8 text-base font-medium text-slate-600">
-            <button onClick={() => scrollToSection('about')} className="hover:text-blue-600 transition">About Paul</button>
-            <button onClick={() => scrollToSection('work')} className="hover:text-blue-600 transition">My Process</button>
             <button onClick={() => scrollToSection('lab')} className="hover:text-blue-600 transition">The Lab</button>
           </div>
         </div>
       </nav>
 
 
-      <main className="pt-24 pb-20">
-
-        {/* HERO SECTION */}
-        <div className="max-w-6xl mx-auto px-6 mb-10 pt-10">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-100 rounded-full px-3 py-1 mb-6">
-              <span className="text-xs font-semibold text-blue-600 tracking-wide uppercase">Paul Duplantis | Consultant</span>
-            </div>
-
-            <h1 className="text-5xl md:text-7xl font-light text-slate-900 mb-8 leading-tight">
-              Cut the noise <br />
-              <span className="font-semibold text-slate-900">Amplify the signal</span>
-            </h1>
-
-            <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mb-10">
-              I help growing businesses identify operational bottlenecks and apply practical technology solutions to improve workflow.
-              <br /><br />
-              With experience implementing CRM systems, evaluating POS platforms, and customizing recruiting tools, I work at the intersection of operations and technology — making systems clearer, simpler, and more aligned with how teams actually work.
-            </p>
-
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                onClick={() => scrollToSection('work')}
-                className="inline-flex items-center justify-center px-6 py-3 bg-slate-900 text-white font-medium rounded-lg hover:bg-slate-800 transition shadow-lg shadow-slate-200/50"
-              >
-                See My Process
-              </button>
-              <button
-                onClick={() => scrollToSection('about')}
-                className="inline-flex items-center justify-center px-6 py-3 bg-white text-slate-700 border border-slate-200 font-medium rounded-lg hover:bg-slate-50 transition"
-              >
-                My Background
-              </button>
-            </div>
-          </div>
-        </div>
-
-
-        {/* BIO / DEFINITION SECTION */}
-        <section id="about" className="py-12 bg-white border-y border-slate-200">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-12 gap-12 items-center">
-
-              <div className="md:col-span-7 prose prose-lg prose-slate">
-                <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">What I do</h3>
-              <div className="space-y-6 text-lg text-slate-600">
-                  <p>For more than 20 years, I’ve worked inside growing businesses where process, technology, and decision-making intersect.</p>
-                  <p>I’ve learned that operational friction rarely comes from lack of effort — it comes from systems that no longer reflect how work actually moves.</p>
-                  <p>I focus on small to mid-sized organizations that need practical improvements but don’t have the time or budget for large enterprise consulting engagements. I help teams uncover workflow gaps and realign operations with the right structure and tools — creating clarity that supports smarter, faster decisions without unnecessary overhead.</p>
-                </div>
-              </div>
-
-
-              <div className="md:col-span-5">
-                <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-xl shadow-slate-200/50 text-center relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-blue-50 to-white z-0"></div>
-                  <div className="relative z-10">
-                    <div className="w-32 h-32 mx-auto bg-white rounded-full p-1 border border-slate-200 shadow-sm mb-4">
-                       <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
-                          <img src={profilePic} alt="Paul Duplantis" className="w-full h-full object-cover" style={{ imageRendering: 'auto', WebkitBackfaceVisibility: 'hidden', transform: 'translateZ(0)' }} />
-                       </div>
-                    </div>
-
-
-                    <h4 className="text-2xl font-bold text-slate-900 mb-1">Paul Duplantis</h4>
-                    <p className="text-blue-600 font-medium text-sm mb-6">Consultant</p>
-                    <p className="text-slate-600 text-sm leading-relaxed mb-8 px-2">Based in Phoenix, AZ. Helping businesses surface the signals that drive opportunity.</p>
-
-
-                    <div className="space-y-3">
-                      <a href="https://www.linkedin.com/in/paulduplantis/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full px-4 py-3 bg-[#0A66C2] text-white rounded-lg hover:bg-[#004182] transition font-medium text-sm group">
-                        <Linkedin size={18} className="mr-2" /> Connect on LinkedIn <ArrowRight size={16} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
-                      </a>
-
-                     </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-        </section>
-
-
-        {/* WORK SECTION */}
-        <section id="work" className="pt-12 pb-10 max-w-6xl mx-auto px-6">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-light text-slate-900 mb-4">How I Deliver Value</h2>
-            <p className="text-lg text-slate-600">My process is circular: I step into the work to uncover where opportunity breaks down, then apply the right technology to remove friction and recover signal.</p>
-            <p className="text-base text-slate-500 italic mt-4">The result isn't more automation. <span className="ml-2">It's providing a clearer signal to surface opportunities where conventional tools might not look.</span></p>
-          </div>
-
-
-          <div className="max-w-4xl mx-auto mb-12">
-            {/* Panel 1: Embedded & Applied Discovery */}
-            <div className="bg-white p-8 rounded-xl border-2 border-slate-100 hover:border-blue-500 transition cursor-pointer group relative overflow-hidden">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mr-4 shrink-0">
-                  <Briefcase className="text-blue-600" size={24} />
-                </div>
-                <h3 className="text-2xl font-semibold">Embedded & Applied Discovery</h3>
-              </div>
-
-              <div className="text-slate-600 leading-relaxed space-y-4">
-                <p>Small and mid-sized businesses often face enterprise-level complexity — without enterprise-level budgets.</p>
-                <p>I offer embedded operational consulting that delivers senior-level systems insight without the overhead, layers, or pricing structure of large firms. My focus is simple: clarify how work actually moves, identify where friction hides, and align the right tools to restore efficiency and momentum.</p>
-                <p>Over the past two decades, I’ve worked inside growing organizations where process, technology, and decision-making intersect. I’ve consistently seen the same challenge: teams invest in tools and reporting layers, yet decision-making still depends on fragmented context and informal workarounds. The issue is rarely effort or capability — it’s misalignment between workflow and the systems meant to support it.</p>
-                <p>My work centers on reducing that structural noise.</p>
-                <p className="font-medium text-slate-900">I help businesses:</p>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-1 shrink-0" />
-                    <span><strong>Diagnose workflow friction</strong> by mapping how work actually flows from intake to decision, identifying bottlenecks and unclear ownership.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-1 shrink-0" />
-                    <span><strong>Optimize existing tools</strong> (CRM, ATS, POS, internal systems) so they better reflect how teams truly operate — reducing manual workarounds and reporting confusion.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-1 shrink-0" />
-                    <span><strong>Clarify opportunity alignment</strong> by improving how roles, prospects, customers, and projects are defined and prioritized in practice — not just on paper.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 size={16} className="mr-2 text-blue-500 mt-1 shrink-0" />
-                    <span><strong>Apply focused automation and AI</strong> where it creates real leverage, ensuring technology simplifies operations instead of adding complexity.</span>
-                  </li>
-                </ul>
-                <p>The goal isn’t transformation for its own sake. It’s practical clarity — restoring visibility, improving momentum, and strengthening how decisions are made inside the business.</p>
-              </div>
-            </div>
-          </div>
-</section>
-
-
+      <main className="pt-20 pb-20">
 
         {/* LAB SECTION */}
         <section id="lab" className="bg-slate-900 text-slate-300 pt-10 pb-24">
