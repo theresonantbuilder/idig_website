@@ -47,7 +47,7 @@ export default function HomeSignalDriven() {
         <section id="lab" className="bg-slate-900 text-slate-300 pt-10 pb-24">
           <div className="max-w-6xl mx-auto px-6">
             <div className="mb-12 border-b border-slate-700 pb-8">
-              <h2 className="text-white font-light leading-tight" style={{ fontSize: 'clamp(1rem, 3vw, 2.5rem)' }}>
+              <h2 className="text-white font-light leading-tight text-center" style={{ fontSize: 'clamp(1rem, 3vw, 2.5rem)' }}>
                 iDIG turns information noise into signal — <span className="text-blue-400 font-medium">guided by you.</span>
               </h2>
             </div>
@@ -95,17 +95,27 @@ export default function HomeSignalDriven() {
                 <div className="bg-slate-800/30 rounded-xl border border-slate-700/50 p-6 flex flex-col items-start justify-between opacity-90">
                    <div className="flex w-full justify-between items-center mb-4"><div className="flex items-center space-x-2"><Lock size={16} className="text-slate-500" /><h4 className="text-slate-300 font-medium">Signal-Driven Framework</h4></div></div>
 
-                   {/* YOUTUBE VIDEO */}
-                   <div className="w-full aspect-video bg-slate-900 rounded-md mb-6 overflow-hidden">
-                     <iframe
-                       className="w-full h-full"
-                       src="https://www.youtube.com/embed/vC8IAOuTczg"
-                       title="Signal-Driven Framework Demo"
-                       frameBorder="0"
-                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                       allowFullScreen
-                     ></iframe>
-                   </div>
+                   {/* YOUTUBE CHANNEL CARD */}
+                   <a
+                     href="https://www.youtube.com/@i-DIG-framework"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="w-full aspect-video bg-slate-900 rounded-md mb-6 overflow-hidden flex flex-col items-center justify-center group border border-slate-700 hover:border-red-500/60 transition-colors duration-300 cursor-pointer relative"
+                   >
+                     <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900 opacity-80"></div>
+                     <div className="relative z-10 flex flex-col items-center text-center px-6">
+                       <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-red-900/40">
+                         <svg className="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                           <path d="M8 5v14l11-7z"/>
+                         </svg>
+                       </div>
+                       <p className="text-white font-medium text-base mb-1">Follow the Build on YouTube</p>
+                       <p className="text-slate-400 text-sm leading-relaxed mb-3">Updates, experiments, and thinking-out-loud as i-DIG takes shape.</p>
+                       <span className="inline-flex items-center text-xs font-semibold text-red-400 group-hover:text-red-300 transition-colors tracking-wide uppercase">
+                         Visit the Channel →
+                       </span>
+                     </div>
+                   </a>
 
 
                    <div className="space-y-4 w-full">
