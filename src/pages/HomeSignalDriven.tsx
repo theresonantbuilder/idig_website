@@ -47,7 +47,7 @@ export default function HomeSignalDriven() {
         <section id="lab" className="bg-slate-900 text-slate-300 pt-10 pb-24">
           <div className="max-w-6xl mx-auto px-6">
             <div className="mb-12 border-b border-slate-700 pb-8">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl text-white font-light leading-tight">
+              <h2 className="text-white font-light leading-tight" style={{ fontSize: 'clamp(1rem, 3vw, 2.5rem)' }}>
                 iDIG turns information noise into signal — <span className="text-blue-400 font-medium">guided by you.</span>
               </h2>
             </div>
