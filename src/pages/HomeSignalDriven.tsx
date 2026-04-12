@@ -64,15 +64,6 @@ export default function HomeSignalDriven() {
                   <p>I'm also exploring what it would mean to move iDIG beyond a product and into a <strong className="text-slate-300">protocol</strong> — a shared layer others could build on to help surface resonance in the tools and systems where human communication already lives.</p>
                 </div>
 
-                <div className="bg-slate-800/50 rounded-lg p-6 border border-slate-700">
-                  <h3 className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-4">Technical Environment</h3>
-                  <div className="grid grid-cols-2 gap-6 text-sm">
-                    <div><div className="flex items-center text-slate-200 mb-2"><Code2 size={16} className="mr-2 text-blue-500" /><strong>Core Stack</strong></div><ul className="text-slate-500 space-y-1 ml-6"><li>TypeScript / React / Vite</li><li>Node.js / Express</li><li>PostgreSQL / Vercel</li></ul></div>
-                    <div><div className="flex items-center text-slate-200 mb-2"><Layers size={16} className="mr-2 text-emerald-500" /><strong>Data & AI</strong></div><ul className="text-slate-500 space-y-1 ml-6"><li>IndexedDB (Local State)</li><li>GenAI APIs (OpenAI/Anthropic)</li><li>React APIs</li></ul></div>
-                    <div className="col-span-2"><div className="flex items-center text-slate-200 mb-2"><Terminal size={16} className="mr-2 text-purple-500" /><strong>Dev Ecosystem</strong></div><p className="text-slate-500 ml-6">VS Code + MCP Servers (Claude/Gemini), Trello, ChatGPT, NotebookLM</p></div>
-                  </div>
-                </div>
-
                 {/* THE RESONANT BUILDERS CARD */}
                 <div className="bg-slate-800/50 rounded-lg p-6 border border-slate-700">
                   <div className="flex items-center mb-3">
@@ -82,6 +73,15 @@ export default function HomeSignalDriven() {
                   <p className="text-sm leading-relaxed text-slate-400 mb-3">I'm building iDIG because I believe a quantum-informed model of communication signals can create real impact — commercially, in how organizations discover and align with opportunity, and socially, in how communities surface the people and needs that traditional systems overlook.</p>
                   <p className="text-sm leading-relaxed text-slate-400 mb-3">One early signal of that social potential: applying this framework to how social workers identify and connect with the families most at risk — where the gap between intent and outcome is widest, and where better signal fidelity could genuinely change lives.</p>
                   <p className="text-sm leading-relaxed text-slate-500">I'll be exploring these ideas — and inviting others to build alongside — through the <strong className="text-slate-400">TheResonantBuilders</strong> blog, coming to this site. If this resonates with you, the conversation is open.</p>
+                </div>
+
+                <div className="bg-slate-800/50 rounded-lg p-6 border border-slate-700">
+                  <h3 className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-4">Technical Environment</h3>
+                  <div className="grid grid-cols-2 gap-6 text-sm">
+                    <div><div className="flex items-center text-slate-200 mb-2"><Code2 size={16} className="mr-2 text-blue-500" /><strong>Core Stack</strong></div><ul className="text-slate-500 space-y-1 ml-6"><li>TypeScript / React / Vite</li><li>Node.js / Express</li><li>PostgreSQL / Vercel</li></ul></div>
+                    <div><div className="flex items-center text-slate-200 mb-2"><Layers size={16} className="mr-2 text-emerald-500" /><strong>Data & AI</strong></div><ul className="text-slate-500 space-y-1 ml-6"><li>IndexedDB (Local State)</li><li>GenAI APIs (OpenAI/Anthropic)</li><li>React APIs</li></ul></div>
+                    <div className="col-span-2"><div className="flex items-center text-slate-200 mb-2"><Terminal size={16} className="mr-2 text-purple-500" /><strong>Dev Ecosystem</strong></div><p className="text-slate-500 ml-6">VS Code + MCP Servers (Claude/Gemini), Trello, ChatGPT, NotebookLM</p></div>
+                  </div>
                 </div>
               </div>
 
