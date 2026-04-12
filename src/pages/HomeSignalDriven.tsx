@@ -6,13 +6,6 @@ export default function HomeSignalDriven() {
 
   const [, navigate] = useLocation();
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-blue-100">
@@ -29,7 +22,7 @@ export default function HomeSignalDriven() {
           >
             {/* Logo increased to text-2xl (mobile) and text-3xl (desktop) */}
             <div className="font-bold text-2xl md:text-3xl tracking-tight text-slate-800 group-hover:opacity-80 transition">
-              i-dig<span className="text-blue-600">.io</span>
+              i-DIG<span className="text-blue-600">.io</span>
             </div>
 
             {/* Tagline increased to text-lg */}
@@ -41,7 +34,7 @@ export default function HomeSignalDriven() {
 
           {/* Menu Links increased to text-base (16px) */}
           <div className="hidden md:flex space-x-8 text-base font-medium text-slate-600">
-            <button onClick={() => scrollToSection('lab')} className="hover:text-blue-600 transition">About Paul</button>
+            <button onClick={() => navigate('/about')} className="hover:text-blue-600 transition">About J. Paul</button>
             <button onClick={() => navigate('/theresonantbuilders')} className="hover:text-blue-600 transition">The Resonant Builders</button>
           </div>
         </div>
@@ -53,8 +46,10 @@ export default function HomeSignalDriven() {
         {/* LAB SECTION */}
         <section id="lab" className="bg-slate-900 text-slate-300 pt-10 pb-24">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-slate-700 pb-8">
-              <div><h3 className="text-blue-400 font-bold tracking-widest text-sm mb-2">MY LAB</h3><h2 className="text-3xl text-white font-light">The i-DIG Framework</h2></div>
+            <div className="mb-12 border-b border-slate-700 pb-8">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl text-white font-light leading-tight">
+                iDIG turns information noise into signal — <span className="text-blue-400 font-medium">guided by you.</span>
+              </h2>
             </div>
 
 

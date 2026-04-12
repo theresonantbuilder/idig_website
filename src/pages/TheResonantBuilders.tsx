@@ -14,7 +14,7 @@ export default function TheResonantBuilders() {
             className="flex items-center cursor-pointer select-none group"
           >
             <div className="font-bold text-2xl md:text-3xl tracking-tight text-slate-200 group-hover:opacity-80 transition">
-              i-dig<span className="text-blue-400">.io</span>
+              i-DIG<span className="text-blue-400">.io</span>
             </div>
             <span className="hidden md:block ml-6 pl-6 border-l-2 border-slate-700 text-lg text-slate-500 font-medium">
               Signal-Driven Discovery & Matching
