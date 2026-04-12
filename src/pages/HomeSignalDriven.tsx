@@ -1,7 +1,10 @@
 import { Code2, Terminal, Layers, Lock, Sliders, GitMerge, BrainCircuit, Eye, Compass, Orbit, Scale, Users } from 'lucide-react';
+import { useLocation } from 'wouter';
 
 
 export default function HomeSignalDriven() {
+
+  const [, navigate] = useLocation();
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -38,7 +41,8 @@ export default function HomeSignalDriven() {
 
           {/* Menu Links increased to text-base (16px) */}
           <div className="hidden md:flex space-x-8 text-base font-medium text-slate-600">
-            <button onClick={() => scrollToSection('lab')} className="hover:text-blue-600 transition">The Lab</button>
+            <button onClick={() => scrollToSection('lab')} className="hover:text-blue-600 transition">About Paul</button>
+            <button onClick={() => navigate('/theresonantbuilders')} className="hover:text-blue-600 transition">The Resonant Builders</button>
           </div>
         </div>
       </nav>
