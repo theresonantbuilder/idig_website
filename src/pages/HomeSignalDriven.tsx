@@ -1,4 +1,4 @@
-import { Code2, Terminal, Layers, Lock, Sliders, GitMerge, BrainCircuit, Eye, Compass, Orbit, Scale } from 'lucide-react';
+import { Code2, Terminal, Layers, Lock, Sliders, GitMerge, BrainCircuit, Eye, Compass, Orbit, Scale, Users } from 'lucide-react';
 
 
 export default function HomeSignalDriven() {
@@ -71,6 +71,17 @@ export default function HomeSignalDriven() {
                     <div><div className="flex items-center text-slate-200 mb-2"><Layers size={16} className="mr-2 text-emerald-500" /><strong>Data & AI</strong></div><ul className="text-slate-500 space-y-1 ml-6"><li>IndexedDB (Local State)</li><li>GenAI APIs (OpenAI/Anthropic)</li><li>React APIs</li></ul></div>
                     <div className="col-span-2"><div className="flex items-center text-slate-200 mb-2"><Terminal size={16} className="mr-2 text-purple-500" /><strong>Dev Ecosystem</strong></div><p className="text-slate-500 ml-6">VS Code + MCP Servers (Claude/Gemini), Trello, ChatGPT, NotebookLM</p></div>
                   </div>
+                </div>
+
+                {/* THE RESONANT BUILDERS CARD */}
+                <div className="bg-slate-800/50 rounded-lg p-6 border border-slate-700">
+                  <div className="flex items-center mb-3">
+                    <Users size={14} className="mr-2 text-amber-400" />
+                    <h3 className="text-amber-400 text-xs font-bold uppercase tracking-widest">The Resonant Builders</h3>
+                  </div>
+                  <p className="text-sm leading-relaxed text-slate-400 mb-3">I'm building iDIG because I believe a quantum-informed model of communication signals can create real impact — commercially, in how organizations discover and align with opportunity, and socially, in how communities surface the people and needs that traditional systems overlook.</p>
+                  <p className="text-sm leading-relaxed text-slate-400 mb-3">One early signal of that social potential: applying this framework to how social workers identify and connect with the families most at risk — where the gap between intent and outcome is widest, and where better signal fidelity could genuinely change lives.</p>
+                  <p className="text-sm leading-relaxed text-slate-500">I'll be exploring these ideas — and inviting others to build alongside — through the <strong className="text-slate-400">TheResonantBuilders</strong> blog, coming to this site. If this resonates with you, the conversation is open.</p>
                 </div>
               </div>
 
