@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Resonant Builders — Essays &amp; Ideas</title>
+    <link>https://i-dig.io/theresonantbuilders</link>
+    <description>Exploring how quantum-informed signal models can reshape the way we communicate — commercially, socially, and culturally.</description>
+    <language>en-us</language>
+    <managingEditor>paul@i-dig.io (J. Paul Duplantis)</managingEditor>
+    <webMaster>paul@i-dig.io</webMaster>
+    <atom:link href="https://i-dig.io/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>We Have a Communication Problem</title>
+      <link>https://i-dig.io/theresonantbuilders/we-have-a-communication-problem</link>
+      <guid>https://i-dig.io/theresonantbuilders/we-have-a-communication-problem</guid>
+      <pubDate>Sat, 12 Apr 2026 00:00:00 GMT</pubDate>
+      <description>The tools we use to communicate have outpaced our ability to make information meaningful. This is the problem iDIG was built to address.</description>
+    </item>
+
+    <item>
+      <title>How Quantum Social Science Unlocked iDIG</title>
+      <link>https://i-dig.io/theresonantbuilders/quantum-social-science-and-idig</link>
+      <guid>https://i-dig.io/theresonantbuilders/quantum-social-science-and-idig</guid>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
+      <description>A walkthrough of how Hilbert Space vectors became the mathematical foundation for modeling communication signals in iDIG.</description>
+    </item>
+
+    <item>
+      <title>Why iDIG Needs to Be a Protocol, Not a Product</title>
+      <link>https://i-dig.io/theresonantbuilders/building-idig-as-a-protocol</link>
+      <guid>https://i-dig.io/theresonantbuilders/building-idig-as-a-protocol</guid>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 GMT</pubDate>
+      <description>A conversation on why the most important version of iDIG is not an application but a shared protocol for surfacing resonance across any communication tool.</description>
+    </item>
+
+    <item>
+      <title>Signal in the Field: Resonance in Social Work</title>
+      <link>https://i-dig.io/theresonantbuilders/resonance-in-social-work</link>
+      <guid>https://i-dig.io/theresonantbuilders/resonance-in-social-work</guid>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
+      <description>An exploration of how signal-driven alignment could help social workers and first responders connect the right support to the right person at the right moment.</description>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>The Resonant Builders Podcast</title>
+    <link>https://i-dig.io/theresonantbuilders</link>
+    <description>Conversations exploring how quantum-informed signal models can reshape the way we communicate — commercially, socially, and culturally. Hosted by J. Paul Duplantis.</description>
+    <language>en-us</language>
+    <managingEditor>paul@i-dig.io (J. Paul Duplantis)</managingEditor>
+    <atom:link href="https://i-dig.io/podcast.xml" rel="self" type="application/rss+xml"/>
+
+    <itunes:author>J. Paul Duplantis</itunes:author>
+    <itunes:email>paul@i-dig.io</itunes:email>
+    <itunes:owner>
+      <itunes:name>J. Paul Duplantis</itunes:name>
+      <itunes:email>paul@i-dig.io</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Technology"/>
+    <itunes:category text="Society &amp; Culture"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <!-- Add itunes:image here once you have cover art:
+    <itunes:image href="https://i-dig.io/podcast-cover.jpg"/> -->
+
+    <!-- Add episodes below as audio becomes available. Example structure:
+
+    <item>
+      <title>Episode Title</title>
+      <link>https://i-dig.io/theresonantbuilders/episode-slug</link>
+      <guid isPermaLink="true">https://i-dig.io/theresonantbuilders/episode-slug</guid>
+      <pubDate>Sat, 12 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Episode description.</description>
+      <itunes:summary>Episode description.</itunes:summary>
+      <itunes:duration>45:00</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://YOUR_VERCEL_BLOB_URL/episode-1.mp3" length="0" type="audio/mpeg"/>
+    </item>
+
+    -->
+
+  </channel>
+</rss>
