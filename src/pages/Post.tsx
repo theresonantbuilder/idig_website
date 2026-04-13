@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useParams } from 'wouter';
-import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 import { getPostBySlug } from '../lib/posts';
 import type { Post as PostType } from '../types/post';
@@ -54,7 +53,7 @@ export default function Post() {
     );
   }
 
-  const html = DOMPurify.sanitize(marked(post.content) as string);
+  const html = DOMPurify.sanitize(post.content);
 
   return (
     <div className="min-h-screen bg-slate-900 font-sans text-slate-300 selection:bg-blue-900">
