@@ -33,7 +33,7 @@ export default function TheResonantBuilders() {
     <div className="min-h-screen bg-slate-900 font-sans text-slate-300 selection:bg-blue-900">
 
       {/* Navigation */}
-      <nav className="fixed w-full bg-white/90 backdrop-blur-md border-b border-slate-200 z-50">
+      <nav className="fixed w-full bg-white border-b border-slate-200 z-50">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           <div onClick={() => navigate('/')} className="flex items-center cursor-pointer select-none group">
             <div className="font-bold text-2xl md:text-3xl tracking-tight text-slate-800 group-hover:opacity-80 transition">
