@@ -1,14 +1,14 @@
 ---
-title: "The Great Thaw: Tuning into the Signal of Human Potential"
+title: "The Awakening: Tuning into the Signal of Human Potential"
 date: "2026-04-14"
 type: "essay"
-summary: "We are living through the slow decay of digital platforms—but the frost is starting to melt. A 20-year journey into observer resonance, Hilbert Space vectors, and the iDIG protocol."
+summary: "We are living through the slow decay of digital platforms—but something is stirring. A 20-year journey into observer resonance, Hilbert Space vectors, and the iDIG protocol."
 tags: ["resonance", "Hilbert space", "iDIG", "quantum", "protocol"]
 ---
 
-We are living through a period of **"Enshittification"** — a term coined by Cory Doctorow to describe the slow decay of digital platforms as they pivot from serving users to harvesting them. For years, the means of human communication have been pinned to the hip of commodification. This has created a **frost** over the lens of our digital lives, forcing us to bounce off superficial signals rather than tuning into deep resonance.
+We are living through a period of **"Enshittification"** — a term coined by Cory Doctorow to describe the slow decay of digital platforms as they pivot from serving users to harvesting them. For years, the means of human communication have been pinned to the hip of commodification. This has created a **stillness** over the lens of our digital lives — a collective numbness that keeps us bouncing off superficial signals rather than tuning into deep resonance.
 
-**But the frost is starting to melt.**
+**But something is waking up.**
 
 ## The Shift Toward Deep Context
 
@@ -78,7 +78,7 @@ For the last two years I have built in a vacuum, testing these theories in a sol
 
 **The build isn't "stable" yet — not because the math is wrong, but because it hasn't yet met the world.**
 
-I am looking for fellow builders to collaborate with — to shape this protocol for my use, their use, and hopefully many others. If the frost is melting, could a new protocol rise where resonant signals are finally within reach for all?
+I am looking for fellow builders to collaborate with — to shape this protocol for my use, their use, and hopefully many others. If we are awakening, could a new protocol rise where resonant signals are finally within reach for all?
 
 This is a 20-year journey that feels like it is only just beginning. This is where I start sharing it.
 
