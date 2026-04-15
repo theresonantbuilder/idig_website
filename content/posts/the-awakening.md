@@ -40,7 +40,7 @@ Busemeyer's research in **Quantum Cognition** proves that human decision-making 
 
 ## The Engine of Resonance: iDIG
 
-Full disclosure: I am not a software developer or a mathematician. I am a **"vibe/spec" coder** with an enormous amount of curiosity and enough perseverance to see a 20-year theory through to reality. Leveraging AI agents and speculative coding, I built a lens around this theory to see where it would go.
+Full disclosure: I am not a software developer or a mathematician. I am a **"vibe/spec" coder** with an enormous amount of curiosity and enough perseverance to see a 20-year theory through to reality. Leveraging AI agents and spec coding, I built a lens around this theory to see where it would go.
 
 What resulted is **iDIG (Deep Inquiry Generator)** — an engine designed to test whether we can actually map human resonance using vector math. To move this from theory into a tangible protocol, I needed a data-rich environment to act as a sandbox.
 
