@@ -1,33 +1,69 @@
 import { useState } from 'react';
 import { useLocation } from 'wouter';
 import { getAllPostMeta } from '../lib/posts';
-import type { PostType } from '../types/post';
+import type { PostMeta } from '../types/post';
 
-const TYPE_LABELS: Record<PostType | 'all', string> = {
-  all: 'All',
-  essay: 'Essays',
-  video: 'Video',
-  podcast: 'Podcast',
-  interview: 'Interviews',
+type ContentFilter = 'all' | 'essay' | 'interview';
+type MediaFilter  = 'all' | 'article' | 'video' | 'audio';
+
+function getMediaType(post: PostMeta): 'video' | 'audio' | 'article' {
+  if (post.videoUrl) return 'video';
+  if (post.audioUrl) return 'audio';
+  return 'article';
+}
+
+function getContentType(post: PostMeta): 'essay' | 'interview' {
+  return post.type === 'interview' ? 'interview' : 'essay';
+}
+
+const CONTENT_BADGE: Record<'essay' | 'interview', string> = {
+  essay:     'bg-blue-900/40 text-blue-300 border-blue-700/50',
+  interview: 'bg-purple-900/40 text-purple-300 border-purple-700/50',
 };
 
-const TYPE_COLORS: Record<PostType, string> = {
-  essay: 'bg-blue-900/40 text-blue-300 border-blue-700/50',
-  video: 'bg-red-900/40 text-red-300 border-red-700/50',
-  podcast: 'bg-emerald-900/40 text-emerald-300 border-emerald-700/50',
-  interview: 'bg-purple-900/40 text-purple-300 border-purple-700/50',
+const MEDIA_BADGE: Record<'article' | 'video' | 'audio', string> = {
+  article: 'bg-slate-700/60 text-slate-400 border-slate-600/50',
+  video:   'bg-red-900/40 text-red-300 border-red-700/50',
+  audio:   'bg-emerald-900/40 text-emerald-300 border-emerald-700/50',
+};
+
+const MEDIA_ICONS: Record<'article' | 'video' | 'audio', string> = {
+  article: '✦',
+  video:   '▶',
+  audio:   '♪',
 };
 
 function formatDate(dateStr: string) {
   return new Date(dateStr).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
+function FilterBtn({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
+  return (
+    <button
+      onClick={onClick}
+      className={`px-4 py-1.5 rounded-full text-sm font-medium border transition ${
+        active
+          ? 'bg-amber-500 text-slate-900 border-amber-500'
+          : 'bg-slate-800 text-slate-400 border-slate-700 hover:border-slate-500 hover:text-slate-300'
+      }`}
+    >
+      {children}
+    </button>
+  );
+}
+
 export default function TheResonantBuilders() {
   const [, navigate] = useLocation();
-  const [filter, setFilter] = useState<PostType | 'all'>('all');
+  const [contentFilter, setContentFilter] = useState<ContentFilter>('all');
+  const [mediaFilter, setMediaFilter]     = useState<MediaFilter>('all');
 
   const allPosts = getAllPostMeta();
-  const posts = filter === 'all' ? allPosts : allPosts.filter(p => p.type === filter);
+
+  const posts = allPosts.filter(post => {
+    const contentMatch = contentFilter === 'all' || getContentType(post) === contentFilter;
+    const mediaMatch   = mediaFilter === 'all'   || getMediaType(post)   === mediaFilter;
+    return contentMatch && mediaMatch;
+  });
 
   return (
     <div className="min-h-screen bg-slate-900 font-sans text-slate-300 selection:bg-blue-900">
@@ -74,51 +110,67 @@ export default function TheResonantBuilders() {
             </a>
           </div>
 
-          {/* Filter bar */}
-          <div className="flex flex-wrap gap-2 mb-10">
-            {(Object.keys(TYPE_LABELS) as (PostType | 'all')[]).map(key => (
-              <button
-                key={key}
-                onClick={() => setFilter(key)}
-                className={`px-4 py-1.5 rounded-full text-sm font-medium border transition ${
-                  filter === key
-                    ? 'bg-amber-500 text-slate-900 border-amber-500'
-                    : 'bg-slate-800 text-slate-400 border-slate-700 hover:border-slate-500'
-                }`}
-              >
-                {TYPE_LABELS[key]}
-              </button>
-            ))}
+          {/* Filters */}
+          <div className="bg-slate-800/40 border border-slate-700/50 rounded-xl p-4 mb-10 flex flex-col sm:flex-row gap-4">
+            <div className="flex items-center gap-3">
+              <span className="text-xs font-bold text-slate-500 uppercase tracking-widest w-16 shrink-0">Content</span>
+              <div className="flex flex-wrap gap-2">
+                <FilterBtn active={contentFilter === 'all'}       onClick={() => setContentFilter('all')}>All</FilterBtn>
+                <FilterBtn active={contentFilter === 'essay'}     onClick={() => setContentFilter('essay')}>Essays</FilterBtn>
+                <FilterBtn active={contentFilter === 'interview'} onClick={() => setContentFilter('interview')}>Interviews</FilterBtn>
+              </div>
+            </div>
+
+            <div className="hidden sm:block w-px bg-slate-700 self-stretch mx-1" />
+
+            <div className="flex items-center gap-3">
+              <span className="text-xs font-bold text-slate-500 uppercase tracking-widest w-16 shrink-0">Media</span>
+              <div className="flex flex-wrap gap-2">
+                <FilterBtn active={mediaFilter === 'all'}     onClick={() => setMediaFilter('all')}>All</FilterBtn>
+                <FilterBtn active={mediaFilter === 'article'} onClick={() => setMediaFilter('article')}>Articles</FilterBtn>
+                <FilterBtn active={mediaFilter === 'video'}   onClick={() => setMediaFilter('video')}>Video</FilterBtn>
+                <FilterBtn active={mediaFilter === 'audio'}   onClick={() => setMediaFilter('audio')}>Audio</FilterBtn>
+              </div>
+            </div>
           </div>
 
           {/* Post grid */}
           {posts.length === 0 ? (
-            <p className="text-slate-500 text-center py-20">No posts yet in this category.</p>
+            <p className="text-slate-500 text-center py-20">No posts match this filter.</p>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {posts.map(post => (
-                <button
-                  key={post.slug}
-                  onClick={() => navigate(`/theresonantbuilders/${post.slug}`)}
-                  className="text-left bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-amber-600/50 hover:bg-slate-800 transition group"
-                >
-                  <div className="flex items-center justify-between mb-4">
-                    <span className={`text-xs font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full border ${TYPE_COLORS[post.type]}`}>
-                      {TYPE_LABELS[post.type]}
-                    </span>
-                    <span className="text-xs text-slate-500">{formatDate(post.date)}</span>
-                  </div>
-                  <h2 className="text-white font-medium text-lg leading-snug mb-3 group-hover:text-amber-300 transition">{post.title}</h2>
-                  <p className="text-slate-400 text-sm leading-relaxed line-clamp-3">{post.summary}</p>
-                  {post.tags && post.tags.length > 0 && (
-                    <div className="flex flex-wrap gap-1.5 mt-4">
-                      {post.tags.map(tag => (
-                        <span key={tag} className="text-xs text-slate-600 bg-slate-700/50 px-2 py-0.5 rounded">#{tag}</span>
-                      ))}
+              {posts.map(post => {
+                const contentType = getContentType(post);
+                const mediaType   = getMediaType(post);
+                return (
+                  <button
+                    key={post.slug}
+                    onClick={() => navigate(`/theresonantbuilders/${post.slug}`)}
+                    className="text-left bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-amber-600/50 hover:bg-slate-800 transition group"
+                  >
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center gap-2">
+                        <span className={`text-xs font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full border ${CONTENT_BADGE[contentType]}`}>
+                          {contentType === 'essay' ? 'Essay' : 'Interview'}
+                        </span>
+                        <span className={`text-xs font-medium px-2 py-1 rounded-full border ${MEDIA_BADGE[mediaType]}`}>
+                          {MEDIA_ICONS[mediaType]} {mediaType.charAt(0).toUpperCase() + mediaType.slice(1)}
+                        </span>
+                      </div>
+                      <span className="text-xs text-slate-500">{formatDate(post.date)}</span>
                     </div>
-                  )}
-                </button>
-              ))}
+                    <h2 className="text-white font-medium text-lg leading-snug mb-3 group-hover:text-amber-300 transition">{post.title}</h2>
+                    <p className="text-slate-400 text-sm leading-relaxed line-clamp-3">{post.summary}</p>
+                    {post.tags && post.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5 mt-4">
+                        {post.tags.map(tag => (
+                          <span key={tag} className="text-xs text-slate-600 bg-slate-700/50 px-2 py-0.5 rounded">#{tag}</span>
+                        ))}
+                      </div>
+                    )}
+                  </button>
+                );
+              })}
             </div>
           )}
         </div>
