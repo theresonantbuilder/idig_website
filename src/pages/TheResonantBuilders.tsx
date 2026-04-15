@@ -125,11 +125,20 @@ export default function TheResonantBuilders() {
 
             <div className="flex items-center gap-3">
               <span className="text-xs font-bold text-slate-500 uppercase tracking-widest w-16 shrink-0">Media</span>
-              <div className="flex flex-wrap gap-2">
-                <FilterBtn active={mediaFilter === 'all'}     onClick={() => setMediaFilter('all')}>All</FilterBtn>
-                <FilterBtn active={mediaFilter === 'article'} onClick={() => setMediaFilter('article')}>Articles</FilterBtn>
-                <FilterBtn active={mediaFilter === 'video'}   onClick={() => setMediaFilter('video')}>Video</FilterBtn>
-                <FilterBtn active={mediaFilter === 'audio'}   onClick={() => setMediaFilter('audio')}>Audio</FilterBtn>
+              <div className="flex rounded-lg border border-slate-600 overflow-hidden text-xs font-semibold">
+                {([['all', 'All'], ['article', '✦ Article'], ['video', '▶ Video'], ['audio', '♪ Audio']] as [MediaFilter, string][]).map(([val, label], i, arr) => (
+                  <button
+                    key={val}
+                    onClick={() => setMediaFilter(val)}
+                    className={`px-3 py-1.5 transition ${
+                      mediaFilter === val
+                        ? 'bg-slate-300 text-slate-900'
+                        : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
+                    } ${i < arr.length - 1 ? 'border-r border-slate-600' : ''}`}
+                  >
+                    {label}
+                  </button>
+                ))}
               </div>
             </div>
           </div>
