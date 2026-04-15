@@ -64,7 +64,7 @@ While iDIG Movies is a proof-of-concept, the implications go far beyond the scre
 >
 > By focusing on **magnitude and direction** within a Hilbert Space, we move toward coherence — looking for the specific vector that possesses the depth and alignment to actually resolve the situation.
 
-Imagine walking through a library where, through a pair of smart glasses, the books, articles, and profiles around you begin to **glow** with resonance. As an Observer, you are seeing the latent alignment between your current inquiry and the information waiting for you.
+Imagine walking through a library where, through a pair of smart glasses tied to your observer profile, passages from books and articles around you begin to **glow** with resonance based on the breadcrumbs you have established. 
 
 The possibilities are endless. But I realize I am running out of track I can lay alone.
 
