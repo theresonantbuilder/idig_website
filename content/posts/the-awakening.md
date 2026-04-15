@@ -80,7 +80,7 @@ For the last two years I have built in a vacuum, testing these theories in a sol
 
 I am looking for fellow builders to collaborate with — to shape this protocol for my use, their use, and hopefully many others. If we are awakening, could a new protocol rise where resonant signals are finally within reach for all?
 
-This is a 20-year journey that feels like it is only just beginning. This is where I start sharing it.
+This is a 20-year journey that feels like it is only just beginning. This is where my contribution to the conversation begins.
 
 ---
 
