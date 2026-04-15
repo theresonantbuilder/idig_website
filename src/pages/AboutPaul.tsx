@@ -7,12 +7,29 @@ export default function AboutPaul() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Message from ${form.name} via i-DIG.io`);
-    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`);
-    window.location.href = `mailto:paul@i-dig.io?subject=${subject}&body=${body}`;
-    setSubmitted(true);
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/paul@i-dig.io', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          _subject: `Message from ${form.name} via i-DIG.io`,
+          _captcha: 'false',
+          ...form,
+        }),
+      });
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        alert('There was an issue sending your message. Please try again.');
+      }
+    } catch {
+      alert('There was an issue sending your message. Please try again.');
+    }
   };
 
   return (
@@ -99,8 +116,8 @@ export default function AboutPaul() {
 
             {submitted ? (
               <div className="bg-blue-50 border border-blue-100 rounded-xl p-8 text-center">
-                <p className="text-blue-700 font-medium text-lg mb-1">Your email client should have opened.</p>
-                <p className="text-blue-500 text-sm">If it didn't, reach me directly at <a href="mailto:paul@i-dig.io" className="underline">paul@i-dig.io</a></p>
+                <p className="text-blue-700 font-medium text-lg mb-1">Message sent — thank you.</p>
+                <p className="text-blue-500 text-sm">I'll be in touch shortly. You can also reach me at <a href="mailto:paul@i-dig.io" className="underline">paul@i-dig.io</a></p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
