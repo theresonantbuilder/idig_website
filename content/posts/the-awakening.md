@@ -32,7 +32,7 @@ If we don't build for the Observer, we are simply building more sophisticated wa
 
 My journey into this didn't start in a lab. It started over 20 years ago with a failed attempt to build a framework for resonant connection. I knew what I wanted to achieve, but I was missing the *how*. Two years ago I tried again — and yet again, the technical bridge remained out of reach.
 
-The breakthrough came during a conversation with my son. He raised the concept of the **quantum realm** as a potential solution to the limitations of classical data. That spark led me down a rabbit hole I didn't know existed: **Quantum Social Science**.
+The breakthrough came during a conversation with my son Vaughn. He raised the concept of the **quantum realm** as a potential solution to the limitations of classical data. That spark led me down a rabbit hole I didn't know existed: **Quantum Social Science**.
 
 I discovered the work of **Professor Alexander Wendt**, whose research on *"Quantum Mind and Social Science: Unifying Physical and Social Ontology"* provided the philosophical foundation I had been seeking for two decades. That work led me directly to **Professor Jerome Busemeyer** and the mathematical properties of **Hilbert Space vectors**.
 
