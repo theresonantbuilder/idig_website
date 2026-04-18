@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLocation, useParams } from 'wouter';
 import DOMPurify from 'dompurify';
 import { getPostBySlug } from '../lib/posts';
@@ -36,6 +36,18 @@ export default function Post() {
   const params = useParams<{ slug: string }>();
   const [post, setPost] = useState<PostType | null>(null);
   const [copied, setCopied] = useState(false);
+  const [audioOpen, setAudioOpen] = useState(false);
+  const audioRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (audioRef.current && !audioRef.current.contains(e.target as Node)) {
+        setAudioOpen(false);
+      }
+    }
+    if (audioOpen) document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [audioOpen]);
 
   useEffect(() => {
     if (params.slug) {
@@ -102,30 +114,44 @@ export default function Post() {
               <span className={`text-xs font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full border ${TYPE_COLORS[post.type]}`}>
                 {post.type}
               </span>
+              {/* Headphone audio dropdown */}
+              <div className="relative" ref={audioRef}>
+                <button
+                  onClick={() => setAudioOpen(o => !o)}
+                  className={`flex items-center gap-1 px-2 py-1 rounded-full border text-xs transition ${
+                    audioOpen
+                      ? 'bg-blue-900/50 border-blue-600/60 text-blue-300'
+                      : 'bg-slate-700/40 border-slate-600/50 text-slate-400 hover:border-blue-600/50 hover:text-blue-300'
+                  }`}
+                  title="Audio options"
+                >
+                  <HeadphoneIcon className="w-3.5 h-3.5" />
+                </button>
+                {audioOpen && (
+                  <div className="absolute left-0 top-full mt-1.5 z-30 bg-slate-800 border border-slate-600 rounded-lg shadow-2xl py-1 w-52">
+                    <button
+                      className="flex items-center gap-2.5 w-full px-4 py-2.5 text-sm text-slate-400 hover:text-slate-200 hover:bg-slate-700/60 transition text-left opacity-50 cursor-not-allowed"
+                      disabled
+                    >
+                      <HeadphoneIcon />
+                      <span>Listen to Essay</span>
+                      <span className="ml-auto text-xs text-slate-600">Soon</span>
+                    </button>
+                    <button
+                      className="flex items-center gap-2.5 w-full px-4 py-2.5 text-sm text-slate-400 hover:text-slate-200 hover:bg-slate-700/60 transition text-left opacity-50 cursor-not-allowed"
+                      disabled
+                    >
+                      <HeadphoneIcon />
+                      <span>AI Discussion</span>
+                      <span className="ml-auto text-xs text-slate-600">Soon</span>
+                    </button>
+                  </div>
+                )}
+              </div>
               <span className="text-sm text-slate-500">{formatDate(post.date)}</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-light text-white leading-tight mb-4">{post.title}</h1>
-            <p className="text-lg text-slate-400 mb-6">{post.summary}</p>
-
-            {/* Audio action buttons */}
-            <div className="flex flex-wrap gap-3">
-              <button
-                disabled
-                className="flex items-center gap-2 px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-400 opacity-50 cursor-not-allowed"
-                title="Audio coming soon"
-              >
-                <HeadphoneIcon />
-                Listen to Essay
-              </button>
-              <button
-                disabled
-                className="flex items-center gap-2 px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-400 opacity-50 cursor-not-allowed"
-                title="Audio coming soon"
-              >
-                <HeadphoneIcon />
-                AI Discussion
-              </button>
-            </div>
+            <p className="text-lg text-slate-400">{post.summary}</p>
           </div>
 
           {/* Video embed (video or interview) */}
