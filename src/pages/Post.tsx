@@ -53,7 +53,7 @@ export default function Post() {
     );
   }
 
-  const html = DOMPurify.sanitize(post.content);
+  const html = DOMPurify.sanitize(post.content, { ADD_ATTR: ['target', 'rel'] });
 
   return (
     <div className="min-h-screen bg-slate-900 font-sans text-slate-300 selection:bg-blue-900">
