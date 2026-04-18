@@ -48,8 +48,9 @@ function parsePost(raw: string, slug: string): Post {
     type:     (data.type     as Post['type']) ?? 'essay',
     summary:  (data.summary  as string)   ?? '',
     content:  marked(content) as string,
-    audioUrl: data.audioUrl  as string | undefined,
-    videoUrl: data.videoUrl  as string | undefined,
+    audioUrl:      data.audioUrl      as string | undefined,
+    discussionUrl: data.discussionUrl as string | undefined,
+    videoUrl:      data.videoUrl      as string | undefined,
     tags:     (data.tags     as string[]) ?? [],
   };
 }

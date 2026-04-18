@@ -3,6 +3,8 @@ title: "The Awakening: Tuning into the Signal of Human Potential"
 date: "2026-04-14"
 type: "essay"
 summary: "We are living through the slow decay of digital platforms—but something is stirring. A 20-year journey into observer resonance, Hilbert Space vectors, and the iDIG protocol."
+audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+discussionUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
 tags: ["resonance", "Hilbert space", "iDIG", "quantum", "protocol"]
 ---
 
