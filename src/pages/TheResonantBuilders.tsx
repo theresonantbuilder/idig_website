@@ -1,7 +1,16 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'wouter';
 import { getAllPostMeta } from '../lib/posts';
 import type { PostMeta } from '../types/post';
+
+function HeadphoneIcon() {
+  return (
+    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 18v-6a9 9 0 0 1 18 0v6" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+    </svg>
+  );
+}
 
 type ContentFilter = 'all' | 'essay' | 'interview';
 type MediaFilter  = 'all' | 'article' | 'video' | 'audio';
@@ -56,6 +65,18 @@ export default function TheResonantBuilders() {
   const [, navigate] = useLocation();
   const [contentFilter, setContentFilter] = useState<ContentFilter>('all');
   const [mediaFilter, setMediaFilter]     = useState<MediaFilter>('all');
+  const [openAudio, setOpenAudio]         = useState<string | null>(null);
+  const audioRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (audioRef.current && !audioRef.current.contains(e.target as Node)) {
+        setOpenAudio(null);
+      }
+    }
+    if (openAudio) document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [openAudio]);
 
   const allPosts = getAllPostMeta();
 
@@ -144,15 +165,16 @@ export default function TheResonantBuilders() {
           </div>
 
           {/* Post grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" ref={audioRef}>
             {posts.map(post => {
               const contentType = getContentType(post);
               const mediaType   = getMediaType(post);
+              const isAudioOpen = openAudio === post.slug;
               return (
-                <button
+                <div
                   key={post.slug}
-                  onClick={() => navigate(`/theresonantbuilders/${post.slug}`)}
-                  className="text-left bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-amber-600/50 hover:bg-slate-800 transition group"
+                  onClick={() => { setOpenAudio(null); navigate(`/theresonantbuilders/${post.slug}`); }}
+                  className="relative text-left bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-amber-600/50 hover:bg-slate-800 transition group cursor-pointer"
                 >
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-2">
@@ -162,6 +184,43 @@ export default function TheResonantBuilders() {
                       <span className={`text-xs font-medium px-2 py-1 rounded-full border ${MEDIA_BADGE[mediaType]}`}>
                         {MEDIA_ICONS[mediaType]} {mediaType.charAt(0).toUpperCase() + mediaType.slice(1)}
                       </span>
+                      {/* Headphone audio dropdown */}
+                      <div
+                        className="relative"
+                        onClick={e => e.stopPropagation()}
+                      >
+                        <button
+                          onClick={() => setOpenAudio(isAudioOpen ? null : post.slug)}
+                          className={`flex items-center gap-1 px-2 py-1 rounded-full border text-xs transition ${
+                            isAudioOpen
+                              ? 'bg-blue-900/50 border-blue-600/60 text-blue-300'
+                              : 'bg-slate-700/40 border-slate-600/50 text-slate-400 hover:border-blue-600/50 hover:text-blue-300'
+                          }`}
+                          title="Audio options"
+                        >
+                          <HeadphoneIcon />
+                        </button>
+                        {isAudioOpen && (
+                          <div className="absolute left-0 top-full mt-1.5 z-30 bg-slate-800 border border-slate-600 rounded-lg shadow-2xl py-1 w-52">
+                            <button
+                              className="flex items-center gap-2.5 w-full px-4 py-2.5 text-sm text-slate-400 hover:text-slate-200 hover:bg-slate-700/60 transition text-left opacity-50 cursor-not-allowed"
+                              disabled
+                            >
+                              <HeadphoneIcon />
+                              <span>Listen to Essay</span>
+                              <span className="ml-auto text-xs text-slate-600">Soon</span>
+                            </button>
+                            <button
+                              className="flex items-center gap-2.5 w-full px-4 py-2.5 text-sm text-slate-400 hover:text-slate-200 hover:bg-slate-700/60 transition text-left opacity-50 cursor-not-allowed"
+                              disabled
+                            >
+                              <HeadphoneIcon />
+                              <span>AI Discussion</span>
+                              <span className="ml-auto text-xs text-slate-600">Soon</span>
+                            </button>
+                          </div>
+                        )}
+                      </div>
                     </div>
                     <span className="text-xs text-slate-500">{formatDate(post.date)}</span>
                   </div>
@@ -174,7 +233,7 @@ export default function TheResonantBuilders() {
                       ))}
                     </div>
                   )}
-                </button>
+                </div>
               );
             })}
 

@@ -5,6 +5,15 @@ import { getPostBySlug } from '../lib/posts';
 import type { Post as PostType } from '../types/post';
 import AudioPlayer from '../components/AudioPlayer';
 
+function HeadphoneIcon({ className = 'w-4 h-4' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 18v-6a9 9 0 0 1 18 0v6" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+    </svg>
+  );
+}
+
 const TYPE_COLORS: Record<string, string> = {
   essay: 'bg-blue-900/40 text-blue-300 border-blue-700/50',
   video: 'bg-red-900/40 text-red-300 border-red-700/50',
@@ -96,7 +105,27 @@ export default function Post() {
               <span className="text-sm text-slate-500">{formatDate(post.date)}</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-light text-white leading-tight mb-4">{post.title}</h1>
-            <p className="text-lg text-slate-400">{post.summary}</p>
+            <p className="text-lg text-slate-400 mb-6">{post.summary}</p>
+
+            {/* Audio action buttons */}
+            <div className="flex flex-wrap gap-3">
+              <button
+                disabled
+                className="flex items-center gap-2 px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-400 opacity-50 cursor-not-allowed"
+                title="Audio coming soon"
+              >
+                <HeadphoneIcon />
+                Listen to Essay
+              </button>
+              <button
+                disabled
+                className="flex items-center gap-2 px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-400 opacity-50 cursor-not-allowed"
+                title="Audio coming soon"
+              >
+                <HeadphoneIcon />
+                AI Discussion
+              </button>
+            </div>
           </div>
 
           {/* Video embed (video or interview) */}
