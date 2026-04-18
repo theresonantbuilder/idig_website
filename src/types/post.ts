@@ -8,6 +8,7 @@ export interface Post {
   summary: string;
   content: string;
   audioUrl?: string;
+  discussionUrl?: string;
   videoUrl?: string;
   tags?: string[];
 }
