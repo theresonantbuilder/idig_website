@@ -22,7 +22,7 @@ While the industry giants are refining the "straight" vector search of Euclidean
 
 > **The Power of the Observer**
 >
-> This distinction is the heart of <a href="https://www.youtube.com/watch?v=WpkhPgpY28M" target="_blank" rel="noopener noreferrer" style="color:#3b82f6;"><strong>Alexander Wendt's work in Quantum Social Science</strong></a>. Wendt argues that we are not just "users" interacting with a static environment, but Observers whose very engagement with a system helps determine the outcome. In a quantum realm, the Observer isn't just part of the system — they are the catalyst for how potential collapses into meaning.
+> This distinction is the heart of <a href="https://www.youtube.com/watch?v=WpkhPgpY28M" target="_blank" rel="noopener noreferrer" style="color:#3b82f6;font-weight:700;text-decoration:underline;">Alexander Wendt's work in Quantum Social Science</a>. Wendt argues that we are not just "users" interacting with a static environment, but Observers whose very engagement with a system helps determine the outcome. In a quantum realm, the Observer isn't just part of the system — they are the catalyst for how potential collapses into meaning.
 
 If we don't build for the Observer, we are simply building more sophisticated ways to be told what to think. Building for resonance means acknowledging that the geometry of information only matters in relation to the person observing it.
 
@@ -36,7 +36,7 @@ The breakthrough came during a conversation with my son Vaughn. He raised the co
 
 I discovered the work of **Professor Alexander Wendt**, whose research on *"Quantum Mind and Social Science: Unifying Physical and Social Ontology"* provided the philosophical foundation I had been seeking for two decades. That work led me directly to **Professor Jerome Busemeyer** and the mathematical properties of **Hilbert Space vectors**.
 
-<a href="https://jbusemey.pages.iu.edu/quantum/HilbertPsyRev.pdf" target="_blank" rel="noopener noreferrer" style="color:#3b82f6;"><strong>Busemeyer's research in Quantum Cognition</strong></a> proves that human decision-making often bypasses classical logic, fitting instead within the geometry of a Hilbert Space. In this space, we aren't just points on a graph — we are vectors. Complex directions of potential and resonance.
+<a href="https://jbusemey.pages.iu.edu/quantum/HilbertPsyRev.pdf" target="_blank" rel="noopener noreferrer" style="color:#3b82f6;font-weight:700;text-decoration:underline;">Busemeyer's research in Quantum Cognition</a> proves that human decision-making often bypasses classical logic, fitting instead within the geometry of a Hilbert Space. In this space, we aren't just points on a graph — we are vectors. Complex directions of potential and resonance.
 
 ## The Engine of Resonance: iDIG
 
