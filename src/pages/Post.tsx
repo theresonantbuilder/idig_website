@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useLocation, useParams } from 'wouter';
 import DOMPurify from 'dompurify';
 import { getPostBySlug } from '../lib/posts';
-import type { Post as PostType } from '../types/post';
 import AudioDropdown from '../components/AudioDropdown';
 
 const TYPE_COLORS: Record<string, string> = {
