@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useLocation, useParams } from 'wouter';
 import DOMPurify from 'dompurify';
 import { getPostBySlug } from '../lib/posts';
 import type { Post as PostType } from '../types/post';
-import AudioPlayer from '../components/AudioPlayer';
 import AudioDropdown from '../components/AudioDropdown';
 
 const TYPE_COLORS: Record<string, string> = {
@@ -26,15 +25,8 @@ function getYouTubeEmbedUrl(url: string) {
 export default function Post() {
   const [, navigate] = useLocation();
   const params = useParams<{ slug: string }>();
-  const [post, setPost] = useState<PostType | null>(null);
+  const post = params.slug ? (getPostBySlug(params.slug) ?? null) : null;
   const [copied, setCopied] = useState(false);
-
-  useEffect(() => {
-    if (params.slug) {
-      const found = getPostBySlug(params.slug);
-      setPost(found ?? null);
-    }
-  }, [params.slug]);
 
   const copyLink = () => {
     navigator.clipboard.writeText(window.location.href);
@@ -115,12 +107,6 @@ export default function Post() {
             </div>
           )}
 
-          {/* Audio player (podcast or interview with audio) */}
-          {post.audioUrl && (
-            <div className="mb-8">
-              <AudioPlayer src={post.audioUrl} />
-            </div>
-          )}
 
           {/* Rendered markdown */}
           <article

@@ -152,7 +152,7 @@ export default function TheResonantBuilders() {
               return (
                 <div
                   key={post.slug}
-                  onClick={() => { setOpenAudio(null); navigate(`/theresonantbuilders/${post.slug}`); }}
+                  onClick={() => navigate(`/theresonantbuilders/${post.slug}`)}
                   className="relative text-left bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-amber-600/50 hover:bg-slate-800 transition group cursor-pointer"
                 >
                   <div className="flex items-center justify-between mb-4">

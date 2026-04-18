@@ -120,7 +120,7 @@ export default function AudioDropdown({ audioUrl, discussionUrl }: Props) {
 
       {/* Dropdown panel */}
       {open && (
-        <div className="absolute left-0 top-full mt-1.5 z-30 bg-slate-800 border border-slate-600 rounded-lg shadow-2xl overflow-hidden w-56">
+        <div className="absolute left-1/2 -translate-x-1/2 top-full mt-1.5 z-30 bg-slate-800 border border-slate-600 rounded-lg shadow-2xl overflow-hidden w-56">
 
           {view === 'menu' ? (
             <>
@@ -200,7 +200,7 @@ export default function AudioDropdown({ audioUrl, discussionUrl }: Props) {
                     if (audioEl.current) audioEl.current.currentTime = val;
                     setCurrentTime(val);
                   }}
-                  className="flex-1 h-1 accent-blue-500 cursor-pointer disabled:cursor-not-allowed disabled:opacity-40"
+                  className="flex-1 min-w-0 h-1 accent-blue-500 cursor-pointer disabled:cursor-not-allowed disabled:opacity-40"
                 />
 
                 <span className="text-xs text-slate-500 shrink-0 tabular-nums w-9 text-right">
