@@ -160,9 +160,11 @@ export default function TheResonantBuilders() {
                       <span className={`text-xs font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full border ${CONTENT_BADGE[contentType]}`}>
                         {contentType === 'essay' ? 'Essay' : 'Interview'}
                       </span>
-                      <span className={`text-xs font-medium px-2 py-1 rounded-full border ${MEDIA_BADGE[mediaType]}`}>
-                        {MEDIA_ICONS[mediaType]} {mediaType.charAt(0).toUpperCase() + mediaType.slice(1)}
-                      </span>
+                      {mediaType !== 'audio' && (
+                        <span className={`text-xs font-medium px-2 py-1 rounded-full border ${MEDIA_BADGE[mediaType]}`}>
+                          {MEDIA_ICONS[mediaType]} {mediaType.charAt(0).toUpperCase() + mediaType.slice(1)}
+                        </span>
+                      )}
                       <AudioDropdown audioUrl={post.audioUrl} discussionUrl={post.discussionUrl} />
                     </div>
                     <span className="text-xs text-slate-500">{formatDate(post.date)}</span>
