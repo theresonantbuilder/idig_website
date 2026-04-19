@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useLocation, useParams } from 'wouter';
 import DOMPurify from 'dompurify';
 import { getPostBySlug } from '../lib/posts';
-import AudioDropdown from '../components/AudioDropdown';
+import MediaPlayer from '../components/MediaPlayer';
 
 const TYPE_COLORS: Record<string, string> = {
   essay: 'bg-blue-900/40 text-blue-300 border-blue-700/50',
@@ -13,12 +13,6 @@ const TYPE_COLORS: Record<string, string> = {
 
 function formatDate(dateStr: string) {
   return new Date(dateStr).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-}
-
-function getYouTubeEmbedUrl(url: string) {
-  if (url.includes('embed/')) return url;
-  const match = url.match(/(?:v=|youtu\.be\/)([^&?/]+)/);
-  return match ? `https://www.youtube.com/embed/${match[1]}` : url;
 }
 
 export default function Post() {
@@ -85,26 +79,14 @@ export default function Post() {
               <span className={`text-xs font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full border ${TYPE_COLORS[post.type]}`}>
                 {post.type}
               </span>
-              <AudioDropdown audioUrl={post.audioUrl} discussionUrl={post.discussionUrl} />
               <span className="text-sm text-slate-500">{formatDate(post.date)}</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-light text-white leading-tight mb-4">{post.title}</h1>
-            <p className="text-lg text-slate-400">{post.summary}</p>
+            <p className="text-lg text-slate-400 mb-8">{post.summary}</p>
           </div>
 
-          {/* Video embed (video or interview) */}
-          {post.videoUrl && (
-            <div className="w-full aspect-video rounded-xl overflow-hidden mb-8 border border-slate-700">
-              <iframe
-                className="w-full h-full"
-                src={getYouTubeEmbedUrl(post.videoUrl)}
-                title={post.title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          )}
+          {/* Inline media player — renders only when audio or video exists */}
+          <MediaPlayer audioUrl={post.audioUrl} discussionUrl={post.discussionUrl} />
 
 
           {/* Rendered markdown */}

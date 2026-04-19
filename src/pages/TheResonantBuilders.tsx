@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useLocation } from 'wouter';
 import { getAllPostMeta } from '../lib/posts';
 import type { PostMeta } from '../types/post';
-import AudioDropdown from '../components/AudioDropdown';
 
 type ContentFilter = 'all' | 'essay' | 'interview';
 type MediaFilter  = 'all' | 'article' | 'video' | 'audio';
@@ -165,7 +164,15 @@ export default function TheResonantBuilders() {
                           {MEDIA_ICONS[mediaType]} {mediaType.charAt(0).toUpperCase() + mediaType.slice(1)}
                         </span>
                       )}
-                      <AudioDropdown audioUrl={post.audioUrl} discussionUrl={post.discussionUrl} />
+                      {post.audioUrl && (
+                        <span className="text-xs text-slate-500 flex items-center gap-1">
+                          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                          </svg>
+                          Audio
+                        </span>
+                      )}
                     </div>
                     <span className="text-xs text-slate-500">{formatDate(post.date)}</span>
                   </div>
