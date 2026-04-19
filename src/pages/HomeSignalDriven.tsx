@@ -257,29 +257,28 @@ export default function HomeSignalDriven() {
                    </div>
                 </div>
 
+                {/* TECHNICAL ENVIRONMENT CARD */}
+                <div className="bg-slate-800/30 rounded-xl border border-slate-700/50 p-6">
+                  <h4 className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-5">Technical Environment</h4>
+                  <div className="grid grid-cols-3 gap-4 text-sm">
+                    <div>
+                      <div className="flex items-center text-slate-300 mb-2"><Code2 size={14} className="mr-1.5 text-blue-500 shrink-0" /><strong className="text-xs">Core Stack</strong></div>
+                      <ul className="text-slate-500 text-xs space-y-1"><li>TypeScript / React</li><li>Vite / Node.js</li><li>PostgreSQL / Vercel</li></ul>
+                    </div>
+                    <div>
+                      <div className="flex items-center text-slate-300 mb-2"><Layers size={14} className="mr-1.5 text-emerald-500 shrink-0" /><strong className="text-xs">Data & AI</strong></div>
+                      <ul className="text-slate-500 text-xs space-y-1"><li>IndexedDB</li><li>OpenAI / Anthropic</li><li>React APIs</li></ul>
+                    </div>
+                    <div>
+                      <div className="flex items-center text-slate-300 mb-2"><Terminal size={14} className="mr-1.5 text-purple-500 shrink-0" /><strong className="text-xs">Dev Ecosystem</strong></div>
+                      <p className="text-slate-500 text-xs leading-relaxed">VS Code + MCP Servers, Trello, ChatGPT, NotebookLM</p>
+                    </div>
+                  </div>
+                </div>
 
               </div>
 
 
-            </div>
-
-            {/* TECHNICAL ENVIRONMENT - FULL WIDTH */}
-            <div className="mt-12 pt-8 border-t border-slate-700">
-              <h3 className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-6 text-center">Technical Environment</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-                <div className="bg-slate-800/50 rounded-lg p-6 border border-slate-700">
-                  <div className="flex items-center text-slate-200 mb-3"><Code2 size={16} className="mr-2 text-blue-500" /><strong>Core Stack</strong></div>
-                  <ul className="text-slate-500 space-y-1 ml-6"><li>TypeScript / React / Vite</li><li>Node.js / Express</li><li>PostgreSQL / Vercel</li></ul>
-                </div>
-                <div className="bg-slate-800/50 rounded-lg p-6 border border-slate-700">
-                  <div className="flex items-center text-slate-200 mb-3"><Layers size={16} className="mr-2 text-emerald-500" /><strong>Data & AI</strong></div>
-                  <ul className="text-slate-500 space-y-1 ml-6"><li>IndexedDB (Local State)</li><li>GenAI APIs (OpenAI/Anthropic)</li><li>React APIs</li></ul>
-                </div>
-                <div className="bg-slate-800/50 rounded-lg p-6 border border-slate-700">
-                  <div className="flex items-center text-slate-200 mb-3"><Terminal size={16} className="mr-2 text-purple-500" /><strong>Dev Ecosystem</strong></div>
-                  <p className="text-slate-500 ml-6">VS Code + MCP Servers (Claude/Gemini), Trello, ChatGPT, NotebookLM</p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
