@@ -15,9 +15,89 @@ function formatDate(dateStr: string) {
   return new Date(dateStr).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
+function ShareIcon() {
+  return (
+    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+        d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+    </svg>
+  );
+}
+
+function LinkedInIcon() {
+  return (
+    <svg className="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+    </svg>
+  );
+}
+
+function CopyIcon() {
+  return (
+    <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+    </svg>
+  );
+}
+
+function ArticleShare() {
+  const [open, setOpen]   = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  function copy() {
+    navigator.clipboard.writeText(window.location.href);
+    setCopied(true);
+    setTimeout(() => { setCopied(false); setOpen(false); }, 1800);
+  }
+
+  function linkedin() {
+    window.open(
+      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`,
+      '_blank'
+    );
+    setOpen(false);
+  }
+
+  return (
+    <div className="relative">
+      <button
+        onClick={() => setOpen(o => !o)}
+        className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-slate-400 border border-slate-700 rounded-lg hover:text-white hover:border-slate-500 transition bg-slate-800/50"
+      >
+        <ShareIcon />
+        Share
+      </button>
+
+      {open && (
+        <>
+          {/* Click-away overlay */}
+          <div className="fixed inset-0 z-10" onClick={() => setOpen(false)} />
+          <div className="absolute right-0 top-full mt-2 bg-slate-800 border border-slate-700 rounded-xl shadow-xl overflow-hidden z-20 min-w-[180px]">
+            <button
+              onClick={copy}
+              className="w-full text-left px-4 py-2.5 text-sm text-slate-300 hover:bg-slate-700 hover:text-white transition flex items-center gap-2"
+            >
+              <CopyIcon />
+              {copied ? 'Copied!' : 'Copy link'}
+            </button>
+            <button
+              onClick={linkedin}
+              className="w-full text-left px-4 py-2.5 text-sm text-slate-300 hover:bg-slate-700 hover:text-white transition flex items-center gap-2"
+            >
+              <LinkedInIcon />
+              Share on LinkedIn
+            </button>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 function SubscribeCallout() {
-  const [email, setEmail]     = useState('');
-  const [status, setStatus]   = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
+  const [email, setEmail]   = useState('');
+  const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -80,17 +160,6 @@ export default function Post() {
   const [, navigate] = useLocation();
   const params = useParams<{ slug: string }>();
   const post = params.slug ? (getPostBySlug(params.slug) ?? null) : null;
-  const [copied, setCopied] = useState(false);
-
-  const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
-  const shareLinkedIn = () => {
-    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_blank');
-  };
 
   if (!post) {
     return (
@@ -136,11 +205,14 @@ export default function Post() {
 
           {/* Post header */}
           <div className="mb-8">
-            <div className="flex items-center gap-3 mb-4">
-              <span className={`text-xs font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full border ${TYPE_COLORS[post.type]}`}>
-                {post.type}
-              </span>
-              <span className="text-sm text-slate-500">{formatDate(post.date)}</span>
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <span className={`text-xs font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full border ${TYPE_COLORS[post.type]}`}>
+                  {post.type}
+                </span>
+                <span className="text-sm text-slate-500">{formatDate(post.date)}</span>
+              </div>
+              <ArticleShare />
             </div>
             <h1 className="text-3xl md:text-4xl font-light text-white leading-tight mb-4">{post.title}</h1>
             <p className="text-lg text-slate-400 mb-8">{post.summary}</p>
@@ -148,7 +220,6 @@ export default function Post() {
 
           {/* Inline media player — renders only when audio or video exists */}
           <MediaPlayer audioUrl={post.audioUrl} discussionUrl={post.discussionUrl} videoUrl={post.videoUrl} />
-
 
           {/* Rendered markdown */}
           <article
@@ -175,21 +246,10 @@ export default function Post() {
             </div>
           )}
 
-          {/* Share bar */}
-          <div className="border-t border-slate-700 pt-8 flex items-center gap-4">
-            <span className="text-sm text-slate-500 mr-2">Share:</span>
-            <button
-              onClick={copyLink}
-              className="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm text-slate-400 hover:text-white hover:border-slate-500 transition"
-            >
-              {copied ? 'Copied!' : 'Copy link'}
-            </button>
-            <button
-              onClick={shareLinkedIn}
-              className="px-4 py-2 bg-[#0A66C2] rounded-lg text-sm text-white hover:bg-[#004182] transition"
-            >
-              Share on LinkedIn
-            </button>
+          {/* Bottom share bar */}
+          <div className="border-t border-slate-700 pt-8 flex items-center gap-3">
+            <span className="text-sm text-slate-500 mr-1">Share this essay:</span>
+            <ArticleShare />
           </div>
 
         </div>

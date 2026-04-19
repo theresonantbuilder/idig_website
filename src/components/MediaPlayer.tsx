@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 type Track = 'essay' | 'discussion' | 'video';
 
@@ -24,6 +24,15 @@ function PauseIcon() {
   );
 }
 
+function LinkIcon() {
+  return (
+    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+    </svg>
+  );
+}
+
 function formatTime(s: number) {
   if (!s || isNaN(s) || !isFinite(s)) return '0:00';
   const m = Math.floor(s / 60);
@@ -42,7 +51,18 @@ export default function MediaPlayer({ audioUrl, discussionUrl, videoUrl }: Props
   const [playing, setPlaying]         = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration]       = useState(0);
+  const [trackCopied, setTrackCopied] = useState(false);
   const audioEl = useRef<HTMLAudioElement>(null);
+
+  // Read ?play= param on mount and jump to that track
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const play = params.get('play') as Track | null;
+    if (play && availableTracks.includes(play)) {
+      setTrack(play);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   if (availableTracks.length === 0) return null;
 
@@ -62,6 +82,13 @@ export default function MediaPlayer({ audioUrl, discussionUrl, videoUrl }: Props
     if (!el) return;
     if (playing) { el.pause(); setPlaying(false); }
     else         { el.play();  setPlaying(true);  }
+  }
+
+  function copyTrackLink() {
+    const url = `${window.location.origin}${window.location.pathname}?play=${track}`;
+    navigator.clipboard.writeText(url);
+    setTrackCopied(true);
+    setTimeout(() => setTrackCopied(false), 2000);
   }
 
   const tabLabel: Record<Track, string> = {
@@ -149,6 +176,17 @@ export default function MediaPlayer({ audioUrl, discussionUrl, videoUrl }: Props
           </span>
         </div>
       )}
+
+      {/* Per-track share link */}
+      <div className="px-4 pb-3 flex justify-end">
+        <button
+          onClick={copyTrackLink}
+          className="flex items-center gap-1.5 text-xs text-slate-500 hover:text-slate-300 transition"
+        >
+          <LinkIcon />
+          {trackCopied ? 'Link copied!' : `Share ${tabLabel[track]}`}
+        </button>
+      </div>
 
       {/* Hidden audio element — key forces remount on track switch */}
       {activeAudioUrl && track !== 'video' && (
