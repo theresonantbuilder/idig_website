@@ -82,10 +82,24 @@ export default function HomeSignalDriven() {
         <section id="lab" className="bg-slate-900 text-slate-300 pt-10 pb-10">
           <div className="max-w-6xl mx-auto px-6">
             <div className="mb-12">
-              <div className="bg-slate-800/60 border border-blue-900/50 rounded-xl px-8 py-6 text-center">
-                <h2 className="text-white font-light leading-tight" style={{ fontSize: 'clamp(1rem, 3vw, 2.5rem)' }}>
-                  iDIG turns information noise into signal — <span className="text-blue-400 font-medium">guided by you.</span>
-                </h2>
+              <style>{`
+                @keyframes signalSweep {
+                  0%   { background-position: 0% 50%; }
+                  100% { background-position: 300% 50%; }
+                }
+              `}</style>
+              <div style={{
+                background: 'linear-gradient(90deg, #0f172a, #1d4ed8, #38bdf8, #1d4ed8, #0f172a)',
+                backgroundSize: '300% 100%',
+                animation: 'signalSweep 4s linear infinite',
+                borderRadius: '0.75rem',
+                padding: '1px',
+              }}>
+                <div className="bg-slate-900 rounded-xl px-8 py-6 text-center">
+                  <h2 className="text-white font-light leading-tight" style={{ fontSize: 'clamp(1rem, 3vw, 2.5rem)' }}>
+                    iDIG turns information noise into signal — <span className="text-blue-400 font-medium">guided by you.</span>
+                  </h2>
+                </div>
               </div>
             </div>
 
@@ -112,8 +126,9 @@ export default function HomeSignalDriven() {
                   </div>
                   <div className="text-sm leading-relaxed text-slate-400 space-y-3">
                     <p>That discovery became the foundation for <strong className="text-slate-300">i-DIG.io</strong> — an applied experiment in representing communication signals as Hilbert space vectors, where meaning isn't extracted but modeled as direction, magnitude, and interference across a shared semantic field.</p>
-                    <p><strong className="text-slate-300">iDIG Movies</strong> extends this into a new dimension: exploring how people engage with passages of moving content — testing whether the signals embedded in film and narrative can create the same kind of resonance the framework is designed to surface in text and data.</p>
-                    <p>I'm also exploring what it would mean to move iDIG beyond a product and into a <strong className="text-slate-300">protocol</strong> — a shared layer others could build on to help surface resonance in the tools and systems where human communication already lives.</p>
+                    <p><strong className="text-slate-300">iDIG Movies</strong> extends this into a new dimension — exploring whether the signals embedded in film and narrative can surface the same kind of resonance the framework finds in text, data, and human intent. Can a person's relationship to a story be modeled? We're testing it.</p>
+                    <p><strong className="text-slate-300">HiringSignals.ai</strong> extends it into another — using the same vector framework to align talent with opportunity through signal rather than keyword filters, giving both sides of a search real visibility into what's actually resonating and why.</p>
+                    <p>Both are experiments. Both point toward the same conclusion: iDIG needs to move beyond a product. I'm working toward establishing it as a <strong className="text-slate-300">nonprofit open protocol</strong> — a shared layer that others can build on to surface genuine resonance in the tools, communities, and systems where human communication already lives.</p>
                   </div>
                 </div>
 
