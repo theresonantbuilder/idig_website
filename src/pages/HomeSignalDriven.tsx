@@ -240,19 +240,19 @@ export default function HomeSignalDriven() {
                    <div className="space-y-4">
                      <div className="flex items-start">
                        <Eye size={16} className="text-blue-400 mt-1 mr-3 shrink-0" />
-                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Signal Visibility:</strong> Rather than collapsing inputs into a single score, signals remain visible and inspectable—allowing teams to understand alignment, tension, and absence before decisions are made.</p>
+                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Signal Visibility:</strong> Whether you're a person looking for work, a community surfacing unmet needs, or a builder finding collaborators — the signals driving a match stay open and readable. No black box. No score you can't interrogate.</p>
                      </div>
                      <div className="flex items-start">
                        <Compass size={16} className="text-emerald-400 mt-1 mr-3 shrink-0" />
-                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Signal Stewardship:</strong> Signals are defined and refined by the teams responsible for outcomes, evolving deliberately over time based on real observer experience—not opaque algorithmic retraining.</p>
+                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Signal Stewardship:</strong> The people closest to an outcome — not the platform — define what signals matter. A hiring community, a neighborhood network, an individual: each shapes their own signal field and refines it through lived experience.</p>
                      </div>
                      <div className="flex items-start">
                        <Orbit size={16} className="text-purple-400 mt-1 mr-3 shrink-0" />
-                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Relational Geometry:</strong> Signals behave as vectors in a relational space, where meaning emerges from interaction, reinforcement, and interference—not isolated features weighted in isolation.</p>
+                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Relational Geometry:</strong> Resonance between a person and an opportunity, a community and a cause, or a reader and a story is modeled as geometry in a shared semantic field — not a ranked list optimized for clicks.</p>
                      </div>
                      <div className="flex items-start">
                        <Scale size={16} className="text-amber-400 mt-1 mr-3 shrink-0" />
-                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Deliberate Decision-Making:</strong> Unlike BI dashboards that surface metrics without modeling alignment, the framework exposes underlying signals so teams can reason through alignment before acting.</p>
+                       <p className="text-sm text-slate-500"><strong className="text-slate-400">Deliberate Decision-Making:</strong> The protocol isn't designed to maximize engagement — it's designed to surface genuine alignment. Commercially, personally, and in communities, the goal is connection that actually fits, not attention captured at any cost.</p>
                      </div>
                    </div>
                 </div>
