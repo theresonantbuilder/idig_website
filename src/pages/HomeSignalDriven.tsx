@@ -81,10 +81,12 @@ export default function HomeSignalDriven() {
         {/* LAB SECTION */}
         <section id="lab" className="bg-slate-900 text-slate-300 pt-10 pb-10">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="mb-12 border-b border-slate-700 pb-8">
-              <h2 className="text-white font-light leading-tight text-center" style={{ fontSize: 'clamp(1rem, 3vw, 2.5rem)' }}>
-                iDIG turns information noise into signal — <span className="text-blue-400 font-medium">guided by you.</span>
-              </h2>
+            <div className="mb-12">
+              <div className="bg-slate-800/60 border border-blue-900/50 rounded-xl px-8 py-6 text-center">
+                <h2 className="text-white font-light leading-tight" style={{ fontSize: 'clamp(1rem, 3vw, 2.5rem)' }}>
+                  iDIG turns information noise into signal — <span className="text-blue-400 font-medium">guided by you.</span>
+                </h2>
+              </div>
             </div>
 
 
