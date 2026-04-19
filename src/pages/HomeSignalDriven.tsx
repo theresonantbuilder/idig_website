@@ -90,12 +90,29 @@ export default function HomeSignalDriven() {
 
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div className="space-y-8">
-                <div className="text-base leading-relaxed text-slate-400 space-y-4">
-                  <p>For over 20 years I've been drawn to a central question: why do the tools people use to communicate so rarely give them a sense of agency over what they're actually saying — or resonance with who they're saying it to?</p>
-                  <p>That question led me toward <strong className="text-slate-300">Quantum Social Science</strong> — a field exploring how concepts from quantum mechanics, including superposition, entanglement, and interference, map onto the way meaning actually behaves in human communication. Unlike classical models that treat language as fixed data, quantum-inspired frameworks treat it as something alive: context-dependent, relational, and irreducibly ambiguous until observed.</p>
-                  <p>That discovery became the foundation for <strong className="text-slate-300">i-DIG.io</strong> — an applied experiment in representing communication signals as Hilbert space vectors, where meaning isn't extracted but modeled as direction, magnitude, and interference across a shared semantic field.</p>
-                  <p><strong className="text-slate-300">iDIG Movies</strong> extends this into a new dimension: exploring how people engage with passages of moving content — testing whether the signals embedded in film and narrative can create the same kind of resonance the framework is designed to surface in text and data.</p>
-                  <p>I'm also exploring what it would mean to move iDIG beyond a product and into a <strong className="text-slate-300">protocol</strong> — a shared layer others could build on to help surface resonance in the tools and systems where human communication already lives.</p>
+                {/* CARD 1: The Origin Question */}
+                <div className="bg-slate-800/30 rounded-xl border border-slate-700/50 p-6">
+                  <div className="flex items-center space-x-2 mb-4">
+                    <Compass size={16} className="text-blue-400" />
+                    <h4 className="text-slate-300 font-medium">The Origin Question</h4>
+                  </div>
+                  <div className="text-sm leading-relaxed text-slate-400 space-y-3">
+                    <p>For over 20 years I've been drawn to a central question: why do the tools people use to communicate so rarely give them a sense of agency over what they're actually saying — or resonance with who they're saying it to?</p>
+                    <p>That question led me toward <strong className="text-slate-300">Quantum Social Science</strong> — a field exploring how concepts from quantum mechanics, including superposition, entanglement, and interference, map onto the way meaning actually behaves in human communication. Unlike classical models that treat language as fixed data, quantum-inspired frameworks treat it as something alive: context-dependent, relational, and irreducibly ambiguous until observed.</p>
+                  </div>
+                </div>
+
+                {/* CARD 2: The Experiment */}
+                <div className="bg-slate-800/30 rounded-xl border border-slate-700/50 p-6">
+                  <div className="flex items-center space-x-2 mb-4">
+                    <Layers size={16} className="text-emerald-400" />
+                    <h4 className="text-slate-300 font-medium">The Experiment</h4>
+                  </div>
+                  <div className="text-sm leading-relaxed text-slate-400 space-y-3">
+                    <p>That discovery became the foundation for <strong className="text-slate-300">i-DIG.io</strong> — an applied experiment in representing communication signals as Hilbert space vectors, where meaning isn't extracted but modeled as direction, magnitude, and interference across a shared semantic field.</p>
+                    <p><strong className="text-slate-300">iDIG Movies</strong> extends this into a new dimension: exploring how people engage with passages of moving content — testing whether the signals embedded in film and narrative can create the same kind of resonance the framework is designed to surface in text and data.</p>
+                    <p>I'm also exploring what it would mean to move iDIG beyond a product and into a <strong className="text-slate-300">protocol</strong> — a shared layer others could build on to help surface resonance in the tools and systems where human communication already lives.</p>
+                  </div>
                 </div>
 
                 {/* THE RESONANT BUILDERS CARD — Latest Signal */}
