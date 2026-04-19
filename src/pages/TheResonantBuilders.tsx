@@ -76,12 +76,14 @@ export default function TheResonantBuilders() {
         <div className="max-w-6xl mx-auto px-6">
 
           {/* Header */}
-          <div className="mb-12">
-            <div className="inline-flex items-center bg-amber-900/30 border border-amber-700/40 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-xs font-bold text-amber-400 tracking-widest uppercase">The Resonant Builders</span>
+          <div className="mb-8">
+            <div className="flex items-center gap-4 mb-3">
+              <div className="inline-flex items-center bg-amber-900/30 border border-amber-700/40 rounded-full px-4 py-1.5 shrink-0">
+                <span className="text-xs font-bold text-amber-400 tracking-widest uppercase">The Resonant Builders</span>
+              </div>
+              <h1 className="text-xl md:text-2xl font-light text-white">Essays, Conversations & Ideas</h1>
             </div>
-            <h1 className="text-4xl md:text-5xl font-light text-white mb-4">Essays, Conversations & Ideas</h1>
-            <p className="text-lg text-slate-400 max-w-2xl">Exploring how quantum-informed signal models can reshape the way we communicate — commercially, socially, and culturally.</p>
+            <p className="text-base text-slate-400 max-w-2xl">Exploring how quantum-informed signal models can reshape the way we communicate — commercially, socially, and culturally.</p>
           </div>
 
           {/* Filter row + RSS links */}
