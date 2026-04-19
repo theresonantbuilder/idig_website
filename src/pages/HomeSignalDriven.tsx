@@ -79,7 +79,7 @@ export default function HomeSignalDriven() {
       <main className="pt-20">
 
         {/* LAB SECTION */}
-        <section id="lab" className="bg-slate-900 text-slate-300 pt-10 pb-24">
+        <section id="lab" className="bg-slate-900 text-slate-300 pt-10 pb-10">
           <div className="max-w-6xl mx-auto px-6">
             <div className="mb-12 border-b border-slate-700 pb-8">
               <h2 className="text-white font-light leading-tight text-center" style={{ fontSize: 'clamp(1rem, 3vw, 2.5rem)' }}>
