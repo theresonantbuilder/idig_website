@@ -111,6 +111,7 @@ export default function TheResonantBuilders() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {posts.map(post => {
               const contentType = getContentType(post);
+              const isUpcoming  = new Date(post.date) > new Date();
               return (
                 <div
                   key={post.slug}
@@ -121,7 +122,12 @@ export default function TheResonantBuilders() {
                     <span className={`text-xs font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full border ${CONTENT_BADGE[contentType]}`}>
                       {contentType === 'essay' ? 'Essay' : 'Interview'}
                     </span>
-                    <span className="text-xs text-slate-500">{formatDate(post.date)}</span>
+                    <div className="flex items-center gap-2">
+                      {isUpcoming && (
+                        <span className="text-xs font-semibold text-amber-400 uppercase tracking-wide">Coming Soon</span>
+                      )}
+                      <span className="text-xs text-slate-500">{formatDate(post.date)}</span>
+                    </div>
                   </div>
                   <h2 className="text-white font-medium text-lg leading-snug mb-3 group-hover:text-amber-300 transition">{post.title}</h2>
                   <p className="text-slate-400 text-sm leading-relaxed line-clamp-3">{post.summary}</p>
