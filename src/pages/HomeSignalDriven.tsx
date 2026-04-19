@@ -76,7 +76,7 @@ export default function HomeSignalDriven() {
       </nav>
 
 
-      <main className="pt-20 pb-20">
+      <main className="pt-20">
 
         {/* LAB SECTION */}
         <section id="lab" className="bg-slate-900 text-slate-300 pt-10 pb-24">
@@ -283,7 +283,7 @@ export default function HomeSignalDriven() {
           </div>
         </section>
 
-        <footer className="bg-white py-12 border-t border-slate-200">
+        <footer className="bg-white py-6 border-t border-slate-200">
           <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0"><span className="font-bold text-slate-900">i-DIG.io</span><p className="text-slate-500 text-sm mt-1">Signal-Driven Discovery & Matching</p></div>
             <div className="text-sm text-slate-500">&copy; 2026 i-DIG.io. All rights reserved.</div>
