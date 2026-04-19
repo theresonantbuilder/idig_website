@@ -83,7 +83,7 @@ export default function TheResonantBuilders() {
               </div>
               <h1 className="text-xl md:text-2xl font-light text-white">Essays, Conversations & Ideas</h1>
             </div>
-            <p className="text-base text-slate-400 max-w-2xl">Exploring how quantum-informed signal models can reshape the way we communicate — commercially, socially, and culturally.</p>
+            <p className="text-base text-slate-400">Exploring how quantum-informed signal models can reshape the way we communicate — commercially, socially, and culturally.</p>
           </div>
 
           {/* Filter row + RSS links */}
