@@ -15,6 +15,67 @@ function formatDate(dateStr: string) {
   return new Date(dateStr).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
+function SubscribeCallout() {
+  const [email, setEmail]     = useState('');
+  const [status, setStatus]   = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!email) return;
+    setStatus('sending');
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/paul@i-dig.io', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          _subject: `New Resonant Builders subscriber: ${email}`,
+          _captcha: 'false',
+          email,
+        }),
+      });
+      setStatus(res.ok ? 'done' : 'error');
+    } catch {
+      setStatus('error');
+    }
+  }
+
+  return (
+    <div className="my-12 bg-amber-900/20 border border-amber-700/40 rounded-xl p-6 md:p-8">
+      <div className="max-w-lg">
+        <p className="text-xs font-bold text-amber-400 uppercase tracking-widest mb-2">The Resonant Builders</p>
+        <h3 className="text-xl font-light text-white mb-2">Stay in the signal.</h3>
+        <p className="text-slate-400 text-sm mb-5">
+          New essays drop every Monday. Subscribe to receive a notification when the next one lands — no noise, just signal.
+        </p>
+        {status === 'done' ? (
+          <p className="text-amber-400 text-sm font-medium">You're in. We'll signal you when the next essay drops.</p>
+        ) : (
+          <form onSubmit={handleSubmit} className="flex gap-2">
+            <input
+              type="email"
+              required
+              placeholder="your@email.com"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              className="flex-1 bg-slate-800 border border-slate-600 rounded-lg px-4 py-2.5 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-amber-500 transition"
+            />
+            <button
+              type="submit"
+              disabled={status === 'sending'}
+              className="px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-900 text-sm font-semibold rounded-lg transition disabled:opacity-50 shrink-0"
+            >
+              {status === 'sending' ? 'Sending…' : 'Subscribe'}
+            </button>
+          </form>
+        )}
+        {status === 'error' && (
+          <p className="text-red-400 text-xs mt-2">Something went wrong — try again or email paul@i-dig.io directly.</p>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function Post() {
   const [, navigate] = useLocation();
   const params = useParams<{ slug: string }>();
@@ -101,6 +162,9 @@ export default function Post() {
               prose-blockquote:border-l-blue-500 prose-blockquote:text-slate-400"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+
+          {/* Subscribe callout */}
+          <SubscribeCallout />
 
           {/* Tags */}
           {post.tags && post.tags.length > 0 && (
