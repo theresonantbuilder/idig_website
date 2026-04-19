@@ -1,10 +1,45 @@
+import { useState } from 'react';
 import { Code2, Terminal, Layers, Lock, Sliders, GitMerge, BrainCircuit, Eye, Compass, Orbit, Scale, Users } from 'lucide-react';
 import { useLocation } from 'wouter';
+import { getAllPostMeta } from '../lib/posts';
+import MediaPlayer from '../components/MediaPlayer';
 
+
+function formatDate(dateStr: string) {
+  return new Date(dateStr).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
 
 export default function HomeSignalDriven() {
 
   const [, navigate] = useLocation();
+
+  const today = new Date().toISOString().split('T')[0];
+  const latestPost = getAllPostMeta()
+    .filter(p => p.date <= today)
+    .at(-1) ?? null;
+
+  const [trbEmail, setTrbEmail]       = useState('');
+  const [trbSubStatus, setTrbSubStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle');
+
+  async function handleTrbSubscribe(e: React.FormEvent) {
+    e.preventDefault();
+    if (!trbEmail) return;
+    setTrbSubStatus('sending');
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/paul@i-dig.io', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          _subject: `New Resonant Builders subscriber: ${trbEmail}`,
+          _captcha: 'false',
+          email: trbEmail,
+        }),
+      });
+      setTrbSubStatus(res.ok ? 'done' : 'error');
+    } catch {
+      setTrbSubStatus('error');
+    }
+  }
 
 
   return (
@@ -63,20 +98,78 @@ export default function HomeSignalDriven() {
                   <p>I'm also exploring what it would mean to move iDIG beyond a product and into a <strong className="text-slate-300">protocol</strong> — a shared layer others could build on to help surface resonance in the tools and systems where human communication already lives.</p>
                 </div>
 
-                {/* THE RESONANT BUILDERS CARD */}
-                <div className="bg-slate-800/50 rounded-lg p-6 border border-slate-700">
-                  <div className="flex items-center mb-3">
-                    <Users size={14} className="mr-2 text-amber-400" />
-                    <h3 className="text-amber-400 text-xs font-bold uppercase tracking-widest">The Resonant Builders</h3>
+                {/* THE RESONANT BUILDERS CARD — Latest Signal */}
+                <div className="bg-slate-800/50 rounded-xl border border-amber-700/30 overflow-hidden">
+
+                  {/* Card header */}
+                  <div className="flex items-center justify-between px-6 py-4 border-b border-slate-700/50">
+                    <div className="flex items-center">
+                      <Users size={14} className="mr-2 text-amber-400" />
+                      <span className="text-amber-400 text-xs font-bold uppercase tracking-widest">The Resonant Builders</span>
+                    </div>
+                    <button
+                      onClick={() => navigate('/theresonantbuilders')}
+                      className="text-xs text-slate-500 hover:text-amber-400 transition"
+                    >
+                      All Essays →
+                    </button>
                   </div>
-                  <p className="text-sm leading-relaxed text-slate-400 mb-3">I'm building iDIG because I believe a quantum-informed model of communication signals can create real impact — commercially, in how organizations discover and align with opportunity, and socially, in how communities surface the people and needs that traditional systems overlook.</p>
-                  <ul className="text-sm text-slate-400 space-y-2 mb-3 ml-1">
-                    <li className="flex items-start"><span className="text-amber-500 mr-2 mt-0.5 shrink-0">→</span><span>Aligning social workers with first responders to surface the right support for the right person at the right moment</span></li>
-                    <li className="flex items-start"><span className="text-amber-500 mr-2 mt-0.5 shrink-0">→</span><span>Cutting hiring noise by matching talent to opportunity through signal — not keyword filters</span></li>
-                    <li className="flex items-start"><span className="text-amber-500 mr-2 mt-0.5 shrink-0">→</span><span>Helping people resonate with stories — through film, books, and content that genuinely reflects who they are</span></li>
-                    <li className="flex items-start"><span className="text-amber-500 mr-2 mt-0.5 shrink-0">→</span><span>Giving people real agency over the products and services they engage with, rather than being matched by opaque algorithms</span></li>
-                  </ul>
-                  <p className="text-sm leading-relaxed text-slate-500">I'll be exploring these ideas — and inviting others to build alongside — through the <strong className="text-slate-400">TheResonantBuilders</strong> blog, coming to this site. If this resonates with you, the conversation is open.</p>
+
+                  {latestPost ? (
+                    <div className="px-6 pt-5 pb-5">
+                      <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">Latest</p>
+                      <h3 className="text-white font-medium text-base leading-snug mb-1">{latestPost.title}</h3>
+                      <p className="text-xs text-slate-600 mb-3">{formatDate(latestPost.date)}</p>
+                      <p className="text-sm text-slate-400 leading-relaxed mb-4">{latestPost.summary}</p>
+
+                      <MediaPlayer
+                        audioUrl={latestPost.audioUrl}
+                        discussionUrl={latestPost.discussionUrl}
+                        videoUrl={latestPost.videoUrl}
+                      />
+
+                      <button
+                        onClick={() => navigate(`/theresonantbuilders/${latestPost.slug}`)}
+                        className="mt-1 text-xs font-semibold text-amber-400 hover:text-amber-300 transition"
+                      >
+                        Read the full essay →
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="px-6 py-5">
+                      <p className="text-sm text-slate-500">First essay drops soon.</p>
+                    </div>
+                  )}
+
+                  {/* Stay in the signal strip */}
+                  <div className="px-6 py-5 border-t border-amber-700/20 bg-amber-900/10">
+                    <p className="text-sm font-light text-white mb-1">Stay in the signal.</p>
+                    <p className="text-xs text-slate-500 mb-3">New essays every Monday — no noise, just signal.</p>
+                    {trbSubStatus === 'done' ? (
+                      <p className="text-amber-400 text-xs font-medium">You're in. We'll signal you when the next essay drops.</p>
+                    ) : (
+                      <form onSubmit={handleTrbSubscribe} className="flex gap-2">
+                        <input
+                          type="email"
+                          required
+                          placeholder="your@email.com"
+                          value={trbEmail}
+                          onChange={e => setTrbEmail(e.target.value)}
+                          className="flex-1 min-w-0 bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-xs text-slate-200 placeholder-slate-600 focus:outline-none focus:border-amber-500 transition"
+                        />
+                        <button
+                          type="submit"
+                          disabled={trbSubStatus === 'sending'}
+                          className="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-900 text-xs font-semibold rounded-lg transition disabled:opacity-50 shrink-0"
+                        >
+                          {trbSubStatus === 'sending' ? '…' : 'Subscribe'}
+                        </button>
+                      </form>
+                    )}
+                    {trbSubStatus === 'error' && (
+                      <p className="text-red-400 text-xs mt-2">Something went wrong — try again or email paul@i-dig.io directly.</p>
+                    )}
+                  </div>
                 </div>
 
               </div>
