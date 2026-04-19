@@ -4,6 +4,8 @@ date: "2026-04-14"
 type: "essay"
 summary: "We are living through the slow decay of digital platforms—but something is stirring. A 20-year journey into observer resonance, Hilbert Space vectors, and the iDIG protocol."
 audioUrl: "https://f004.backblazeb2.com/file/idigdemo/The+Awakening+-+Tuning+into+the+Signal+of+Human+Potential.mp3"
+discussionUrl: "https://f004.backblazeb2.com/file/idigdemo/The+Awakening_NotebookLM+AI+discussion.m4a"
+videoUrl: "https://f004.backblazeb2.com/file/idigdemo/The+Awakening_Notebook+LM+Explainer+Video.mp4"
 tags: ["resonance", "Hilbert space", "iDIG", "quantum", "protocol"]
 ---
 

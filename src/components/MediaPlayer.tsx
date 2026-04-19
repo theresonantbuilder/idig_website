@@ -1,10 +1,11 @@
 import { useRef, useState } from 'react';
 
-type Track = 'essay' | 'discussion';
+type Track = 'essay' | 'discussion' | 'video';
 
 interface Props {
   audioUrl?: string;
   discussionUrl?: string;
+  videoUrl?: string;
 }
 
 function PlayIcon() {
@@ -30,18 +31,22 @@ function formatTime(s: number) {
   return `${m}:${sec.toString().padStart(2, '0')}`;
 }
 
-export default function MediaPlayer({ audioUrl, discussionUrl }: Props) {
-  const hasBoth = !!audioUrl && !!discussionUrl;
-  const [track, setTrack]         = useState<Track>(audioUrl ? 'essay' : 'discussion');
-  const [playing, setPlaying]     = useState(false);
+export default function MediaPlayer({ audioUrl, discussionUrl, videoUrl }: Props) {
+  const availableTracks: Track[] = [
+    ...(audioUrl      ? (['essay']      as Track[]) : []),
+    ...(discussionUrl ? (['discussion'] as Track[]) : []),
+    ...(videoUrl      ? (['video']      as Track[]) : []),
+  ];
+
+  const [track, setTrack]             = useState<Track>(availableTracks[0] ?? 'essay');
+  const [playing, setPlaying]         = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration]   = useState(0);
+  const [duration, setDuration]       = useState(0);
   const audioEl = useRef<HTMLAudioElement>(null);
 
-  if (!audioUrl && !discussionUrl) return null;
+  if (availableTracks.length === 0) return null;
 
-  const activeUrl   = track === 'essay' ? audioUrl : discussionUrl;
-  const trackLabel  = track === 'essay' ? 'Listen to Essay' : 'AI Discussion';
+  const showTabs = availableTracks.length > 1;
 
   function switchTrack(t: Track) {
     if (t === track) return;
@@ -59,13 +64,21 @@ export default function MediaPlayer({ audioUrl, discussionUrl }: Props) {
     else         { el.play();  setPlaying(true);  }
   }
 
+  const tabLabel: Record<Track, string> = {
+    essay:      '🎙 Narrative',
+    discussion: '🤖 AI Discussion',
+    video:      '🎬 Explainer Video',
+  };
+
+  const activeAudioUrl = track === 'essay' ? audioUrl : track === 'discussion' ? discussionUrl : undefined;
+
   return (
     <div className="mb-8 bg-slate-800/60 border border-slate-700 rounded-xl overflow-hidden">
 
-      {/* Track tabs — only when both tracks exist */}
-      {hasBoth && (
+      {/* Track tabs — only when multiple tracks exist */}
+      {showTabs && (
         <div className="flex border-b border-slate-700">
-          {(['essay', 'discussion'] as Track[]).map(t => (
+          {availableTracks.map(t => (
             <button
               key={t}
               onClick={() => switchTrack(t)}
@@ -75,60 +88,74 @@ export default function MediaPlayer({ audioUrl, discussionUrl }: Props) {
                   : 'text-slate-400 hover:text-slate-200'
               }`}
             >
-              {t === 'essay' ? 'Listen to Essay' : 'AI Discussion'}
+              {tabLabel[t]}
             </button>
           ))}
         </div>
       )}
 
-      {/* Controls row */}
-      <div className="flex items-center gap-3 px-4 py-3">
-
-        {/* Label when only one track */}
-        {!hasBoth && (
-          <span className="text-xs font-medium text-slate-400 shrink-0">{trackLabel}</span>
-        )}
-
-        {/* Play / Pause */}
-        <button
-          onClick={togglePlay}
-          className="shrink-0 w-8 h-8 rounded-full bg-blue-600 hover:bg-blue-500 flex items-center justify-center text-white transition"
-        >
-          {playing ? <PauseIcon /> : <PlayIcon />}
-        </button>
-
-        {/* Current time */}
-        <span className="text-xs text-slate-500 tabular-nums shrink-0 w-9 text-right">
-          {formatTime(currentTime)}
-        </span>
-
-        {/* Scrub bar */}
-        <input
-          type="range"
-          min={0}
-          max={duration || 100}
-          value={currentTime}
-          step={0.1}
-          onChange={e => {
-            const val = parseFloat(e.target.value);
-            if (audioEl.current) audioEl.current.currentTime = val;
-            setCurrentTime(val);
-          }}
-          className="flex-1 min-w-0 h-1 accent-blue-500 cursor-pointer"
+      {/* Video player */}
+      {track === 'video' && videoUrl && (
+        <video
+          key={videoUrl}
+          src={videoUrl}
+          controls
+          className="w-full max-h-[480px] bg-black"
         />
+      )}
 
-        {/* Duration */}
-        <span className="text-xs text-slate-500 tabular-nums shrink-0 w-9">
-          {formatTime(duration)}
-        </span>
-      </div>
+      {/* Audio controls — only for non-video tracks */}
+      {track !== 'video' && (
+        <div className="flex items-center gap-3 px-4 py-3">
+
+          {/* Label when only one track */}
+          {!showTabs && (
+            <span className="text-xs font-medium text-slate-400 shrink-0">
+              {tabLabel[track]}
+            </span>
+          )}
+
+          {/* Play / Pause */}
+          <button
+            onClick={togglePlay}
+            className="shrink-0 w-8 h-8 rounded-full bg-blue-600 hover:bg-blue-500 flex items-center justify-center text-white transition"
+          >
+            {playing ? <PauseIcon /> : <PlayIcon />}
+          </button>
+
+          {/* Current time */}
+          <span className="text-xs text-slate-500 tabular-nums shrink-0 w-9 text-right">
+            {formatTime(currentTime)}
+          </span>
+
+          {/* Scrub bar */}
+          <input
+            type="range"
+            min={0}
+            max={duration || 100}
+            value={currentTime}
+            step={0.1}
+            onChange={e => {
+              const val = parseFloat(e.target.value);
+              if (audioEl.current) audioEl.current.currentTime = val;
+              setCurrentTime(val);
+            }}
+            className="flex-1 min-w-0 h-1 accent-blue-500 cursor-pointer"
+          />
+
+          {/* Duration */}
+          <span className="text-xs text-slate-500 tabular-nums shrink-0 w-9">
+            {formatTime(duration)}
+          </span>
+        </div>
+      )}
 
       {/* Hidden audio element — key forces remount on track switch */}
-      {activeUrl && (
+      {activeAudioUrl && track !== 'video' && (
         <audio
-          key={activeUrl}
+          key={activeAudioUrl}
           ref={audioEl}
-          src={activeUrl}
+          src={activeAudioUrl}
           onTimeUpdate={() => setCurrentTime(audioEl.current?.currentTime ?? 0)}
           onLoadedMetadata={() => setDuration(audioEl.current?.duration ?? 0)}
           onEnded={() => setPlaying(false)}
