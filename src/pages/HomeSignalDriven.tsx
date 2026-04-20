@@ -151,10 +151,19 @@ export default function HomeSignalDriven() {
                     <h4 className="text-slate-300 font-medium">The Experiment</h4>
                   </div>
                   <div className="text-sm leading-relaxed text-slate-400 space-y-3">
-                    <p>That discovery became the foundation for <strong className="text-slate-300">i-DIG.io</strong> — an applied experiment in representing communication signals as Hilbert space vectors, where meaning isn't extracted but modeled as direction, magnitude, and interference across a shared semantic field.</p>
-                    <p><strong className="text-slate-300">iDIG Movies</strong> extends this into a new dimension — exploring whether the signals embedded in film and narrative can surface the same kind of resonance the framework finds in text, data, and human intent. Can a person's relationship to a story be modeled? We're testing it.</p>
-                    <p><strong className="text-slate-300">HiringSignals.ai</strong> extends it into another — using the same vector framework to align talent with opportunity through signal rather than keyword filters, giving both sides of a search real visibility into what's actually resonating and why.</p>
-                    <p>Both are experiments. Both point toward the same conclusion: iDIG needs to move beyond a product. I'm working toward establishing it as a <strong className="text-slate-300">nonprofit open protocol</strong> — a shared layer that others can build on to surface genuine resonance in the tools, communities, and systems where human communication already lives.</p>
+                    <p>This discovery became the foundation for <strong className="text-slate-300">i-DIG.io</strong> — an applied experiment in representing communication signals as Hilbert space vectors, where meaning isn't extracted but modeled as direction, magnitude, and interference across a shared semantic field.</p>
+                    <p>This experiment has extended into two primary domains focused on aligning talent with opportunities and the resonance of narrative through cinema.</p>
+                    <p>By mapping a viewer's relationship to film as a series of vector intersections rather than static genre tags, I am exploring whether the same signals that identify professional alignment can surface the deep, often subconscious archetypes that draw us to specific stories.</p>
+                    <p>Through this exploration I have decided to transition <strong className="text-slate-300">iDIG</strong> to a <strong className="text-slate-300">nonprofit open protocol</strong> — to establish a shared, neutral layer where social impact and genuine resonance can finally outpace algorithmic noise.</p>
+                  </div>
+                  <div className="mt-5 pt-4 border-t border-slate-700/50 flex items-center justify-between">
+                    <p className="text-xs text-slate-500 italic">Reach out if you would like to collaborate.</p>
+                    <a
+                      href="mailto:paul@i-dig.io"
+                      className="text-xs font-semibold text-blue-400 hover:text-blue-300 transition shrink-0 ml-4"
+                    >
+                      Get in touch →
+                    </a>
                   </div>
                 </div>
 
