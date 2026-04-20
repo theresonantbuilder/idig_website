@@ -92,7 +92,7 @@ export default function MediaPlayer({ audioUrl, discussionUrl, videoUrl }: Props
   }
 
   const tabLabel: Record<Track, string> = {
-    essay:      '🎙 Narrative',
+    essay:      '🎙 Listen to Essay',
     discussion: '🤖 AI Discussion',
     video:      '🎬 Explainer Video',
   };
