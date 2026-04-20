@@ -151,19 +151,19 @@ export default function HomeSignalDriven() {
                     <h4 className="text-slate-300 font-medium">The Experiment</h4>
                   </div>
                   <div className="text-sm leading-relaxed text-slate-400 space-y-3">
-                    <p>This discovery became the foundation for <strong className="text-slate-300">i-DIG.io</strong> — an applied experiment in representing communication signals as Hilbert space vectors, where meaning isn't extracted but modeled as direction, magnitude, and interference across a shared semantic field.</p>
-                    <p>This experiment has extended into two primary domains focused on aligning talent with opportunities and the resonance of narrative through cinema.</p>
-                    <p>By mapping a viewer's relationship to film as a series of vector intersections rather than static genre tags, I am exploring whether the same signals that identify professional alignment can surface the deep, often subconscious archetypes that draw us to specific stories.</p>
-                    <p>Through this exploration I have decided to transition <strong className="text-slate-300">iDIG</strong> to a <strong className="text-slate-300">nonprofit open protocol</strong> — to establish a shared, neutral layer where social impact and genuine resonance can finally outpace algorithmic noise.</p>
+                    <p><strong className="text-slate-300">i-DIG.io</strong> is an applied experiment in modeling communication as Hilbert space vectors — where meaning is defined by direction, magnitude, and interference rather than extraction.</p>
+                    <p>While rooted in talent discovery and cinematic narrative, these initial nodes establish a universal protocol for mapping any complex human ecosystem.</p>
+                    <p>By treating film and enterprise-scale career alignment as vector intersections rather than static tags, I can surface the deep archetypes and "signals" that silos traditionally mask. This ensures that whether architecting for technical roles or narrative resonance, the focus remains on sovereign discovery.</p>
+                    <p>To protect this mission, <strong className="text-slate-300">iDIG</strong> is transitioning to a <strong className="text-slate-300">nonprofit open protocol</strong> — a neutral layer designed to let genuine resonance finally outpace algorithmic noise.</p>
                   </div>
                   <div className="mt-5 pt-4 border-t border-slate-700/50 flex items-center justify-between">
                     <p className="text-xs text-slate-500 italic">Reach out if you would like to collaborate.</p>
-                    <a
-                      href="mailto:paul@i-dig.io"
+                    <button
+                      onClick={() => { window.location.href = '/about#contact'; }}
                       className="text-xs font-semibold text-blue-400 hover:text-blue-300 transition shrink-0 ml-4"
                     >
                       Get in touch →
-                    </a>
+                    </button>
                   </div>
                 </div>
 

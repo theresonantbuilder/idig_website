@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import { Linkedin } from 'lucide-react';
 
@@ -6,6 +6,12 @@ export default function AboutPaul() {
   const [, navigate] = useLocation();
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (window.location.hash === '#contact') {
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -110,7 +116,7 @@ export default function AboutPaul() {
           <div className="border-t border-slate-200 mb-14"></div>
 
           {/* Contact Form */}
-          <div className="mb-12">
+          <div id="contact" className="mb-12">
             <h2 className="text-2xl font-light text-slate-900 mb-2">Get in touch</h2>
             <p className="text-slate-500 mb-8">Have a question, an idea, or just want to connect? Send me a note.</p>
 
