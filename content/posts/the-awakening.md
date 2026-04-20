@@ -9,7 +9,7 @@ videoUrl: "https://f004.backblazeb2.com/file/idigdemo/The+Awakening_Notebook+LM+
 tags: ["resonance", "Hilbert space", "iDIG", "quantum", "protocol"]
 ---
 
-We are living through a period of **"Enshittification"** — a term coined by Cory Doctorow to describe the slow decay of digital platforms as they pivot from serving users to harvesting them. For years, the means of human communication have been pinned to the hip of commodification. This has created a **stillness** over the lens of our digital lives — a collective numbness that keeps us bouncing off superficial signals rather than tuning into deep resonance.
+We are living through a period of **<a href="https://en.wikipedia.org/wiki/Enshittification" target="_blank" rel="noopener noreferrer" style="color:#3b82f6;font-weight:700;text-decoration:underline;">Enshittification</a>** — a term coined by Cory Doctorow to describe the slow decay of digital platforms as they pivot from serving users to harvesting them. For years, the means of human communication have been pinned to the hip of commodification. This has created a **stillness** over the lens of our digital lives — a collective numbness that keeps us bouncing off superficial signals rather than tuning into deep resonance.
 
 **But something is waking up.** Something that has never been awake before.
 
