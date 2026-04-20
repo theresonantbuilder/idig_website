@@ -41,19 +41,25 @@ function CopyIcon() {
   );
 }
 
-function ArticleShare() {
+function ArticleShare({ summary }: { summary: string }) {
   const [open, setOpen]   = useState(false);
   const [copied, setCopied] = useState(false);
 
+  function shareText() {
+    const url = window.location.href;
+    return `I thought this might resonate.\n\n${summary}\n\n${url}`;
+  }
+
   function copy() {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(shareText());
     setCopied(true);
     setTimeout(() => { setCopied(false); setOpen(false); }, 1800);
   }
 
   function linkedin() {
+    const url = window.location.href;
     window.open(
-      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`,
+      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}&summary=${encodeURIComponent(shareText())}`,
       '_blank'
     );
     setOpen(false);
@@ -212,7 +218,7 @@ export default function Post() {
                 </span>
                 <span className="text-sm text-slate-500">{formatDate(post.date)}</span>
               </div>
-              <ArticleShare />
+              <ArticleShare summary={post.summary} />
             </div>
             <h1 className="text-3xl md:text-4xl font-light text-white leading-tight mb-4">{post.title}</h1>
             <p className="text-lg text-slate-400 mb-8">{post.summary}</p>
@@ -249,7 +255,7 @@ export default function Post() {
           {/* Bottom share bar */}
           <div className="border-t border-slate-700 pt-8 flex items-center gap-3">
             <span className="text-sm text-slate-500 mr-1">Share this essay:</span>
-            <ArticleShare />
+            <ArticleShare summary={post.summary} />
           </div>
 
         </div>
