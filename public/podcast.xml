@@ -4,15 +4,16 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>The Resonant Builders Podcast</title>
+    <title>The Resonant Builders</title>
     <link>https://i-dig.io/theresonantbuilders</link>
-    <description>Conversations exploring how quantum-informed signal models can reshape the way we communicate — commercially, socially, and culturally. Hosted by J. Paul Duplantis.</description>
+    <description>A weekly essay series — and companion audio — exploring the Observer Resonance movement. Each essay asks whether Hilbert Space vectors can replace attention capture as the architecture of human communication. Hosted by J. Paul Duplantis, founder of i-DIG.io and author of the forthcoming manifesto We The Resonant Builders.</description>
     <language>en-us</language>
     <managingEditor>paul@i-dig.io (J. Paul Duplantis)</managingEditor>
     <atom:link href="https://i-dig.io/podcast.xml" rel="self" type="application/rss+xml"/>
 
     <itunes:author>J. Paul Duplantis</itunes:author>
     <itunes:email>paul@i-dig.io</itunes:email>
+    <itunes:subtitle>Building toward observer resonance — one signal at a time.</itunes:subtitle>
     <itunes:owner>
       <itunes:name>J. Paul Duplantis</itunes:name>
       <itunes:email>paul@i-dig.io</itunes:email>
@@ -21,25 +22,104 @@
     <itunes:category text="Society &amp; Culture"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
-    <!-- Add itunes:image here once you have cover art:
-    <itunes:image href="https://i-dig.io/podcast-cover.jpg"/> -->
+    <itunes:image href="https://i-dig.io/podcast-cover.png"/>
+    <copyright>© 2026 J. Paul Duplantis. All rights reserved.</copyright>
 
-    <!-- Add episodes below as audio becomes available. Example structure:
+    <!-- ============================================================
+         EPISODE TEMPLATE — copy for each new essay
+         Listen to Essay = full | AI Discussion = bonus
+         ============================================================
 
     <item>
-      <title>Episode Title</title>
-      <link>https://i-dig.io/theresonantbuilders/episode-slug</link>
-      <guid isPermaLink="true">https://i-dig.io/theresonantbuilders/episode-slug</guid>
-      <pubDate>Sat, 12 Apr 2026 00:00:00 GMT</pubDate>
-      <description>Episode description.</description>
-      <itunes:summary>Episode description.</itunes:summary>
-      <itunes:duration>45:00</itunes:duration>
-      <itunes:episode>1</itunes:episode>
+      <title>[Essay Title] — Listen to Essay</title>
+      <link>https://i-dig.io/theresonantbuilders/[slug]</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/[slug]-essay</guid>
+      <pubDate>[Day, DD Mon YYYY 00:00:00 GMT]</pubDate>
+      <description><![CDATA[
+        [Essay summary.]
+
+        Read the full essay, watch the AI explainer video, and join the conversation at:
+        https://i-dig.io/theresonantbuilders/[slug]
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>[Essay summary.]</itunes:summary>
+      <itunes:duration>0:00</itunes:duration>
+      <itunes:episode>[#]</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
-      <enclosure url="https://YOUR_VERCEL_BLOB_URL/episode-1.mp3" length="0" type="audio/mpeg"/>
+      <enclosure url="[audioUrl]" length="0" type="audio/mpeg"/>
     </item>
 
-    -->
+    <item>
+      <title>[Essay Title] — AI Discussion</title>
+      <link>https://i-dig.io/theresonantbuilders/[slug]</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/[slug]-discussion</guid>
+      <pubDate>[Day, DD Mon YYYY 00:00:00 GMT]</pubDate>
+      <description><![CDATA[
+        An AI-generated discussion of the essay "[Essay Title]" — two voices exploring
+        the ideas, implications, and questions the essay raises.
+
+        Read the full essay at:
+        https://i-dig.io/theresonantbuilders/[slug]
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>An AI-generated discussion exploring the ideas in "[Essay Title]."</itunes:summary>
+      <itunes:duration>0:00</itunes:duration>
+      <itunes:episode>[#]</itunes:episode>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="[discussionUrl]" length="0" type="audio/mpeg"/>
+    </item>
+
+    ============================================================ -->
+
+    <!-- EPISODE 1 — The Awakening: Listen to Essay -->
+    <item>
+      <title>The Awakening: Tuning into the Signal of Human Potential — Listen to Essay</title>
+      <link>https://i-dig.io/theresonantbuilders/the-awakening</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/the-awakening-essay</guid>
+      <pubDate>Mon, 14 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        We are living through the slow decay of digital platforms — but something is stirring.
+        A 20-year journey into observer resonance, Hilbert Space vectors, and the iDIG protocol.
+
+        J. Paul Duplantis reads the opening essay of the We The Resonant Builders series —
+        a manifesto for a movement that believes the next architecture of human communication
+        must be built on resonance, not capture.
+
+        Read the full essay, watch the AI explainer video, and join the conversation at:
+        https://i-dig.io/theresonantbuilders/the-awakening
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>We are living through the slow decay of digital platforms — but something is stirring. A 20-year journey into observer resonance, Hilbert Space vectors, and the iDIG protocol.</itunes:summary>
+      <itunes:episode>1</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/idigdemo/The+Awakening+-+Tuning+into+the+Signal+of+Human+Potential.mp3" length="7450345" type="audio/mpeg"/>
+    </item>
+
+    <!-- EPISODE 2 — The Awakening: AI Discussion -->
+    <item>
+      <title>The Awakening: Tuning into the Signal of Human Potential — AI Discussion</title>
+      <link>https://i-dig.io/theresonantbuilders/the-awakening</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/the-awakening-discussion</guid>
+      <pubDate>Mon, 14 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        An AI-generated discussion of the essay "The Awakening: Tuning into the Signal of
+        Human Potential" — two voices exploring the ideas, implications, and questions the
+        essay raises: enshittification, Quantum Social Science, Hilbert Space vectors,
+        and what it means to build for observer resonance.
+
+        Read the full essay at:
+        https://i-dig.io/theresonantbuilders/the-awakening
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>An AI-generated discussion exploring the ideas in The Awakening — enshittification, Quantum Social Science, Hilbert Space vectors, and building for observer resonance.</itunes:summary>
+      <itunes:episode>2</itunes:episode>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/idigdemo/The+Awakening_NotebookLM+AI+discussion.m4a" length="45304097" type="audio/mp4"/>
+    </item>
 
   </channel>
 </rss>
