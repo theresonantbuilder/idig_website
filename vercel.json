@@ -1,5 +1,21 @@
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/podcast.xml",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" },
+        { "key": "Content-Type", "value": "application/rss+xml; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/feed.xml",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" },
+        { "key": "Content-Type", "value": "application/rss+xml; charset=utf-8" }
+      ]
+    }
   ]
 }
