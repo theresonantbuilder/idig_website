@@ -57,6 +57,16 @@ Copy this checklist each week. Fill in the blanks at the top before you start.
 
 ## PHASE 3 — PODCAST FEED  (~15 min)
 
+### Local Audio File Convention
+Save all audio files here before uploading to Backblaze:
+```
+Documents/Paul/Resonant Builders/Audio/
+  ep[##]-[slug]-essay.mp3
+  ep[##]-[slug]-discussion.m4a
+```
+Example: `ep02-library-quest-essay.mp3`
+
+### Steps
 - [ ] Open `public/podcast.xml`
 - [ ] Add Episode 1 — Listen to Essay:
   ```xml
@@ -89,6 +99,8 @@ Copy this checklist each week. Fill in the blanks at the top before you start.
   </item>
   ```
 - [ ] Verify feed is valid at https://www.castfeedvalidator.com
+
+> **Once you push, all podcast directories (Apple, Spotify, Amazon, etc.) automatically pick up the new episode within a few hours — no further action needed.**
 
 ---
 
@@ -164,6 +176,34 @@ Copy this checklist each week. Fill in the blanks at the top before you start.
 - [ ] Update `content/posts/[next-slug].md` placeholder for next week's essay
 - [ ] Archive this checklist with the week's date
 - [ ] Note anything that slowed you down this week to improve the process
+
+---
+
+## PODCAST DIRECTORY SUBMISSIONS
+*One-time setup only — do this once, never again. Your feed at `https://i-dig.io/podcast.xml` updates all directories automatically on every push.*
+
+### Tier 1 — Do first
+- [x ] **Apple Podcasts** — https://podcastsconnect.apple.com/u/1/en/signup *(24–48hr approval)*
+4/20/26 Submitted podcast
+
+- [ ] **Spotify** — https://podcasters.spotify.com *(same day)*
+- [ ] **Amazon Music / Audible** — https://podcasters.amazon.com
+- [ ] **iHeartRadio** — https://iheart.com/content/submit-your-podcast
+
+### Tier 2 — Do this week
+- [ ] **Podcast Index** — https://podcastindex.org/add-feed *(auto-distributes to 20+ smaller apps)*
+- [ ] **Pocket Casts** — https://pocketcasts.com/submit
+- [ ] **Podchaser** — https://podchaser.com/login
+- [ ] **Listen Notes** — https://listennotes.com/submit
+- [ ] **TuneIn** — https://help.tunein.com/contact
+
+### Tier 3 — Do eventually
+- [ ] **Deezer** — https://podcasters.deezer.com
+- [ ] **Castbox** — https://castbox.fm/podcaster
+- [ ] **Pandora / SiriusXM** — Via AdsWizz *(requires approval)*
+
+> Your feed URL for all submissions: **https://i-dig.io/podcast.xml**
+> You own this URL permanently. No platform can take it from you.
 
 ---
 
