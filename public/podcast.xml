@@ -19,7 +19,9 @@
       <itunes:email>paul@i-dig.io</itunes:email>
     </itunes:owner>
     <itunes:category text="Technology"/>
-    <itunes:category text="Society &amp; Culture"/>
+    <itunes:category text="Society &amp; Culture">
+      <itunes:category text="Documentary"/>
+    </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <itunes:image href="https://i-dig.io/podcast-cover.png"/>
