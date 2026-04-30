@@ -11,6 +11,7 @@ export interface Post {
   discussionUrl?: string;
   videoUrl?: string;
   tags?: string[];
+  draft?: boolean;
 }
 
 export interface PostMeta extends Omit<Post, 'content'> {}

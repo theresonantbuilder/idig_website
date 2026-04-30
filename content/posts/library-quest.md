@@ -3,6 +3,7 @@ title: "Library Quest: A Walk Through Resonance"
 date: "2026-04-27"
 type: "essay"
 summary: "A narrative manifesto for the iDIG Protocol — from searching a box to navigating a resonant field. What happens when a library becomes a physical manifestation of Hilbert Space?"
+draft: true
 tags: ["library", "iDIG", "protocol", "resonance", "Hilbert space", "discovery"]
 ---
 

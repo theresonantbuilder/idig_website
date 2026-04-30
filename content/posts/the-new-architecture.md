@@ -3,6 +3,7 @@ title: "The New Architecture of Talent Alignment"
 date: "2026-05-04"
 type: "essay"
 summary: "HiringSignals.ai is not a new hiring tool — it is a living laboratory for how open-source protocols can align human potential with opportunity. A look at the vector anatomy of talent, enriched breadcrumbs, and the case for sovereign professional identity."
+draft: true
 tags: ["hiring", "HiringSignals", "iDIG", "protocol", "vectors", "talent"]
 ---
 

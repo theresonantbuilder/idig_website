@@ -15,8 +15,8 @@ export default function HomeSignalDriven() {
 
   const today = new Date().toISOString().split('T')[0];
   const latestPost = getAllPostMeta()
-    .filter(p => p.date <= today)
-    .at(-1) ?? null;
+    .filter(p => !p.draft && p.date <= today)
+    .at(0) ?? null;
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [trbEmail, setTrbEmail]       = useState('');

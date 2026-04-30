@@ -48,7 +48,7 @@ export default function TheResonantBuilders() {
   const allPosts = getAllPostMeta();
 
   const posts = allPosts.filter(post =>
-    contentFilter === 'all' || getContentType(post) === contentFilter
+    !post.draft && (contentFilter === 'all' || getContentType(post) === contentFilter)
   );
 
   return (

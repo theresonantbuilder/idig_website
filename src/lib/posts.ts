@@ -52,6 +52,7 @@ function parsePost(raw: string, slug: string): Post {
     discussionUrl: data.discussionUrl as string | undefined,
     videoUrl:      data.videoUrl      as string | undefined,
     tags:     (data.tags     as string[]) ?? [],
+    draft:    data.draft === 'true' || data.draft === true,
   };
 }
 
