@@ -21,7 +21,7 @@ We are finally breaking that chain. I believe the toolset has finally arrived to
 
 One way out of Enshittification is to provide agency to end users in their discovery of information and opportunities. We are seeing a fundamental shift toward this through **semantic discovery** — using vectors and LLM embeddings to understand the *why* behind a search, not just the *what*.
 
-Organizations like **AMC Networks** are already moving toward "deep context" to find fans that traditional algorithms missed. Even the largest ecosystems, including **Google**, are shifting their weight toward vector-based discovery — moving past keyword matching to integrate LLM-driven enrichment that transforms raw data into high-dimensional semantic signals.
+Organizations like **<a href="https://ppc.land/how-amc-networks-uses-ai-to-find-fans-it-didnt-know-it-had/" target="_blank" rel="noopener noreferrer" style="color:#3b82f6;font-weight:700;text-decoration:underline;">AMC Networks</a>** are already moving toward "deep context" to find fans that traditional algorithms missed. Even the largest ecosystems, including **Google**, are shifting their weight toward vector-based discovery — moving past keyword matching to integrate LLM-driven enrichment that transforms raw data into high-dimensional semantic signals.
 
 There is, however, a fundamental difference between aligning vectors and building for resonance.
 

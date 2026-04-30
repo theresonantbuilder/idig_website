@@ -61,7 +61,7 @@ export function getAllPosts(): Post[] {
       const slug = path.replace('/content/posts/', '').replace('.md', '');
       return parsePost(raw, slug);
     })
-    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
 export function getPostBySlug(slug: string): Post | undefined {

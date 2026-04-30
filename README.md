@@ -156,3 +156,7 @@ public/
 - The frontmatter parser is a custom browser-safe implementation — `gray-matter` was removed because it depends on Node.js `Buffer` which is not available in the browser
 - `vercel.json` contains a catch-all rewrite rule required for client-side SPA routing
 - DOMPurify is configured with `ADD_ATTR: ['target', 'rel']` to allow `target="_blank"` links in markdown content
+
+4/28/29
+Using piper.ttstool.com for text to audio for listen to essay
+using Piper hfc_female-medium English voice
