@@ -75,6 +75,55 @@
 
     ============================================================ -->
 
+    <!-- EPISODE 3 — The Fractal Escape: Listen to Essay -->
+    <item>
+      <title>The Fractal Escape: From Doom Scrolling to Zoom Scrolling — Listen to Essay</title>
+      <link>https://i-dig.io/theresonantbuilders/the-fractal-escape</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/the-fractal-escape-essay</guid>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        Doom scrolling hijacks the primordial brain with a relentless stream of micro-shocks.
+        Zoom scrolling offers a way out — navigating information as a fractal geometry of
+        resonance rather than a flat feed of noise.
+
+        J. Paul Duplantis reads the second essay of the We The Resonant Builders series —
+        exploring Hilbert Space vectors, iDIG Movies, Social Worker Alignment, and a
+        Trust Protocol designed to keep the geometry sovereign.
+
+        Read the full essay, watch the AI explainer video, and join the conversation at:
+        https://i-dig.io/theresonantbuilders/the-fractal-escape
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>Doom scrolling hijacks the primordial brain with micro-shocks. Zoom scrolling offers a way out — navigating information as a fractal geometry of resonance rather than a flat feed of noise.</itunes:summary>
+      <itunes:episode>3</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/idigdemo/Listen+to+Essay_The+Fractal+Escape+-+Doom+to+Zoom+_+Piper+hfc_femail-piperdotttstool.wav" length="0" type="audio/wav"/>
+    </item>
+
+    <!-- EPISODE 4 — The Fractal Escape: AI Discussion -->
+    <item>
+      <title>The Fractal Escape: From Doom Scrolling to Zoom Scrolling — AI Discussion</title>
+      <link>https://i-dig.io/theresonantbuilders/the-fractal-escape</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/the-fractal-escape-discussion</guid>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        An AI-generated discussion of the essay "The Fractal Escape: From Doom Scrolling to
+        Zoom Scrolling" — two voices exploring the ideas, implications, and questions the
+        essay raises: the hijacked primordial brain, Hilbert Space navigation, iDIG Movies,
+        Social Worker Alignment, Zoom scrolling for the public square, and the Trust Protocol.
+
+        Read the full essay at:
+        https://i-dig.io/theresonantbuilders/the-fractal-escape
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>An AI-generated discussion exploring the ideas in The Fractal Escape — the primordial brain, Hilbert Space navigation, iDIG Movies, Social Worker Alignment, and the Trust Protocol.</itunes:summary>
+      <itunes:episode>4</itunes:episode>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/idigdemo/AI+Discussion+-The+Fractal+Escape-+From+doom+srolling+to+zoom+scrolling.m4a" length="0" type="audio/mp4"/>
+    </item>
+
     <!-- EPISODE 1 — The Awakening: Listen to Essay -->
     <item>
       <title>The Awakening: Tuning into the Signal of Human Potential — Listen to Essay</title>
