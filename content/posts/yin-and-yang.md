@@ -23,4 +23,4 @@ Quantum cognition may not be proven yet, but I believe there is a roadmap to fol
 
 When, how, what, and where we make decisions are the signals to pay attention to. If delivery of these signals are predicated on the profit motive over the people motive, then how could we ever evolve to a more balanced state?
 
-Looking deep within is not just a catch phrase. Maybe there is architecture already created for us — if we dare to look.
+Looking deep within is not just a catch phrase. Maybe the architecture is already created for us — if we dare to look.
