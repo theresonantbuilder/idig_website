@@ -17,9 +17,7 @@ I cannot speak at great length of its history or deep philosophical connections.
 
 Here is a quick recap of the meaning behind the symbol.
 
-Yin yang balance is the foundational Taoist principle that opposites — passive/active, cold/hot, dark/light — are interconnected, complementary, and constantly shifting, rather than strictly opposing. Achieving this balance brings homeostasis to the mind and body, improving well-being, enhancing relationships, and sustaining energy. It requires balancing passive Yin (reception, rest) with active Yang (doing, drive).
-
-But here is the thing — the image I shared is not the symbol. It is the first photo of two photons entangling in the quantum world.
+*Yin yang balance is the foundational Taoist principle that opposites — passive/active, cold/hot, dark/light — are interconnected, complementary, and constantly shifting, rather than strictly opposing. Achieving this balance brings homeostasis to the mind and body, improving well-being, enhancing relationships, and sustaining energy. It requires balancing passive Yin (reception, rest) with active Yang (doing, drive).*
 
 Quantum cognition may not be proven yet, but I believe there is a roadmap to follow in how we communicate that could lead us to this homeostasis.
 
