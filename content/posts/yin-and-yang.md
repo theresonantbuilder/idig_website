@@ -2,7 +2,7 @@
 title: "Yin and Yang"
 date: "2026-05-07"
 type: "commentary"
-summary: ""
+summary: "This is the Yin and Yang symbol. I cannot speak at great length of its history or deep philosophical connections. What I did find is this version of the symbol dates back to around 1688 A.D."
 draft: false
 tags: ["yin yang", "quantum", "balance", "communication", "signal"]
 ---
