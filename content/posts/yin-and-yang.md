@@ -2,7 +2,7 @@
 title: "Yin and Yang"
 date: "2026-05-07"
 type: "commentary"
-summary: "The image I shared is not the Yin Yang symbol — it's the first photo of two quantum-entangled photons. And in that coincidence, there may be a roadmap for how we communicate."
+summary: ""
 draft: false
 tags: ["yin yang", "quantum", "balance", "communication", "signal"]
 ---
