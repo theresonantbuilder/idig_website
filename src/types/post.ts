@@ -1,4 +1,4 @@
-export type PostType = 'essay' | 'video' | 'podcast' | 'interview';
+export type PostType = 'essay' | 'video' | 'podcast' | 'interview' | 'commentary';
 
 export interface Post {
   slug: string;

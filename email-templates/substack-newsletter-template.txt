@@ -1,0 +1,115 @@
+╔══════════════════════════════════════════════════════════════════╗
+  SUBSTACK NEWSLETTER TEMPLATE — The Resonant Builders
+  Paste into Substack editor. Replace all [BRACKETS].
+  Substack: New Post > paste section by section.
+  NOTE: Substack supports native audio upload — use it!
+╚══════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+POST TITLE  →  paste into the Substack "Title" field
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[ESSAY TITLE]: [ESSAY SUBTITLE]
+
+EXAMPLE:
+The Fractal Escape: From Doom Scrolling to Zoom Scrolling
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SUBTITLE  →  paste into the Substack "Subtitle" field
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[ESSAY SUMMARY SENTENCE]
+
+EXAMPLE:
+Doom scrolling hijacks the primordial brain with a relentless stream of micro-shocks. Zoom scrolling offers a way out — navigating information as a fractal geometry of resonance rather than a flat feed of noise.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BODY CONTENT  →  paste into the Substack editor body
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The Resonant Builders  ·  Issue #[NUMBER]  ·  [MONTH DD, YYYY]
+
+─────────────────────────────────────────────────────────────────
+🎙 AUDIO — INSERT NATIVE SUBSTACK AUDIO PLAYER HERE
+─────────────────────────────────────────────────────────────────
+  In the Substack editor:
+  Click the + block button → Audio → upload your .wav or .m4a file
+  directly. Substack renders a native player in the email — no
+  link needed. Add one block for the Essay reading, a second for
+  the AI Discussion.
+
+  Files to upload:
+  Essay:      [FILENAME.wav]
+  Discussion: [FILENAME.m4a]
+
+  EXAMPLE:
+  Essay:      Listen+to+Essay_The+Fractal+Escape.wav
+  Discussion: AI+Discussion-The+Fractal+Escape.m4a
+─────────────────────────────────────────────────────────────────
+
+🎬 Video Explainer → https://i-dig.io/theresonantbuilders/[SLUG]?play=video
+📖 Read & listen online → https://i-dig.io/theresonantbuilders/[SLUG]
+
+EXAMPLE:
+🎬 Video Explainer → https://i-dig.io/theresonantbuilders/the-fractal-escape?play=video
+📖 Read & listen online → https://i-dig.io/theresonantbuilders/the-fractal-escape
+
+─────────────────────────────────────────────────────────────────
+
+[PASTE FULL ESSAY TEXT HERE — section by section]
+
+Use Substack Heading 1 for section headers.
+Use the pull quote block for the blockquote/callout sections.
+
+─────────────────────────────────────────────────────────────────
+
+SECTION: [SECTION HEADER]
+
+[SECTION BODY TEXT]
+
+─────────────────────────────────────────────────────────────────
+
+PULL QUOTE BLOCK (for blockquotes like the Trust note):
+  In Substack editor: + block → Quote
+  Paste the blockquote text inside.
+
+EXAMPLE:
+  A Note on Trust: There is a prerequisite to all of this that
+  cannot be engineered around. In the alignment of vectors, if
+  the observer doesn't trust the connection — the signal collapses
+  back into noise before it ever has the chance to align. Trust
+  isn't a feature; it is the foundation on which the entire
+  geometry rests.
+
+─────────────────────────────────────────────────────────────────
+
+[CONTINUE ALL SECTIONS...]
+
+─────────────────────────────────────────────────────────────────
+
+— J. Paul Duplantis
+Observer, Builder, and founder of i-DIG.io
+
+─────────────────────────────────────────────────────────────────
+
+🎧 Listen on Spotify → https://open.spotify.com/show/6ompRuMKyiXQZoboUzjAy5
+[🎧 Listen on Apple Podcasts → [APPLE PODCASTS LINK WHEN READY]]
+🌐 i-dig.io → https://i-dig.io
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SUBSTACK EDITOR CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[ ] Title and subtitle filled in
+[ ] Cover image added (Settings > Post settings > Add cover image)
+[ ] Audio block added for Essay reading (native upload)
+[ ] Audio block added for AI Discussion (native upload)
+[ ] Video link and Read online link are clickable
+[ ] Section headers formatted as Heading 1
+[ ] Blockquotes formatted using the Quote block
+[ ] Footer links are clickable
+[ ] Set post to send as email + publish to web
+[ ] Share the published URL to your other platforms after posting

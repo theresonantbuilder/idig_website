@@ -1,0 +1,45 @@
+Something is waking up in the digital world — and it has never been awake before. After 20 years of noise, the tools to build for genuine human resonance have finally arrived. The question is whether we have the will to use them.
+
+This AI-generated video explainer breaks down the opening essay of The Resonant Builders series — exploring the slow decay of digital platforms, the mathematics of Hilbert Space vectors, and the iDIG protocol: a discovery engine designed to align human resonance rather than harvest human attention.
+
+Topics covered:
+→ Enshittification — how platforms pivot from serving users to harvesting them
+→ The shift from keyword matching to semantic, vector-based discovery
+→ AMC Networks and the early proof that deep context beats algorithmic noise
+→ Alexander Wendt's Quantum Social Science and the power of the Observer
+→ Jerome Busemeyer's Hilbert Space research and what it means for human decision-making
+→ The iDIG protocol — geometry of words, representative breadcrumbs, and vector alignment
+→ Magnitude vs. amplitude — why the loudest signal is rarely the right one
+→ The library metaphor — what resonant discovery could feel like in everyday life
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📖 Read the full essay + listen to the audio:
+https://i-dig.io/theresonantbuilders/the-awakening
+
+🎙 Listen to Essay (audio narration):
+https://i-dig.io/theresonantbuilders/the-awakening?play=essay
+
+🤖 AI Discussion (NotebookLM deep dive):
+https://i-dig.io/theresonantbuilders/the-awakening?play=discussion
+
+📬 Subscribe to The Resonant Builders newsletter:
+https://i-dig.io/theresonantbuilders
+
+🎧 Listen on Spotify:
+https://open.spotify.com/show/6ompRuMKyiXQZoboUzjAy5
+
+🌐 i-DIG.io:
+https://i-dig.io
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+About The Resonant Builders
+
+A weekly essay series exploring what happens when we stop building digital tools for retention and start building them for resonance. Hosted by J. Paul Duplantis, founder of i-DIG.io and author of the forthcoming manifesto We The Resonant Builders.
+
+Each essay is published with a narrated reading, an AI-generated discussion, and a video explainer — available on the website, Spotify, and Apple Podcasts.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#ResonantBuilders #iDIG #ObserverResonance #HilbertSpace #QuantumSocialScience #Enshittification #SemanticDiscovery #DigitalWellbeing #AIDiscovery #TheAwakening

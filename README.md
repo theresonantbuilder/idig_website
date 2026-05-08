@@ -36,7 +36,7 @@ git push           # triggers Vercel deploy
 | Styling | Tailwind CSS + @tailwindcss/typography |
 | Markdown | marked (render) + custom frontmatter parser |
 | Sanitization | DOMPurify |
-| Contact form | formsubmit.co (no backend required) |
+| Email list | Beehiiv (subscriber management) |
 | Hosting | Vercel |
 | Media storage | Backblaze B2 |
 
@@ -168,6 +168,18 @@ public/
   podcast.xml                 # Podcast RSS (iTunes-compatible)
   podcast-cover.jpg           # Podcast artwork (3000x3000 recommended for Apple)
 ```
+
+---
+
+## Email Subscribers — Beehiiv
+
+All subscribe forms on the site post directly to Beehiiv. No API key required for the embedded form endpoint.
+
+- **Platform:** beehiiv.com
+- **Form UUID:** `de9e33f8-2ecf-4b3c-973d-bf9dc69eb2ac`
+- **Endpoint:** `https://api.beehiiv.com/v2/forms/de9e33f8-2ecf-4b3c-973d-bf9dc69eb2ac/subscriptions`
+- **Forms wired up:** Homepage subscribe strip, Post page subscribe callout
+- **Subscriber list:** managed at beehiiv.com dashboard → Audience
 
 ---
 

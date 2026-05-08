@@ -9,6 +9,7 @@ const TYPE_COLORS: Record<string, string> = {
   video: 'bg-red-900/40 text-red-300 border-red-700/50',
   podcast: 'bg-emerald-900/40 text-emerald-300 border-emerald-700/50',
   interview: 'bg-purple-900/40 text-purple-300 border-purple-700/50',
+  commentary: 'bg-teal-900/40 text-teal-300 border-teal-700/50',
 };
 
 function formatDate(dateStr: string) {
@@ -110,14 +111,10 @@ function SubscribeCallout() {
     if (!email) return;
     setStatus('sending');
     try {
-      const res = await fetch('https://formsubmit.co/ajax/paul@i-dig.io', {
+      const res = await fetch('https://api.beehiiv.com/v2/forms/de9e33f8-2ecf-4b3c-973d-bf9dc69eb2ac/subscriptions', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({
-          _subject: `New Resonant Builders subscriber: ${email}`,
-          _captcha: 'false',
-          email,
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
       });
       setStatus(res.ok ? 'done' : 'error');
     } catch {
@@ -254,7 +251,7 @@ export default function Post() {
 
           {/* Bottom share bar */}
           <div className="border-t border-slate-700 pt-8 flex items-center gap-3">
-            <span className="text-sm text-slate-500 mr-1">Share this essay:</span>
+            <span className="text-sm text-slate-500 mr-1">Share this {post.type}:</span>
             <ArticleShare summary={post.summary} />
           </div>
 

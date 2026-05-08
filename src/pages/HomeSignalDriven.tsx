@@ -27,14 +27,10 @@ export default function HomeSignalDriven() {
     if (!trbEmail) return;
     setTrbSubStatus('sending');
     try {
-      const res = await fetch('https://formsubmit.co/ajax/paul@i-dig.io', {
+      const res = await fetch('https://api.beehiiv.com/v2/forms/de9e33f8-2ecf-4b3c-973d-bf9dc69eb2ac/subscriptions', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({
-          _subject: `New Resonant Builders subscriber: ${trbEmail}`,
-          _captcha: 'false',
-          email: trbEmail,
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: trbEmail }),
       });
       setTrbSubStatus(res.ok ? 'done' : 'error');
     } catch {

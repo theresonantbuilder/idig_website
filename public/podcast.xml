@@ -29,7 +29,7 @@
 
     <!-- ============================================================
          EPISODE TEMPLATE — copy for each new essay
-         Listen to Essay = full | AI Discussion = bonus
+         Listen to Essay = full | AI Discussion = bonus | Video Explainer = bonus
          ============================================================
 
     <item>
@@ -124,6 +124,28 @@
       <enclosure url="https://f004.backblazeb2.com/file/idigdemo/AI+Discussion+-The+Fractal+Escape-+From+doom+srolling+to+zoom+scrolling.m4a" length="0" type="audio/mp4"/>
     </item>
 
+    <!-- EPISODE 5 — The Fractal Escape: Video Explainer -->
+    <item>
+      <title>The Fractal Escape: From Doom Scrolling to Zoom Scrolling — Video Explainer</title>
+      <link>https://i-dig.io/theresonantbuilders/the-fractal-escape</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/the-fractal-escape-video</guid>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        An AI-generated video explainer for the essay "The Fractal Escape: From Doom Scrolling
+        to Zoom Scrolling" — a visual walkthrough of the primordial brain, Hilbert Space
+        navigation, iDIG Movies, Social Worker Alignment, and the Trust Protocol.
+
+        Read the full essay at:
+        https://i-dig.io/theresonantbuilders/the-fractal-escape
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>An AI-generated video explainer for The Fractal Escape — Hilbert Space navigation, iDIG Movies, Social Worker Alignment, and the Trust Protocol.</itunes:summary>
+      <itunes:episode>5</itunes:episode>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/idigdemo/Video+explainer-The_fractal+escape-doom+scrool+zoom+scroll.mp4" length="0" type="video/mp4"/>
+    </item>
+
     <!-- EPISODE 1 — The Awakening: Listen to Essay -->
     <item>
       <title>The Awakening: Tuning into the Signal of Human Potential — Listen to Essay</title>
@@ -170,6 +192,28 @@
       <itunes:episode>2</itunes:episode>
       <itunes:episodeType>bonus</itunes:episodeType>
       <enclosure url="https://f004.backblazeb2.com/file/idigdemo/The+Awakening_NotebookLM+AI+discussion.m4a" length="45304097" type="audio/mp4"/>
+    </item>
+
+    <!-- EPISODE 6 — The Awakening: Video Explainer -->
+    <item>
+      <title>The Awakening: Tuning into the Signal of Human Potential — Video Explainer</title>
+      <link>https://i-dig.io/theresonantbuilders/the-awakening</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/the-awakening-video</guid>
+      <pubDate>Mon, 14 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        An AI-generated video explainer for the essay "The Awakening: Tuning into the Signal
+        of Human Potential" — a visual walkthrough of enshittification, Quantum Social Science,
+        Hilbert Space vectors, and what it means to build for observer resonance.
+
+        Read the full essay at:
+        https://i-dig.io/theresonantbuilders/the-awakening
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>An AI-generated video explainer for The Awakening — enshittification, Quantum Social Science, Hilbert Space vectors, and building for observer resonance.</itunes:summary>
+      <itunes:episode>6</itunes:episode>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/idigdemo/The+Awakening_Notebook+LM+Explainer+Video.mp4" length="0" type="video/mp4"/>
     </item>
 
   </channel>

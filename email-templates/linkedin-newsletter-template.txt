@@ -1,0 +1,87 @@
+╔══════════════════════════════════════════════════════════════════╗
+  LINKEDIN NEWSLETTER TEMPLATE — The Resonant Builders
+  Paste into LinkedIn Newsletter editor. Replace all [BRACKETS].
+  LinkedIn editor: Newsletter > Write > paste section by section.
+╚══════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NEWSLETTER TITLE (set once in LinkedIn settings, not per issue):
+  The Resonant Builders
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ISSUE HEADLINE  →  paste into the LinkedIn "Title" field
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[ESSAY TITLE]: [ESSAY SUBTITLE]
+
+EXAMPLE:
+The Fractal Escape: From Doom Scrolling to Zoom Scrolling
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BODY CONTENT  →  paste into the LinkedIn editor body
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The Resonant Builders  ·  Issue #[NUMBER]  ·  [MONTH DD, YYYY]
+
+
+[ESSAY SUMMARY — one sentence, italic in the editor]
+
+EXAMPLE:
+Doom scrolling hijacks the primordial brain with a relentless stream of micro-shocks. Zoom scrolling offers a way out — navigating information as a fractal geometry of resonance rather than a flat feed of noise.
+
+─────────────────────────────────────────────────────────────────
+
+🎙 Listen to Essay → [ESSAY AUDIO LINK]
+🤖 AI Discussion  → [DISCUSSION AUDIO LINK]
+🎬 Video Explainer → [VIDEO LINK]
+📖 Read online    → https://i-dig.io/theresonantbuilders/[SLUG]
+
+EXAMPLE LINKS:
+🎙 Listen to Essay → https://i-dig.io/theresonantbuilders/the-fractal-escape?play=essay
+🤖 AI Discussion  → https://i-dig.io/theresonantbuilders/the-fractal-escape?play=discussion
+🎬 Video Explainer → https://i-dig.io/theresonantbuilders/the-fractal-escape?play=video
+📖 Read online    → https://i-dig.io/theresonantbuilders/the-fractal-escape
+
+─────────────────────────────────────────────────────────────────
+
+[PASTE OPENING TWO PARAGRAPHS OF ESSAY HERE]
+
+EXAMPLE:
+It starts with a single thumb-flick. You're waiting for the coffee to brew, or perhaps you're lying in bed, intending to check the weather. Suddenly, the "For You" feed takes the wheel. One minute you're watching a recipe for sourdough; the next, you're four layers deep into a debate about 1990s cinematic tropes, followed by a series of high-octane "fails."
+
+Two hours vanish. Your coffee is cold, your back aches, and your mind feels like it's been scrubbed with steel wool. I am as guilty of this as anyone. There is a specific, haunting realization that hits around the ninety-minute mark — a silent scream in the back of your head saying, "Put the phone down. Escape." But the hand doesn't move. You are locked in a digital tractor beam of nonsense.
+
+─────────────────────────────────────────────────────────────────
+
+[SECTION HEADER — use Heading 2 in LinkedIn editor]
+
+[SECTION BODY]
+
+[REPEAT FOR EACH SECTION]
+
+─────────────────────────────────────────────────────────────────
+
+— J. Paul Duplantis
+Observer, Builder, and founder of i-DIG.io
+
+─────────────────────────────────────────────────────────────────
+
+📬 Subscribe to The Resonant Builders → https://i-dig.io/theresonantbuilders
+🎧 Listen on Spotify → https://open.spotify.com/show/6ompRuMKyiXQZoboUzjAy5
+[🎧 Listen on Apple Podcasts → [APPLE PODCASTS LINK WHEN READY]]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LINKEDIN EDITOR CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[ ] Paste headline into the Title field
+[ ] Add a cover image (recommend the podcast cover art or an essay-specific image)
+[ ] Make the summary line italic
+[ ] Format each section header as Heading 2
+[ ] Make the 🎙🤖🎬📖 links clickable (highlight text → insert link)
+[ ] Make the signature and footer links clickable
+[ ] Preview before publishing
+[ ] Publish and share to your LinkedIn feed as a post to drive traffic

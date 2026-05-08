@@ -3,15 +3,24 @@ import { useLocation } from 'wouter';
 import { getAllPostMeta } from '../lib/posts';
 import type { PostMeta } from '../types/post';
 
-type ContentFilter = 'all' | 'essay' | 'interview';
+type ContentFilter = 'all' | 'essay' | 'interview' | 'commentary';
 
-function getContentType(post: PostMeta): 'essay' | 'interview' {
-  return post.type === 'interview' ? 'interview' : 'essay';
+function getContentType(post: PostMeta): 'essay' | 'interview' | 'commentary' {
+  if (post.type === 'interview') return 'interview';
+  if (post.type === 'commentary') return 'commentary';
+  return 'essay';
 }
 
-const CONTENT_BADGE: Record<'essay' | 'interview', string> = {
-  essay:     'bg-blue-900/40 text-blue-300 border-blue-700/50',
-  interview: 'bg-purple-900/40 text-purple-300 border-purple-700/50',
+const CONTENT_BADGE: Record<'essay' | 'interview' | 'commentary', string> = {
+  essay:       'bg-blue-900/40 text-blue-300 border-blue-700/50',
+  interview:   'bg-purple-900/40 text-purple-300 border-purple-700/50',
+  commentary:  'bg-teal-900/40 text-teal-300 border-teal-700/50',
+};
+
+const CONTENT_LABEL: Record<'essay' | 'interview' | 'commentary', string> = {
+  essay:      'Essay',
+  interview:  'Interview',
+  commentary: 'Commentary',
 };
 
 function formatDate(dateStr: string) {
@@ -91,9 +100,10 @@ export default function TheResonantBuilders() {
             <div className="flex items-center gap-3">
               <span className="text-xs font-bold text-slate-500 uppercase tracking-widest shrink-0">Content</span>
               <div className="flex flex-wrap gap-2">
-                <FilterBtn active={contentFilter === 'all'}       onClick={() => setContentFilter('all')}>All</FilterBtn>
-                <FilterBtn active={contentFilter === 'essay'}     onClick={() => setContentFilter('essay')}>Essays</FilterBtn>
-                <FilterBtn active={contentFilter === 'interview'} onClick={() => setContentFilter('interview')}>Interviews</FilterBtn>
+                <FilterBtn active={contentFilter === 'all'}         onClick={() => setContentFilter('all')}>All</FilterBtn>
+                <FilterBtn active={contentFilter === 'essay'}       onClick={() => setContentFilter('essay')}>Essays</FilterBtn>
+                <FilterBtn active={contentFilter === 'interview'}   onClick={() => setContentFilter('interview')}>Interviews</FilterBtn>
+                <FilterBtn active={contentFilter === 'commentary'}  onClick={() => setContentFilter('commentary')}>Commentary</FilterBtn>
               </div>
             </div>
 
@@ -131,7 +141,7 @@ export default function TheResonantBuilders() {
                 >
                   <div className="flex items-center justify-between mb-4">
                     <span className={`text-xs font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full border ${CONTENT_BADGE[contentType]}`}>
-                      {contentType === 'essay' ? 'Essay' : 'Interview'}
+                      {CONTENT_LABEL[contentType]}
                     </span>
                     <div className="flex items-center gap-2">
                       {isUpcoming && (
