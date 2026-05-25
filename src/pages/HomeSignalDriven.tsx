@@ -188,9 +188,9 @@ export default function HomeSignalDriven() {
                       <p className="text-sm text-slate-400 leading-relaxed mb-4">{latestPost.summary}</p>
 
                       <MediaPlayer
-                        audioUrl={latestPost.audioUrl}
-                        discussionUrl={latestPost.discussionUrl}
-                        videoUrl={latestPost.videoUrl}
+                        audioUrl={latestPost.audioUrl}         audioLabel={latestPost.audioLabel}
+                        discussionUrl={latestPost.discussionUrl} discussionLabel={latestPost.discussionLabel}
+                        videoUrl={latestPost.videoUrl}         videoLabel={latestPost.videoLabel}
                       />
 
                       <button
