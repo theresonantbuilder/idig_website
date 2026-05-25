@@ -49,8 +49,11 @@ function parsePost(raw: string, slug: string): Post {
     summary:  (data.summary  as string)   ?? '',
     content:  marked(content) as string,
     audioUrl:      data.audioUrl      as string | undefined,
+    audioLabel:    data.audioLabel    as string | undefined,
     discussionUrl: data.discussionUrl as string | undefined,
+    discussionLabel: data.discussionLabel as string | undefined,
     videoUrl:      data.videoUrl      as string | undefined,
+    videoLabel:    data.videoLabel    as string | undefined,
     tags:     (data.tags     as string[]) ?? [],
     draft:    data.draft === 'true' || data.draft === true,
   };

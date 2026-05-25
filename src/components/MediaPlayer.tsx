@@ -4,8 +4,11 @@ type Track = 'essay' | 'discussion' | 'video';
 
 interface Props {
   audioUrl?: string;
+  audioLabel?: string;
   discussionUrl?: string;
+  discussionLabel?: string;
   videoUrl?: string;
+  videoLabel?: string;
 }
 
 function PlayIcon() {
@@ -40,7 +43,7 @@ function formatTime(s: number) {
   return `${m}:${sec.toString().padStart(2, '0')}`;
 }
 
-export default function MediaPlayer({ audioUrl, discussionUrl, videoUrl }: Props) {
+export default function MediaPlayer({ audioUrl, audioLabel, discussionUrl, discussionLabel, videoUrl, videoLabel }: Props) {
   const availableTracks: Track[] = [
     ...(audioUrl      ? (['essay']      as Track[]) : []),
     ...(discussionUrl ? (['discussion'] as Track[]) : []),
@@ -92,9 +95,9 @@ export default function MediaPlayer({ audioUrl, discussionUrl, videoUrl }: Props
   }
 
   const tabLabel: Record<Track, string> = {
-    essay:      '🎙 Listen to Essay',
-    discussion: '🤖 AI Discussion',
-    video:      '🎬 Explainer Video',
+    essay:      audioLabel      ?? '🎙 Listen to Essay',
+    discussion: discussionLabel ?? '🤖 AI Discussion',
+    video:      videoLabel      ?? '🎬 Explainer Video',
   };
 
   const activeAudioUrl = track === 'essay' ? audioUrl : track === 'discussion' ? discussionUrl : undefined;

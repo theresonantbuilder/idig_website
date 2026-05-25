@@ -222,7 +222,11 @@ export default function Post() {
           </div>
 
           {/* Inline media player — renders only when audio or video exists */}
-          <MediaPlayer audioUrl={post.audioUrl} discussionUrl={post.discussionUrl} videoUrl={post.videoUrl} />
+          <MediaPlayer
+            audioUrl={post.audioUrl}      audioLabel={post.audioLabel}
+            discussionUrl={post.discussionUrl} discussionLabel={post.discussionLabel}
+            videoUrl={post.videoUrl}      videoLabel={post.videoLabel}
+          />
 
           {/* Rendered markdown */}
           <article
