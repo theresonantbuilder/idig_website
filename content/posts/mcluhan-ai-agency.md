@@ -4,11 +4,11 @@ date: "2026-05-25"
 type: "essay"
 summary: "McLuhan predicted that the computer would extend our central nervous system in a global embrace. Today's AI fulfills that prophecy — but his framework is less a warning about the rise of the machine and more a diagnostic map for builders who want to preserve human agency in an ambient AI landscape."
 audioUrl: "https://f004.backblazeb2.com/file/McLuhanAIandtheArchitectureofAgency/Audio+Narration_McLuhan%2C_AI%2C_and_the_Architecture_of_Agency.mp3"
-audioLabel: "🎙 Audio Narration by Eleven Labs"
+audioLabel: "Audio Narration by Eleven Labs"
 discussionUrl: "https://f004.backblazeb2.com/file/McLuhanAIandtheArchitectureofAgency/Notebook+LM+Podcasters+McLuhan+AI+and+the+Architecture+of+Agency.m4a"
-discussionLabel: "🎙 Podcasters Breakdown by Notebook LM"
+discussionLabel: "Podcasters Breakdown by Notebook LM"
 videoUrl: "https://f004.backblazeb2.com/file/McLuhanAIandtheArchitectureofAgency/Notebook+LM+-+Cinema+McLuhan+AI+and+the+Architecture.mp4"
-videoLabel: "🎬 Cinematic Overview by Notebook LM"
+videoLabel: "Cinematic Overview by Notebook LM"
 tags: ["McLuhan", "AI", "agency", "counter-environment", "resonance", "builders"]
 ---
 

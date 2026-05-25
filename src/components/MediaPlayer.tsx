@@ -95,9 +95,15 @@ export default function MediaPlayer({ audioUrl, audioLabel, discussionUrl, discu
   }
 
   const tabLabel: Record<Track, string> = {
-    essay:      audioLabel      ?? '🎙 Listen to Essay',
-    discussion: discussionLabel ?? '🤖 AI Discussion',
-    video:      videoLabel      ?? '🎬 Explainer Video',
+    essay:      '🎙 Listen to Essay',
+    discussion: '🤖 AI Discussion',
+    video:      '🎬 Cinematic Overview',
+  };
+
+  const trackSubtitle: Partial<Record<Track, string>> = {
+    essay:      audioLabel,
+    discussion: discussionLabel,
+    video:      videoLabel,
   };
 
   const activeAudioUrl = track === 'essay' ? audioUrl : track === 'discussion' ? discussionUrl : undefined;
@@ -178,6 +184,11 @@ export default function MediaPlayer({ audioUrl, audioLabel, discussionUrl, discu
             {formatTime(duration)}
           </span>
         </div>
+      )}
+
+      {/* Model attribution subtitle */}
+      {trackSubtitle[track] && (
+        <p className="px-4 pt-0.5 pb-1 text-xs text-slate-500 italic">{trackSubtitle[track]}</p>
       )}
 
       {/* Per-track share link */}
