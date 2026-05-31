@@ -109,24 +109,21 @@ export default function MentalHealthPathways() {
               {[
                 {
                   label: 'Today', symbol: '⊗', accent: '#EF4444',
-                  bg: '#FEF2F2', border: '#FECACA',
                   title: 'Peak Burden at Peak Vulnerability',
                   body: 'Before reaching care, a person in crisis must navigate insurance rules, Medicaid eligibility, waitlists, intake requirements, and transportation gaps — demanding peak executive functioning at the exact moment their capacity is lowest.',
                 },
                 {
                   label: 'The Constraint', symbol: '≈', accent: '#D97706',
-                  bg: '#FFFBEB', border: '#FDE68A',
                   title: 'Funding Gets Absorbed, Not Deployed',
                   body: 'City, state, and philanthropic dollars intended for community mental health routinely disappear into administrative overhead, billing infrastructure, and institutional gatekeeping before they reach the person who needs them.',
                 },
                 {
                   label: 'The Hypothesis', symbol: '◎', accent: '#4F46E5',
-                  bg: '#EEF2FF', border: '#C7D2FE',
                   title: 'A Direct Line from Funding to Services',
                   body: 'A citizen-powered navigation layer — asset-light, radically transparent, and bypass-capable — can route people to existing resources faster while moving community funding directly to the outcomes it was meant to achieve.',
                 },
               ].map((card, i) => (
-                <div key={i} className="rounded-2xl p-8" style={{ background: card.bg, border: `1px solid ${card.border}` }}>
+                <div key={i} className="rounded-2xl p-8 bg-white" style={{ border: '1px solid rgba(15,23,42,0.08)' }}>
                   <div className="flex items-center gap-2.5 mb-4">
                     <span style={{ fontSize: '1.1rem', color: card.accent }}>{card.symbol}</span>
                     <span className="text-[0.68rem] font-extrabold tracking-[0.18em] uppercase" style={{ color: card.accent }}>{card.label}</span>

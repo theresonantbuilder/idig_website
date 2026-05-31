@@ -111,24 +111,21 @@ export default function IDIGMovies() {
               {[
                 {
                   label: 'Today', symbol: '⊗', accent: '#EF4444',
-                  bg: '#FEF2F2', border: '#FECACA',
                   title: 'Popularity Over Resonance',
                   body: 'Streaming algorithms surface what the largest number of people finished watching. They mistake completion for resonance and trending for truth. The film that would genuinely move you is buried under what moved the masses.',
                 },
                 {
                   label: 'The Constraint', symbol: '≈', accent: '#D97706',
-                  bg: '#FFFBEB', border: '#FDE68A',
                   title: 'Genre Is a Lossy Format',
                   body: 'Tagging a film as "Drama" or "Thriller" strips away everything that actually matters — the specific emotional texture, the underlying archetype, the thematic vector that makes it resonate with a particular person at a particular moment.',
                 },
                 {
                   label: 'The Hypothesis', symbol: '◎', accent: '#4F46E5',
-                  bg: '#EEF2FF', border: '#C7D2FE',
                   title: 'Cinema as Resonance Space',
                   body: 'If films are mapped not as tagged items but as vectors of narrative texture and emotional geometry — and if the observer\'s current state of curiosity is similarly mapped — genuine alignment becomes discoverable for the first time.',
                 },
               ].map((card, i) => (
-                <div key={i} className="rounded-2xl p-8" style={{ background: card.bg, border: `1px solid ${card.border}` }}>
+                <div key={i} className="rounded-2xl p-8 bg-white" style={{ border: '1px solid rgba(15,23,42,0.08)' }}>
                   <div className="flex items-center gap-2.5 mb-4">
                     <span style={{ fontSize: '1.1rem', color: card.accent }}>{card.symbol}</span>
                     <span className="text-[0.68rem] font-extrabold tracking-[0.18em] uppercase" style={{ color: card.accent }}>{card.label}</span>

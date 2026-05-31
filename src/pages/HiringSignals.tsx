@@ -114,24 +114,21 @@ export default function HiringSignals() {
               {[
                 {
                   label: 'Today', symbol: '⊗', accent: '#EF4444',
-                  bg: '#FEF2F2', border: '#FECACA',
                   title: 'Fragmented & Siloed',
                   body: 'Candidate data lives in a dozen proprietary systems. Talent signals are locked behind walls. The most capable individuals never enter the field of discovery because the cost of being seen is too high.',
                 },
                 {
                   label: 'The Constraint', symbol: '≈', accent: '#D97706',
-                  bg: '#FFFBEB', border: '#FDE68A',
                   title: 'Platform Incentive Mismatch',
                   body: 'Platforms are incentivized to maximize engagement within their walls — not to facilitate genuine alignment. The candidate becomes a commodity, not an observer with agency.',
                 },
                 {
                   label: 'The Hypothesis', symbol: '◎', accent: '#4F46E5',
-                  bg: '#EEF2FF', border: '#C7D2FE',
                   title: 'Open Resonance Protocol',
                   body: 'If talent data is treated as a personal asset governed by open standards — discoverable by resonance, not by platform participation — alignment becomes possible for the first time.',
                 },
               ].map((card, i) => (
-                <div key={i} className="rounded-2xl p-8" style={{ background: card.bg, border: `1px solid ${card.border}` }}>
+                <div key={i} className="rounded-2xl p-8 bg-white" style={{ border: '1px solid rgba(15,23,42,0.08)' }}>
                   <div className="flex items-center gap-2.5 mb-4">
                     <span style={{ fontSize: '1.1rem', color: card.accent }}>{card.symbol}</span>
                     <span className="text-[0.68rem] font-extrabold tracking-[0.18em] uppercase" style={{ color: card.accent }}>{card.label}</span>
