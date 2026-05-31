@@ -2,9 +2,10 @@ import { useState } from 'react';
 import { useLocation } from 'wouter';
 
 const NAV_ITEMS = [
-  { label: 'About J. Paul',       path: '/about' },
+  { label: 'About J. Paul',        path: '/about' },
   { label: 'The Resonant Builders', path: '/theresonantbuilders' },
-  { label: 'HiringSignals.ai',    path: '/hiringsignals' },
+  { label: 'iDIG Movies',          path: '/idigmovies' },
+  { label: 'HiringSignals.ai',     path: '/hiringsignals' },
 ];
 
 export default function NavBar() {

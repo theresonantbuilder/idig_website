@@ -4,12 +4,14 @@ import TheResonantBuilders from "./pages/TheResonantBuilders";
 import Post from "./pages/Post";
 import AboutPaul from "./pages/AboutPaul";
 import HiringSignals from "./pages/HiringSignals";
+import IDIGMovies from "./pages/IDIGMovies";
 
 function App() {
   return (
     <Switch>
       <Route path="/" component={HomeSignalDriven} />
       <Route path="/about" component={AboutPaul} />
+      <Route path="/idigmovies" component={IDIGMovies} />
       <Route path="/hiringsignals" component={HiringSignals} />
       <Route path="/theresonantbuilders" component={TheResonantBuilders} />
       <Route path="/theresonantbuilders/:slug" component={Post} />
