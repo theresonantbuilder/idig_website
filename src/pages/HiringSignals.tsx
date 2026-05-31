@@ -1,5 +1,6 @@
 import { useLocation } from 'wouter';
 import NavBar from '../components/NavBar';
+import ContactForm from '../components/ContactForm';
 
 // ── Reusable sub-components ───────────────────────────────────────────────────
 
@@ -444,13 +445,8 @@ export default function HiringSignals() {
               could look like. If these ideas resonate — whether you're a candidate,
               a hiring manager, or a fellow builder — we'd like to hear from you.
             </p>
-            <a
-              href="mailto:paul@i-dig.io"
-              className="inline-block px-11 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-lg transition text-sm tracking-wide"
-            >
-              Start a Conversation
-            </a>
-            <p className="mt-8 text-xs text-slate-700 italic">
+            <ContactForm subject="HiringSignals.ai Inquiry" />
+            <p className="mt-6 text-xs text-slate-700 italic">
               This is version 0.1 of an ongoing experiment. Nothing here is final.
             </p>
           </div>

@@ -1,4 +1,5 @@
 import NavBar from '../components/NavBar';
+import ContactForm from '../components/ContactForm';
 
 // ── Reusable sub-components ───────────────────────────────────────────────────
 
@@ -218,7 +219,7 @@ export default function IDIGMovies() {
                 {
                   number: '01', label: 'Narrative Vector', accent: '#0EA5E9',
                   title: 'The Texture of the Plot',
-                  body: 'Rather than matching genre labels, the narrative vector parses the deep prose of a film\'s story — extracting archetypes, tension structures, and the specific emotional mechanics of how a plot moves. This is the geometry of what actually happens on screen.',
+                  body: 'Rather than only matching genre labels, the narrative vector parses the deep prose of a film\'s story — extracting archetypes, tension structures, and the specific emotional mechanics of how a plot moves. This is the geometry of what actually happens on screen.',
                 },
                 {
                   number: '02', label: 'Thematic Vector', accent: '#7C3AED',
@@ -430,17 +431,13 @@ export default function IDIGMovies() {
               We're building in the open.<br />Come find what resonates.
             </h2>
             <p className="text-slate-400 mb-10 leading-relaxed text-lg">
-              iDIG Movies is an early-stage experiment proving the protocol in public.
-              If you're a film lover, a builder, or someone curious about what resonance-first
-              discovery could look like — we'd like to hear from you.
+              iDIG Movies is the first node of the iDIG Media Protocol — a broader framework
+              that will extend resonance-first discovery to books, comic books, and magazines.
+              Cinema is where we prove the math. If you're a film lover, a builder, or someone
+              curious about what this could look like across all of media — we'd like to hear from you.
             </p>
-            <a
-              href="mailto:paul@i-dig.io"
-              className="inline-block px-11 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-lg transition text-sm tracking-wide"
-            >
-              Get in Touch
-            </a>
-            <p className="mt-8 text-xs text-slate-700 italic">
+            <ContactForm subject="iDIG Movies Inquiry" />
+            <p className="mt-6 text-xs text-slate-700 italic">
               This is version 0.1 of an ongoing experiment. Nothing here is final.
             </p>
           </div>
