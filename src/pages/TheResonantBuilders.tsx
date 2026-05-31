@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useLocation } from 'wouter';
+import NavBar from '../components/NavBar';
 import { getAllPostMeta } from '../lib/posts';
 import type { PostMeta } from '../types/post';
 
@@ -82,23 +83,7 @@ export default function TheResonantBuilders() {
   return (
     <div className="min-h-screen bg-slate-900 font-sans text-slate-300 selection:bg-blue-900">
 
-      {/* Navigation */}
-      <nav className="fixed w-full bg-white border-b border-slate-200 z-50">
-        <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div onClick={() => navigate('/')} className="flex items-center cursor-pointer select-none group">
-            <div className="font-bold text-2xl md:text-3xl tracking-tight text-slate-800 group-hover:opacity-80 transition">
-              i-DIG<span className="text-blue-600">.io</span>
-            </div>
-            <span className="hidden md:block ml-6 pl-6 border-l-2 border-slate-300 text-lg text-slate-500 font-medium">
-              Signal-Driven Discovery & Matching
-            </span>
-          </div>
-          <div className="hidden md:flex space-x-8 text-base font-medium text-slate-600">
-            <button onClick={() => navigate('/about')} className="hover:text-blue-600 transition">About J. Paul</button>
-            <button className="text-amber-500 cursor-default">The Resonant Builders</button>
-          </div>
-        </div>
-      </nav>
+      <NavBar />
 
       <main className="pt-28 pb-20">
         <div className="max-w-6xl mx-auto px-6">
