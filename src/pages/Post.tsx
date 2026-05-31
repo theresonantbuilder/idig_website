@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useLocation, useParams } from 'wouter';
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 import DOMPurify from 'dompurify';
 import { getPostBySlug } from '../lib/posts';
 import MediaPlayer from '../components/MediaPlayer';
@@ -247,15 +248,7 @@ export default function Post() {
         </div>
       </main>
 
-      <footer className="border-t border-slate-800 py-8">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <span className="font-bold text-slate-400">i-DIG.io</span>
-            <p className="text-slate-600 text-sm mt-1">Signal-Driven Discovery & Matching</p>
-          </div>
-          <div className="text-sm text-slate-600">&copy; 2026 i-DIG.io. All rights reserved.</div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

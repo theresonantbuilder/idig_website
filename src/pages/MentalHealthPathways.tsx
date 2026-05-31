@@ -1,5 +1,6 @@
 import NavBar from '../components/NavBar';
 import ContactForm from '../components/ContactForm';
+import Footer from '../components/Footer';
 
 // ── Reusable sub-components ───────────────────────────────────────────────────
 
@@ -444,14 +445,7 @@ export default function MentalHealthPathways() {
 
       </main>
 
-      {/* Footer */}
-      <footer className="border-t py-5 px-10 flex items-center justify-center gap-1.5"
-        style={{ background: '#0A1628', borderColor: 'rgba(255,255,255,0.06)' }}>
-        <span className="text-xs text-slate-600 tracking-wide">Powered by</span>
-        <a href="/" className="text-xs font-bold text-[#818CF8] tracking-wide hover:text-indigo-300 transition">
-          i-DIG.io
-        </a>
-      </footer>
+      <Footer />
 
     </div>
   );
