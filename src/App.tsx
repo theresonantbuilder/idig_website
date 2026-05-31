@@ -5,6 +5,7 @@ import Post from "./pages/Post";
 import AboutPaul from "./pages/AboutPaul";
 import HiringSignals from "./pages/HiringSignals";
 import IDIGMovies from "./pages/IDIGMovies";
+import MentalHealthPathways from "./pages/MentalHealthPathways";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/about" component={AboutPaul} />
       <Route path="/idigmovies" component={IDIGMovies} />
       <Route path="/hiringsignals" component={HiringSignals} />
+      <Route path="/mentalhealthpathways" component={MentalHealthPathways} />
       <Route path="/theresonantbuilders" component={TheResonantBuilders} />
       <Route path="/theresonantbuilders/:slug" component={Post} />
     </Switch>

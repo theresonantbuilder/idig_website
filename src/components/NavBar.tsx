@@ -5,7 +5,8 @@ const NAV_ITEMS = [
   { label: 'About J. Paul',        path: '/about' },
   { label: 'The Resonant Builders', path: '/theresonantbuilders' },
   { label: 'iDIG Movies',          path: '/idigmovies' },
-  { label: 'HiringSignals.ai',     path: '/hiringsignals' },
+  { label: 'HiringSignals.ai',          path: '/hiringsignals' },
+  { label: 'Mental Health Pathways',    path: '/mentalhealthpathways' },
 ];
 
 export default function NavBar() {
