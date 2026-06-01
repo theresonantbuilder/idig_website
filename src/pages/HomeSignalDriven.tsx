@@ -131,11 +131,11 @@ export default function HomeSignalDriven() {
         <section className="py-20 px-6 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <span className="inline-block text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-indigo-500 mb-3">
+              <span className="inline-block text-xs font-extrabold tracking-[0.2em] uppercase text-indigo-500 mb-3">
                 The Protocol Nodes
               </span>
               <h2 className="font-extrabold text-slate-900 leading-tight tracking-tight"
-                style={{ fontSize: 'clamp(1.6rem,3.5vw,2.4rem)', letterSpacing: '-0.02em' }}>
+                style={{ fontSize: 'clamp(1.8rem,4vw,3rem)', letterSpacing: '-0.02em' }}>
                 Three experiments. One architecture.
               </h2>
             </div>
@@ -148,12 +148,12 @@ export default function HomeSignalDriven() {
                   className="text-left bg-white rounded-2xl p-7 hover:shadow-md transition-all duration-200"
                   style={{ border: '1px solid rgba(15,23,42,0.08)', borderTop: `3px solid ${p.accent}` }}
                 >
-                  <span className="inline-block text-[0.62rem] font-extrabold tracking-[0.18em] uppercase mb-4" style={{ color: p.accent }}>
+                  <span className="inline-block text-xs font-extrabold tracking-[0.18em] uppercase mb-4" style={{ color: p.accent }}>
                     {p.status}
                   </span>
-                  <h3 className="font-bold text-slate-900 text-xl mb-3">{p.title}</h3>
-                  <p className="text-sm text-slate-500 leading-relaxed mb-6">{p.description}</p>
-                  <span className="text-xs font-semibold" style={{ color: p.accent }}>{p.cta}</span>
+                  <h3 className="font-bold text-slate-900 text-2xl mb-3">{p.title}</h3>
+                  <p className="text-base text-slate-500 leading-relaxed mb-6">{p.description}</p>
+                  <span className="text-sm font-semibold" style={{ color: p.accent }}>{p.cta}</span>
                 </button>
               ))}
             </div>
