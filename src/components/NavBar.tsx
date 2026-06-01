@@ -28,7 +28,7 @@ export default function NavBar() {
         </div>
 
         {/* Tagline — absolutely centered */}
-        <span className="hidden md:block absolute left-1/2 -translate-x-1/2 text-base text-slate-500 font-medium pointer-events-none select-none">
+        <span className="hidden md:block absolute left-1/2 -translate-x-1/2 text-lg text-slate-500 font-medium pointer-events-none select-none">
           Signal-Driven Discovery &amp; Matching
         </span>
 
