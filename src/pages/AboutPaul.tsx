@@ -97,6 +97,59 @@ export default function AboutPaul() {
           {/* Divider */}
           <div className="border-t border-slate-200 mb-14"></div>
 
+          {/* The iDIG Protocol */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-light text-slate-900 mb-2">The iDIG Protocol</h2>
+            <p className="text-slate-500 mb-8">A discovery engine designed to surface meaningful signals across people, needs, and decisions — especially where intent, authority, and context are easy to miss.</p>
+
+            <div className="space-y-4 mb-8">
+              {[
+                { label: 'Signal Visibility',        desc: 'Whether you\'re a person looking for work, a community surfacing unmet needs, or a builder finding collaborators — the signals driving a match stay open and readable. No black box. No score you can\'t interrogate.' },
+                { label: 'Signal Stewardship',       desc: 'The people closest to an outcome — not the platform — define what signals matter. A hiring community, a neighborhood network, an individual: each shapes their own signal field and refines it through lived experience.' },
+                { label: 'Relational Geometry',      desc: 'Resonance between a person and an opportunity, a community and a cause, or a reader and a story is modeled as geometry in a shared semantic field — not a ranked list optimized for clicks.' },
+                { label: 'Deliberate Alignment',     desc: 'The protocol isn\'t designed to maximize engagement — it\'s designed to surface genuine alignment. Commercially, personally, and in communities, the goal is connection that actually fits, not attention captured at any cost.' },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100">
+                  <span className="mt-0.5 text-indigo-500 text-lg shrink-0">◈</span>
+                  <div>
+                    <p className="font-semibold text-sm text-slate-800 mb-0.5">{item.label}</p>
+                    <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Technical Environment */}
+          <div className="mb-14">
+            <h2 className="text-2xl font-light text-slate-900 mb-6">Technical Environment</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 bg-slate-50 rounded-xl border border-slate-100">
+              <div>
+                <p className="text-xs font-bold text-slate-700 uppercase tracking-widest mb-3">Core Stack</p>
+                <ul className="text-sm text-slate-500 space-y-1.5">
+                  <li>TypeScript / React</li>
+                  <li>Vite / Node.js</li>
+                  <li>PostgreSQL / Vercel</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-xs font-bold text-slate-700 uppercase tracking-widest mb-3">Data &amp; AI</p>
+                <ul className="text-sm text-slate-500 space-y-1.5">
+                  <li>IndexedDB</li>
+                  <li>OpenAI / Anthropic</li>
+                  <li>Vector embeddings</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-xs font-bold text-slate-700 uppercase tracking-widest mb-3">Dev Ecosystem</p>
+                <p className="text-sm text-slate-500 leading-relaxed">VS Code + MCP Servers, Trello, ChatGPT, NotebookLM</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="border-t border-slate-200 mb-14"></div>
+
           {/* Contact Form */}
           <div id="contact" className="mb-12">
             <h2 className="text-2xl font-light text-slate-900 mb-2">Get in touch</h2>
