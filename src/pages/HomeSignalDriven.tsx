@@ -144,7 +144,7 @@ export default function HomeSignalDriven() {
               {PROJECTS.map(p => (
                 <button
                   key={p.path}
-                  onClick={() => navigate(p.path)}
+                  onClick={() => { window.scrollTo(0, 0); navigate(p.path); }}
                   className="text-left bg-white rounded-2xl p-7 hover:shadow-md transition-all duration-200"
                   style={{ border: '1px solid rgba(15,23,42,0.08)', borderTop: `3px solid ${p.accent}` }}
                 >
