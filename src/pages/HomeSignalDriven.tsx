@@ -127,16 +127,14 @@ export default function HomeSignalDriven() {
           </div>
         </section>
 
-        {/* ══ THREE PROJECT CARDS — dark bg, white cards ════════════════════ */}
-        <section className="py-20 px-6" style={{
-          background: 'linear-gradient(180deg, #0A1628 0%, #0D1B35 100%)',
-        }}>
+        {/* ══ THREE PROJECT CARDS — white ═══════════════════════════════════ */}
+        <section className="py-20 px-6 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <span className="inline-block text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-[#818CF8] mb-3">
+              <span className="inline-block text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-indigo-500 mb-3">
                 The Protocol Nodes
               </span>
-              <h2 className="font-extrabold text-white leading-tight tracking-tight"
+              <h2 className="font-extrabold text-slate-900 leading-tight tracking-tight"
                 style={{ fontSize: 'clamp(1.6rem,3.5vw,2.4rem)', letterSpacing: '-0.02em' }}>
                 Three experiments. One architecture.
               </h2>
@@ -147,8 +145,8 @@ export default function HomeSignalDriven() {
                 <button
                   key={p.path}
                   onClick={() => navigate(p.path)}
-                  className="text-left bg-white rounded-2xl p-7 hover:shadow-lg transition-all duration-200"
-                  style={{ borderTop: `3px solid ${p.accent}` }}
+                  className="text-left bg-white rounded-2xl p-7 hover:shadow-md transition-all duration-200"
+                  style={{ border: '1px solid rgba(15,23,42,0.08)', borderTop: `3px solid ${p.accent}` }}
                 >
                   <span className="inline-block text-[0.62rem] font-extrabold tracking-[0.18em] uppercase mb-4" style={{ color: p.accent }}>
                     {p.status}
@@ -162,18 +160,20 @@ export default function HomeSignalDriven() {
           </div>
         </section>
 
-        {/* ══ WHAT IS iDIG — white ══════════════════════════════════════════ */}
-        <section className="bg-white py-24 px-8">
+        {/* ══ WHAT IS iDIG — dark ═══════════════════════════════════════════ */}
+        <section className="py-24 px-8" style={{
+          background: 'linear-gradient(150deg, #080F1E 0%, #1E1040 100%)',
+        }}>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-16 items-start">
             <div>
-              <span className="inline-block text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-indigo-500 mb-3">
+              <span className="inline-block text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-[#818CF8] mb-3">
                 The Core Idea
               </span>
-              <h2 className="font-extrabold text-slate-900 mb-6 leading-snug tracking-tight"
+              <h2 className="font-extrabold text-white mb-6 leading-snug tracking-tight"
                 style={{ fontSize: 'clamp(1.6rem,3.5vw,2.4rem)', letterSpacing: '-0.02em' }}>
                 Resonance, not retrieval.
               </h2>
-              <div className="space-y-4 text-slate-600 leading-relaxed">
+              <div className="space-y-4 text-slate-400 leading-relaxed">
                 <p>
                   Every dominant discovery system — streaming recommendations, hiring platforms,
                   social feeds — is built around the same assumption: that what the crowd
@@ -181,7 +181,7 @@ export default function HomeSignalDriven() {
                 </p>
                 <p>
                   The iDIG Protocol is built around a different premise. Meaning is not a fixed
-                  point — it is a <strong className="text-slate-800">direction</strong>. Shaped by
+                  point — it is a <strong className="text-slate-200">direction</strong>. Shaped by
                   context, interference, and the specific state of the person observing it.
                   Quantum Social Science and Hilbert Space mathematics give us the geometry to
                   model this — and LLMs give us the language enrichment to apply it at scale.
@@ -196,16 +196,17 @@ export default function HomeSignalDriven() {
 
             <div className="flex flex-col gap-4">
               {[
-                { color: '#4F46E5', label: 'Observer-First Discovery',   desc: 'The person\'s current state of curiosity, need, or intent is the entry point — not a demographic profile or a search keyword.' },
-                { color: '#0EA5E9', label: 'Vectors, Not Tags',          desc: 'Content, talent, and community resources are mapped as high-dimensional vectors — capturing nuance that flat metadata systematically strips away.' },
-                { color: '#7C3AED', label: 'Open Protocol Architecture', desc: 'iDIG is transitioning to a nonprofit open protocol — a neutral layer anyone can build on, designed to let genuine resonance outpace algorithmic noise.' },
-                { color: '#10B981', label: 'Asset-Light Deployment',     desc: 'Each node proves the protocol in a real-world domain. The math that works for cinema works for hiring, and for navigating a mental health system.' },
+                { color: '#818CF8', label: 'Observer-First Discovery',   desc: 'The person\'s current state of curiosity, need, or intent is the entry point — not a demographic profile or a search keyword.' },
+                { color: '#38BDF8', label: 'Vectors, Not Tags',          desc: 'Content, talent, and community resources are mapped as high-dimensional vectors — capturing nuance that flat metadata systematically strips away.' },
+                { color: '#A78BFA', label: 'Open Protocol Architecture', desc: 'iDIG is transitioning to a nonprofit open protocol — a neutral layer anyone can build on, designed to let genuine resonance outpace algorithmic noise.' },
+                { color: '#34D399', label: 'Asset-Light Deployment',     desc: 'Each node proves the protocol in a real-world domain. The math that works for cinema works for hiring, and for navigating a mental health system.' },
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3.5 p-4 bg-slate-50 rounded-xl border border-slate-100">
+                <div key={i} className="flex items-start gap-3.5 p-4 rounded-xl"
+                  style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}>
                   <span className="mt-0.5 text-lg shrink-0" style={{ color: item.color }}>◈</span>
                   <div>
-                    <p className="font-bold text-sm text-slate-900 mb-0.5">{item.label}</p>
-                    <p className="text-xs text-slate-500 leading-relaxed">{item.desc}</p>
+                    <p className="font-bold text-sm text-slate-200 mb-0.5">{item.label}</p>
+                    <p className="text-xs text-slate-400 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -213,36 +214,34 @@ export default function HomeSignalDriven() {
           </div>
         </section>
 
-        {/* ══ THE RESONANT BUILDERS — dark ══════════════════════════════════ */}
-        <section className="py-20 px-8" style={{
-          background: 'linear-gradient(150deg, #080F1E 0%, #0F1E3C 100%)',
-        }}>
+        {/* ══ THE RESONANT BUILDERS — white ═════════════════════════════════ */}
+        <section className="bg-slate-50 py-20 px-8 border-t border-slate-100">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10">
-              <span className="inline-block text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-amber-400 mb-3">
+              <span className="inline-block text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-amber-600 mb-3">
                 The Resonant Builders
               </span>
-              <h2 className="font-extrabold text-white leading-snug tracking-tight"
+              <h2 className="font-extrabold text-slate-900 leading-snug tracking-tight"
                 style={{ fontSize: 'clamp(1.6rem,3.5vw,2.4rem)', letterSpacing: '-0.02em' }}>
                 Essays, conversations, and ideas<br />from the build.
               </h2>
             </div>
 
             {/* Latest post card */}
-            <div className="bg-white/[0.04] border border-amber-700/30 rounded-2xl overflow-hidden mb-5">
-              <div className="flex items-center justify-between px-6 py-4 border-b border-white/[0.06]">
-                <span className="text-amber-400 text-xs font-bold uppercase tracking-widest">Latest Signal</span>
+            <div className="bg-white border border-amber-200 rounded-2xl overflow-hidden mb-5 shadow-sm">
+              <div className="flex items-center justify-between px-6 py-4 border-b border-amber-100 bg-amber-50">
+                <span className="text-amber-700 text-xs font-bold uppercase tracking-widest">Latest Signal</span>
                 <button onClick={() => navigate('/theresonantbuilders')}
-                  className="text-xs text-slate-500 hover:text-amber-400 transition">
+                  className="text-xs text-slate-400 hover:text-amber-600 transition">
                   All Essays →
                 </button>
               </div>
 
               {latestPost ? (
                 <div className="px-6 py-6">
-                  <h3 className="text-white font-medium text-lg leading-snug mb-1">{latestPost.title}</h3>
-                  <p className="text-xs text-slate-600 mb-4">{formatDate(latestPost.date)}</p>
-                  <p className="text-sm text-slate-400 leading-relaxed mb-5">{latestPost.summary}</p>
+                  <h3 className="text-slate-900 font-medium text-lg leading-snug mb-1">{latestPost.title}</h3>
+                  <p className="text-xs text-slate-400 mb-4">{formatDate(latestPost.date)}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed mb-5">{latestPost.summary}</p>
                   <MediaPlayer
                     audioUrl={latestPost.audioUrl}          audioLabel={latestPost.audioLabel}
                     discussionUrl={latestPost.discussionUrl} discussionLabel={latestPost.discussionLabel}
@@ -250,41 +249,41 @@ export default function HomeSignalDriven() {
                   />
                   <button
                     onClick={() => navigate(`/theresonantbuilders/${latestPost.slug}`)}
-                    className="mt-3 text-xs font-semibold text-amber-400 hover:text-amber-300 transition"
+                    className="mt-3 text-xs font-semibold text-amber-600 hover:text-amber-500 transition"
                   >
                     Read the full essay →
                   </button>
                 </div>
               ) : (
                 <div className="px-6 py-5">
-                  <p className="text-sm text-slate-500">First essay drops soon.</p>
+                  <p className="text-sm text-slate-400">First essay drops soon.</p>
                 </div>
               )}
             </div>
 
             {/* Subscribe strip */}
-            <div className="rounded-2xl px-6 py-6 border border-amber-700/20 bg-amber-900/10">
-              <p className="text-white font-light text-base mb-1">Stay in the signal.</p>
-              <p className="text-xs text-slate-500 mb-4">New essays every Monday — no noise, just signal.</p>
+            <div className="rounded-2xl px-6 py-6 bg-white border border-slate-200 shadow-sm">
+              <p className="text-slate-800 font-medium text-base mb-1">Stay in the signal.</p>
+              <p className="text-xs text-slate-400 mb-4">New essays every Monday — no noise, just signal.</p>
               {trbSubStatus === 'done' ? (
-                <p className="text-amber-400 text-xs font-medium">You're in. We'll signal you when the next essay drops.</p>
+                <p className="text-amber-600 text-xs font-medium">You're in. We'll signal you when the next essay drops.</p>
               ) : (
                 <form onSubmit={handleTrbSubscribe} className="flex gap-2">
                   <input
                     type="email" required placeholder="your@email.com"
                     value={trbEmail} onChange={e => setTrbEmail(e.target.value)}
-                    className="flex-1 min-w-0 bg-slate-800 border border-slate-600 rounded-lg px-3 py-2.5 text-xs text-slate-200 placeholder-slate-600 focus:outline-none focus:border-amber-500 transition"
+                    className="flex-1 min-w-0 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2.5 text-xs text-slate-700 placeholder-slate-400 focus:outline-none focus:border-amber-400 transition"
                   />
                   <button
                     type="submit" disabled={trbSubStatus === 'sending'}
-                    className="px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-900 text-xs font-semibold rounded-lg transition disabled:opacity-50 shrink-0"
+                    className="px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-white text-xs font-semibold rounded-lg transition disabled:opacity-50 shrink-0"
                   >
                     {trbSubStatus === 'sending' ? '…' : 'Subscribe'}
                   </button>
                 </form>
               )}
               {trbSubStatus === 'error' && (
-                <p className="text-red-400 text-xs mt-2">Something went wrong — try again or email paul@i-dig.io directly.</p>
+                <p className="text-red-500 text-xs mt-2">Something went wrong — try again or email paul@i-dig.io directly.</p>
               )}
             </div>
           </div>
@@ -292,7 +291,7 @@ export default function HomeSignalDriven() {
 
       </main>
 
-      <Footer />
+      <Footer variant="light" />
 
     </div>
   );
