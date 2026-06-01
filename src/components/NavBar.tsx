@@ -15,7 +15,7 @@ export default function NavBar() {
 
   return (
     <nav className="fixed w-full bg-white/90 backdrop-blur-md border-b border-slate-200 z-50">
-      <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div className="relative max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
 
         {/* Logo */}
         <div
@@ -25,10 +25,12 @@ export default function NavBar() {
           <div className="font-bold text-2xl md:text-3xl tracking-tight text-slate-800 group-hover:opacity-80 transition">
             i-DIG<span className="text-blue-600">.io</span>
           </div>
-          <span className="hidden md:block ml-6 pl-6 border-l-2 border-slate-300 text-lg text-slate-500 font-medium">
-            Signal-Driven Discovery &amp; Matching
-          </span>
         </div>
+
+        {/* Tagline — absolutely centered */}
+        <span className="hidden md:block absolute left-1/2 -translate-x-1/2 text-base text-slate-500 font-medium pointer-events-none select-none">
+          Signal-Driven Discovery &amp; Matching
+        </span>
 
         {/* Hamburger — always visible on the right */}
         <div className="relative">

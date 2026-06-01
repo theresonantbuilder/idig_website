@@ -105,7 +105,7 @@ export default function HomeSignalDriven() {
               display: 'inline-block',
             }}>
               <div className="rounded-full px-6 py-2" style={{ background: '#080F1E' }}>
-                <span className="text-[0.72rem] font-bold tracking-[0.2em] uppercase text-[#818CF8]">
+                <span className="text-[0.72rem] font-bold tracking-[0.2em] uppercase text-white">
                   An Open Protocol for Human Resonance
                 </span>
               </div>
