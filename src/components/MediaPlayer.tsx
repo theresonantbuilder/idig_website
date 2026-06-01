@@ -9,6 +9,7 @@ interface Props {
   discussionLabel?: string;
   videoUrl?: string;
   videoLabel?: string;
+  light?: boolean;
 }
 
 function PlayIcon() {
@@ -43,7 +44,7 @@ function formatTime(s: number) {
   return `${m}:${sec.toString().padStart(2, '0')}`;
 }
 
-export default function MediaPlayer({ audioUrl, audioLabel, discussionUrl, discussionLabel, videoUrl, videoLabel }: Props) {
+export default function MediaPlayer({ audioUrl, audioLabel, discussionUrl, discussionLabel, videoUrl, videoLabel, light = false }: Props) {
   const availableTracks: Track[] = [
     ...(audioUrl      ? (['essay']      as Track[]) : []),
     ...(discussionUrl ? (['discussion'] as Track[]) : []),
@@ -109,19 +110,23 @@ export default function MediaPlayer({ audioUrl, audioLabel, discussionUrl, discu
   const activeAudioUrl = track === 'essay' ? audioUrl : track === 'discussion' ? discussionUrl : undefined;
 
   return (
-    <div className="mb-8 bg-slate-800/60 border border-slate-700 rounded-xl overflow-hidden">
+    <div className={`mb-8 rounded-xl overflow-hidden ${light ? 'bg-white border border-slate-200' : 'bg-slate-800/60 border border-slate-700'}`}>
 
       {/* Track tabs — only when multiple tracks exist */}
       {showTabs && (
-        <div className="flex border-b border-slate-700">
+        <div className={`flex border-b ${light ? 'border-slate-200' : 'border-slate-700'}`}>
           {availableTracks.map(t => (
             <button
               key={t}
               onClick={() => switchTrack(t)}
               className={`flex-1 py-2.5 text-sm font-medium transition ${
                 track === t
-                  ? 'text-white border-b-2 border-blue-500 bg-slate-800/80'
-                  : 'text-slate-400 hover:text-slate-200'
+                  ? light
+                    ? 'text-slate-900 border-b-2 border-blue-500 bg-slate-50'
+                    : 'text-white border-b-2 border-blue-500 bg-slate-800/80'
+                  : light
+                    ? 'text-slate-500 hover:text-slate-800'
+                    : 'text-slate-400 hover:text-slate-200'
               }`}
             >
               {tabLabel[t]}
@@ -146,7 +151,7 @@ export default function MediaPlayer({ audioUrl, audioLabel, discussionUrl, discu
 
           {/* Label when only one track */}
           {!showTabs && (
-            <span className="text-xs font-medium text-slate-400 shrink-0">
+            <span className={`text-xs font-medium shrink-0 ${light ? 'text-slate-500' : 'text-slate-400'}`}>
               {tabLabel[track]}
             </span>
           )}
@@ -160,7 +165,7 @@ export default function MediaPlayer({ audioUrl, audioLabel, discussionUrl, discu
           </button>
 
           {/* Current time */}
-          <span className="text-xs text-slate-500 tabular-nums shrink-0 w-9 text-right">
+          <span className={`text-xs tabular-nums shrink-0 w-9 text-right ${light ? 'text-slate-400' : 'text-slate-500'}`}>
             {formatTime(currentTime)}
           </span>
 
@@ -180,7 +185,7 @@ export default function MediaPlayer({ audioUrl, audioLabel, discussionUrl, discu
           />
 
           {/* Duration */}
-          <span className="text-xs text-slate-500 tabular-nums shrink-0 w-9">
+          <span className={`text-xs tabular-nums shrink-0 w-9 ${light ? 'text-slate-400' : 'text-slate-500'}`}>
             {formatTime(duration)}
           </span>
         </div>
@@ -188,14 +193,14 @@ export default function MediaPlayer({ audioUrl, audioLabel, discussionUrl, discu
 
       {/* Model attribution subtitle */}
       {trackSubtitle[track] && (
-        <p className="px-4 pt-0.5 pb-1 text-xs text-slate-500 italic">{trackSubtitle[track]}</p>
+        <p className={`px-4 pt-0.5 pb-1 text-xs italic ${light ? 'text-slate-400' : 'text-slate-500'}`}>{trackSubtitle[track]}</p>
       )}
 
       {/* Per-track share link */}
       <div className="px-4 pb-3 flex justify-end">
         <button
           onClick={copyTrackLink}
-          className="flex items-center gap-1.5 text-xs text-slate-500 hover:text-slate-300 transition"
+          className={`flex items-center gap-1.5 text-xs transition ${light ? 'text-slate-400 hover:text-slate-600' : 'text-slate-500 hover:text-slate-300'}`}
         >
           <LinkIcon />
           {trackCopied ? 'Link copied!' : `Share ${tabLabel[track]}`}

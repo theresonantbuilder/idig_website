@@ -229,8 +229,8 @@ export default function HomeSignalDriven() {
 
             {/* Latest post card */}
             <div className="bg-white border border-amber-200 rounded-2xl overflow-hidden mb-5 shadow-sm">
-              <div className="flex items-center justify-between px-6 py-4 border-b border-amber-100 bg-amber-50">
-                <span className="text-amber-700 text-xs font-bold uppercase tracking-widest">Latest Signal</span>
+              <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100">
+                <span className="text-amber-600 text-xs font-bold uppercase tracking-widest">Latest Signal</span>
                 <button onClick={() => navigate('/theresonantbuilders')}
                   className="text-xs text-slate-400 hover:text-amber-600 transition">
                   All Essays →
@@ -246,6 +246,7 @@ export default function HomeSignalDriven() {
                     audioUrl={latestPost.audioUrl}          audioLabel={latestPost.audioLabel}
                     discussionUrl={latestPost.discussionUrl} discussionLabel={latestPost.discussionLabel}
                     videoUrl={latestPost.videoUrl}           videoLabel={latestPost.videoLabel}
+                    light
                   />
                   <button
                     onClick={() => navigate(`/theresonantbuilders/${latestPost.slug}`)}
