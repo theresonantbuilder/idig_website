@@ -134,7 +134,9 @@ export default function TheResonantBuilders() {
                 <div className="flex flex-wrap gap-2">
                   <FilterBtn active={contentFilter === 'all'}        onClick={() => setContentFilter('all')}>All</FilterBtn>
                   <FilterBtn active={contentFilter === 'essay'}      onClick={() => setContentFilter('essay')}>Essays</FilterBtn>
+                  {/* Hidden for now — re-enable when interview content exists
                   <FilterBtn active={contentFilter === 'interview'}  onClick={() => setContentFilter('interview')}>Interviews</FilterBtn>
+                  */}
                   <FilterBtn active={contentFilter === 'commentary'} onClick={() => setContentFilter('commentary')}>Commentary</FilterBtn>
                 </div>
               </div>
@@ -226,8 +228,8 @@ export default function TheResonantBuilders() {
                 );
               })}
 
-              {/* Coming Soon placeholders */}
-              {[{ label: 'Essay' }, { label: 'Interview' }].map((item, i) => (
+              {/* Coming Soon placeholders — Interview hidden for now, re-enable when interview content exists */}
+              {[{ label: 'Essay' }].map((item, i) => (
                 <div
                   key={i}
                   className="text-left bg-slate-50 border border-dashed border-slate-200 rounded-xl p-6 flex flex-col justify-between opacity-60"

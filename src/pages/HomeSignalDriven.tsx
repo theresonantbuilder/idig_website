@@ -264,8 +264,8 @@ export default function HomeSignalDriven() {
 
             {/* Subscribe strip */}
             <div className="rounded-2xl px-6 py-6 bg-white border border-slate-200 shadow-sm">
-              <p className="text-slate-800 font-medium text-base mb-1">Stay in the signal.</p>
-              <p className="text-xs text-slate-400 mb-4">New essays every Monday — no noise, just signal.</p>
+              <p className="text-slate-800 font-medium text-base mb-1">Stay in the signal. Subscribe to the Resonant Builders newsletter.</p>
+              <p className="text-xs text-slate-400 mb-4">No noise, just signal.</p>
               {trbSubStatus === 'done' ? (
                 <p className="text-amber-600 text-xs font-medium">You're in. We'll signal you when the next essay drops.</p>
               ) : (
