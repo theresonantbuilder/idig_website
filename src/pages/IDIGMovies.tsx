@@ -77,7 +77,17 @@ export default function IDIGMovies() {
               with who you are right now, not just what the crowd clicked last week.
             </p>
 
-            <p className="text-slate-700 text-sm italic">
+            <a
+              href="https://idig-movies-production-demo.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-bold text-white text-sm tracking-wide no-underline transition-all duration-200 hover:scale-105"
+              style={{ background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)', boxShadow: '0 0 20px rgba(79,70,229,0.4)' }}
+            >
+              Try the Live Demo ↗
+            </a>
+
+            <p className="text-slate-700 text-sm italic mt-6">
               Led by J. Paul Duplantis — version 0.1 of an ongoing experiment.
             </p>
           </div>

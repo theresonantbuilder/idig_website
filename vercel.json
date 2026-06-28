@@ -1,7 +1,5 @@
 {
   "rewrites": [
-    { "source": "/movies", "destination": "https://idig-movies-production-demo.vercel.app/" },
-    { "source": "/movies/:path*", "destination": "https://idig-movies-production-demo.vercel.app/:path*" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [

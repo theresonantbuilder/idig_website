@@ -22,6 +22,7 @@ function App() {
         <Route path="/" component={HomeSignalDriven} />
         <Route path="/about" component={AboutPaul} />
         <Route path="/idigmovies" component={IDIGMovies} />
+        <Route path="/movies">{() => { window.location.href = 'https://idig-movies-production-demo.vercel.app/'; return null; }}</Route>
         <Route path="/hiringsignals" component={HiringSignals} />
         <Route path="/mentalhealthpathways" component={MentalHealthPathways} />
         <Route path="/theresonantbuilders" component={TheResonantBuilders} />
