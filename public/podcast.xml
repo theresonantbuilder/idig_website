@@ -75,6 +75,79 @@
 
     ============================================================ -->
 
+    <!-- EPISODE 10 — The Geometry of Intent: Audio Narration -->
+    <item>
+      <title>The Geometry of Intent: Why Builders Should Design for Meaning, Not Keywords — Audio Narration by Eleven Labs</title>
+      <link>https://i-dig.io/theresonantbuilders/the-geometry-of-intent</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/the-geometry-of-intent-essay</guid>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        Search tools treat human queries like compliance checks — match the exact keyword or
+        the gate slams shut. Vector embeddings and the geometry of Hilbert space offer builders
+        a different foundation: one where context outweighs keywords, and discovery becomes a
+        matter of genuine proximity between meaning and intent.
+
+        Audio narration produced with Eleven Labs.
+
+        Read the full essay, watch the cinematic overview, and join the conversation at:
+        https://i-dig.io/theresonantbuilders/the-geometry-of-intent
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>Search tools treat human queries like compliance checks — match the exact keyword or the gate slams shut. Vector embeddings and the geometry of Hilbert space offer builders a different foundation where context outweighs keywords.</itunes:summary>
+      <itunes:duration>0:00</itunes:duration>
+      <itunes:episode>10</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/TheGeometryofIntent/Listen_To_Essay_The_Geometry_of_Intent_Why_Builders_Should_Design_for_Meaning%2C_Not_Keywords.mp3" length="0" type="audio/mpeg"/>
+    </item>
+
+    <!-- EPISODE 11 — The Geometry of Intent: Podcasters Breakdown -->
+    <item>
+      <title>The Geometry of Intent: Why Builders Should Design for Meaning, Not Keywords — Podcasters Breakdown by Notebook LM</title>
+      <link>https://i-dig.io/theresonantbuilders/the-geometry-of-intent</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/the-geometry-of-intent-discussion</guid>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        A Notebook LM podcasters breakdown of the essay "The Geometry of Intent: Why Builders
+        Should Design for Meaning, Not Keywords" — two voices exploring the ideas, implications,
+        and questions the essay raises: vector embeddings, Hilbert space, and what it means to
+        design discovery tools around the geometry of meaning instead of keyword matching.
+
+        Read the full essay at:
+        https://i-dig.io/theresonantbuilders/the-geometry-of-intent
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>A Notebook LM podcasters breakdown of The Geometry of Intent — vector embeddings, Hilbert space, and designing discovery tools around meaning instead of keywords.</itunes:summary>
+      <itunes:duration>0:00</itunes:duration>
+      <itunes:episode>11</itunes:episode>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/TheGeometryofIntent/AI+Discussion_How_Vector_Geometry_Maps_Human_Intent.m4a" length="0" type="audio/mp4"/>
+    </item>
+
+    <!-- EPISODE 12 — The Geometry of Intent: Cinematic Overview -->
+    <item>
+      <title>The Geometry of Intent: Why Builders Should Design for Meaning, Not Keywords — Cinematic Overview by Notebook LM</title>
+      <link>https://i-dig.io/theresonantbuilders/the-geometry-of-intent</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/the-geometry-of-intent-video</guid>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        A Notebook LM cinematic overview for the essay "The Geometry of Intent: Why Builders
+        Should Design for Meaning, Not Keywords" — a visual walkthrough of vector embeddings,
+        Hilbert space, and the geometry of intent across professional, systemic, emotional,
+        and societal examples.
+
+        Read the full essay at:
+        https://i-dig.io/theresonantbuilders/the-geometry-of-intent
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>A Notebook LM cinematic overview of The Geometry of Intent — vector embeddings, Hilbert space, and the geometry of intent across professional, systemic, emotional, and societal examples.</itunes:summary>
+      <itunes:episode>12</itunes:episode>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/TheGeometryofIntent/Cinematic+Overview_The_Geometry_of_Intent.mp4" length="0" type="video/mp4"/>
+    </item>
+
     <!-- EPISODE 7 — McLuhan, AI, and the Architecture of Agency: Audio Narration -->
     <item>
       <title>McLuhan, AI, and the Architecture of Agency — Audio Narration by Eleven Labs</title>
