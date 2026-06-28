@@ -227,6 +227,27 @@ export default function Post() {
             dangerouslySetInnerHTML={{ __html: html }}
           />
 
+          {/* iDIG Movies demo callout */}
+          {post.slug === 'the-geometry-of-stories-and-discovery' && (
+            <div className="my-12 bg-indigo-900/20 border border-indigo-700/40 rounded-xl p-6 md:p-8">
+              <div className="max-w-lg">
+                <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">iDIG Movies</p>
+                <h3 className="text-xl font-light text-white mb-2">Experience the live demo.</h3>
+                <p className="text-slate-400 text-sm mb-5">
+                  Explore the discovery space described in this essay. Choose your trails, rotate the dimensions, and see what resonates.
+                </p>
+                <a
+                  href="https://idig-movies-production-demo.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded-lg transition no-underline"
+                >
+                  Access the Live Demo
+                </a>
+              </div>
+            </div>
+          )}
+
           {/* Subscribe callout */}
           <SubscribeCallout />
 
