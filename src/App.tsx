@@ -5,7 +5,6 @@ import TheResonantBuilders from "./pages/TheResonantBuilders";
 import Post from "./pages/Post";
 import AboutPaul from "./pages/AboutPaul";
 import HiringSignals from "./pages/HiringSignals";
-import IDIGMovies from "./pages/IDIGMovies";
 import MentalHealthPathways from "./pages/MentalHealthPathways";
 
 function ScrollToTop() {
@@ -21,7 +20,6 @@ function App() {
       <Switch>
         <Route path="/" component={HomeSignalDriven} />
         <Route path="/about" component={AboutPaul} />
-        <Route path="/idigmovies" component={IDIGMovies} />
         <Route path="/movies">{() => { window.location.href = 'https://idig-movies-production-demo.vercel.app/'; return null; }}</Route>
         <Route path="/hiringsignals" component={HiringSignals} />
         <Route path="/mentalhealthpathways" component={MentalHealthPathways} />
