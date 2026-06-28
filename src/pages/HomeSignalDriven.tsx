@@ -32,8 +32,8 @@ const PROJECTS = [
     status: 'Active Build — iDIG Media Protocol',
     title: 'iDIG Movies',
     description: 'Cinema as the first proof of concept for the iDIG Protocol. Films mapped as vectors of narrative texture, emotional resonance, and thematic depth — surfacing what genuinely aligns with who you are right now.',
-    path: '/idigmovies',
-    cta: 'Explore iDIG Movies →',
+    path: '/movies',
+    cta: 'Access the Live iDIG Movies Demo →',
   },
   {
     accent: '#7C3AED',
