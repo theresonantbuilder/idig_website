@@ -3,12 +3,12 @@ title: "The Geometry of Stories and Discovery"
 date: "2026-06-28"
 type: "essay"
 summary: "iDIG Movies is a film discovery experience built on the idea that the right film finds you — not through what's popular or trending, but through what resonates with who you are and how you're feeling right now."
-audioUrl: ""
-audioLabel: ""
-discussionUrl: ""
-discussionLabel: ""
-videoUrl: ""
-videoLabel: ""
+audioUrl: "https://f004.backblazeb2.com/file/TheGeometryofStoriesandDiscovery/ElevenLabs_The+Geometry+of+Stories+and+Discovery.mp3"
+audioLabel: "Audio Narration by Eleven Labs"
+discussionUrl: "https://f004.backblazeb2.com/file/TheGeometryofStoriesandDiscovery/AI+Discussion_The+Geometry+of+Stories+and+Discovery.m4a"
+discussionLabel: "AI Discussion by Notebook LM"
+videoUrl: "https://f004.backblazeb2.com/file/TheGeometryofStoriesandDiscovery/Video+Preview+-+Idig+Movies..mp4"
+videoLabel: "Video Preview of the iDIG Movies Demo"
 tags: ["iDIG Movies", "discovery", "Hilbert space", "resonance", "cinema", "protocol", "builders"]
 draft: true
 ---
