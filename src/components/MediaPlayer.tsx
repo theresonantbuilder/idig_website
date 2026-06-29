@@ -98,7 +98,7 @@ export default function MediaPlayer({ audioUrl, audioLabel, discussionUrl, discu
   const tabLabel: Record<Track, string> = {
     essay:      '🎙 Listen to Essay',
     discussion: '🤖 AI Discussion',
-    video:      '🎬 Cinematic Overview',
+    video:      '🎬 Preview Live Demo',
   };
 
   const trackSubtitle: Partial<Record<Track, string>> = {
