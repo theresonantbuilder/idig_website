@@ -75,6 +75,77 @@
 
     ============================================================ -->
 
+    <!-- EPISODE 13 — The Geometry of Stories and Discovery: Audio Narration -->
+    <item>
+      <title>The Geometry of Stories and Discovery — Audio Narration by Eleven Labs</title>
+      <link>https://i-dig.io/theresonantbuilders/the-geometry-of-stories-and-discovery</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/the-geometry-of-stories-and-discovery-essay</guid>
+      <pubDate>Sun, 29 Jun 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        iDIG Movies is a film discovery experience built on the idea that the right film finds
+        you — not through what's popular or trending, but through what resonates with who you
+        are and how you're feeling right now.
+
+        Audio narration produced with Eleven Labs.
+
+        Read the full essay, preview the live demo, and join the conversation at:
+        https://i-dig.io/theresonantbuilders/the-geometry-of-stories-and-discovery
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>iDIG Movies is a film discovery experience built on the idea that the right film finds you — not through what's popular or trending, but through what resonates with who you are and how you're feeling right now.</itunes:summary>
+      <itunes:duration>0:00</itunes:duration>
+      <itunes:episode>13</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/TheGeometryofStoriesandDiscovery/ElevenLabs_The+Geometry+of+Stories+and+Discovery.mp3" length="0" type="audio/mpeg"/>
+    </item>
+
+    <!-- EPISODE 14 — The Geometry of Stories and Discovery: AI Discussion -->
+    <item>
+      <title>The Geometry of Stories and Discovery — AI Discussion by Notebook LM</title>
+      <link>https://i-dig.io/theresonantbuilders/the-geometry-of-stories-and-discovery</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/the-geometry-of-stories-and-discovery-discussion</guid>
+      <pubDate>Sun, 29 Jun 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        A Notebook LM discussion of the essay "The Geometry of Stories and Discovery" — two
+        voices exploring the ideas, implications, and questions the essay raises: resonance-driven
+        film discovery, Hilbert space vectors, thematic trails, observer agency, Story Pathways,
+        and the community protocol behind iDIG Movies.
+
+        Read the full essay at:
+        https://i-dig.io/theresonantbuilders/the-geometry-of-stories-and-discovery
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>A Notebook LM discussion of The Geometry of Stories and Discovery — resonance-driven film discovery, Hilbert space vectors, thematic trails, observer agency, and the community protocol behind iDIG Movies.</itunes:summary>
+      <itunes:duration>0:00</itunes:duration>
+      <itunes:episode>14</itunes:episode>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/TheGeometryofStoriesandDiscovery/AI+Discussion_The+Geometry+of+Stories+and+Discovery.m4a" length="0" type="audio/mp4"/>
+    </item>
+
+    <!-- EPISODE 15 — The Geometry of Stories and Discovery: Preview Live Demo -->
+    <item>
+      <title>The Geometry of Stories and Discovery — Preview Live Demo</title>
+      <link>https://i-dig.io/theresonantbuilders/the-geometry-of-stories-and-discovery</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/the-geometry-of-stories-and-discovery-video</guid>
+      <pubDate>Sun, 29 Jun 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        A video walkthrough of the live iDIG Movies demo — exploring the discovery space,
+        thematic trails, resonance scoring, and Story Pathways described in the essay
+        "The Geometry of Stories and Discovery."
+
+        Read the full essay at:
+        https://i-dig.io/theresonantbuilders/the-geometry-of-stories-and-discovery
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>A video walkthrough of the live iDIG Movies demo — thematic trails, resonance scoring, and Story Pathways in action.</itunes:summary>
+      <itunes:episode>15</itunes:episode>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/TheGeometryofStoriesandDiscovery/Video+Preview+-+Idig+Movies..mp4" length="0" type="video/mp4"/>
+    </item>
+
     <!-- EPISODE 10 — The Geometry of Intent: Audio Narration -->
     <item>
       <title>The Geometry of Intent: Why Builders Should Design for Meaning, Not Keywords — Audio Narration by Eleven Labs</title>
