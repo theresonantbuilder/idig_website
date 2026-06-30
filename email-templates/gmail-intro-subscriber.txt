@@ -1,0 +1,30 @@
+╔══════════════════════════════════════════════════════════════════╗
+  GMAIL INTRO TEMPLATE — Find Subscribers & iDIG Movies Feedback
+  Send from personal Gmail. Replace all [BRACKETS].
+  Keep it short and personal — this is a note from Paul, not a blast.
+╚══════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SUBJECT LINE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+I built something — would love your eyes on it
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BODY — paste into Gmail compose
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Hey [NAME],
+
+I've been building a film discovery experiment called iDIG Movies — it uses thematic trails instead of algorithms to surface films that resonate with who you are right now, not what's trending.
+
+The live demo is here: https://www.i-dig.io/movies
+
+I also wrote an essay breaking down the architecture and the philosophy behind it: https://i-dig.io/theresonantbuilders/the-geometry-of-stories-and-discovery
+
+If you're interested in following the build, you can subscribe to The Resonant Builders — a weekly essay series on resonance-driven discovery: https://i-dig.io/theresonantbuilders
+
+Would genuinely love feedback — especially on whether the trails feel meaningful when you explore.
+
+— Paul

@@ -49,11 +49,11 @@ The Resonant Builders  ·  Issue #[NUMBER]  ·  [MONTH DD, YYYY]
   Discussion: AI+Discussion-The+Fractal+Escape.m4a
 ─────────────────────────────────────────────────────────────────
 
-🎬 Video Explainer → https://i-dig.io/theresonantbuilders/[SLUG]?play=video
+🎬 Preview Live Demo → https://i-dig.io/theresonantbuilders/[SLUG]?play=video
 📖 Read & listen online → https://i-dig.io/theresonantbuilders/[SLUG]
 
 EXAMPLE:
-🎬 Video Explainer → https://i-dig.io/theresonantbuilders/the-fractal-escape?play=video
+🎬 Preview Live Demo → https://i-dig.io/theresonantbuilders/the-fractal-escape?play=video
 📖 Read & listen online → https://i-dig.io/theresonantbuilders/the-fractal-escape
 
 ─────────────────────────────────────────────────────────────────

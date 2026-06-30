@@ -35,13 +35,13 @@ Doom scrolling hijacks the primordial brain with a relentless stream of micro-sh
 
 🎙 Listen to Essay → [ESSAY AUDIO LINK]
 🤖 AI Discussion  → [DISCUSSION AUDIO LINK]
-🎬 Video Explainer → [VIDEO LINK]
+🎬 Preview Live Demo → [VIDEO LINK]
 📖 Read online    → https://i-dig.io/theresonantbuilders/[SLUG]
 
 EXAMPLE LINKS:
 🎙 Listen to Essay → https://i-dig.io/theresonantbuilders/the-fractal-escape?play=essay
 🤖 AI Discussion  → https://i-dig.io/theresonantbuilders/the-fractal-escape?play=discussion
-🎬 Video Explainer → https://i-dig.io/theresonantbuilders/the-fractal-escape?play=video
+🎬 Preview Live Demo → https://i-dig.io/theresonantbuilders/the-fractal-escape?play=video
 📖 Read online    → https://i-dig.io/theresonantbuilders/the-fractal-escape
 
 ─────────────────────────────────────────────────────────────────
