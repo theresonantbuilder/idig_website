@@ -164,8 +164,9 @@ export default function HomeSignalDriven() {
                   The iDIG Semantic Engine is built around a different premise. Meaning is not a
                   fixed point — it is a <strong className="text-slate-200">direction</strong>. Shaped
                   by context, interference, and the specific state of the person observing it.
-                  Quantum Social Science and Hilbert Space mathematics give us the geometry to
-                  model this — and LLMs give us the language enrichment to apply it at scale.
+                  That relationship is already encoded in nature — in force, motion, color, sound —
+                  and dimensional vectors give us the geometry to model it. LLMs give us the
+                  language enrichment to apply it at scale.
                 </p>
                 <p>
                   The result is a framework where alignment between a person and an opportunity,
