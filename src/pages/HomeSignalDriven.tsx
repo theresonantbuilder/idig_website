@@ -44,12 +44,12 @@ const PROJECTS = [
     cta: 'Explore HiringSignals →',
   },
   {
-    accent: '#10B981',
-    status: 'Pilot Design — Avondale, AZ',
-    title: 'Mental Health Pathways',
-    description: 'Moving community funding directly to the people who need it — bypassing administrative extraction to connect residents to care faster, with radical financial transparency and absolute resident privacy.',
-    path: '/mentalhealthpathways',
-    cta: 'Explore the Pilot →',
+    accent: '#F59E0B',
+    status: 'Concept Phase — Not Yet in Development',
+    title: 'Subject Explorer',
+    description: 'Discover any subject — Generative AI, the War of 1812, plumbing — the way you discover a movie. The Semantic Engine maps its themes and builds enriched trails that deepen understanding as you explore.',
+    path: '/subjectexplorer',
+    cta: 'Explore the Concept →',
   },
 ];
 

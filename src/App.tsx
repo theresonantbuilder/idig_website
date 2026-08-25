@@ -5,7 +5,7 @@ import TheResonantBuilders from "./pages/TheResonantBuilders";
 import Post from "./pages/Post";
 import AboutPaul from "./pages/AboutPaul";
 import HiringSignals from "./pages/HiringSignals";
-import MentalHealthPathways from "./pages/MentalHealthPathways";
+import SubjectExplorer from "./pages/SubjectExplorer";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -22,7 +22,7 @@ function App() {
         <Route path="/about" component={AboutPaul} />
         <Route path="/movies">{() => { window.location.href = 'https://idig-movies-production-demo.vercel.app/'; return null; }}</Route>
         <Route path="/hiringsignals" component={HiringSignals} />
-        <Route path="/mentalhealthpathways" component={MentalHealthPathways} />
+        <Route path="/subjectexplorer" component={SubjectExplorer} />
         <Route path="/theresonantbuilders" component={TheResonantBuilders} />
         <Route path="/theresonantbuilders/:slug" component={Post} />
       </Switch>

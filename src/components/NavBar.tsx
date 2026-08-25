@@ -6,7 +6,7 @@ const NAV_ITEMS = [
   { label: 'The Resonant Builders', path: '/theresonantbuilders' },
   { label: 'iDIG Movies',          path: '/idigmovies' },
   { label: 'HiringSignals.ai',          path: '/hiringsignals' },
-  { label: 'Mental Health Pathways',    path: '/mentalhealthpathways' },
+  { label: 'Subject Explorer',          path: '/subjectexplorer' },
 ];
 
 export default function NavBar() {
