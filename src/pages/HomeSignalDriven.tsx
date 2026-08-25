@@ -113,7 +113,7 @@ export default function HomeSignalDriven() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <span className="inline-block text-xs font-extrabold tracking-[0.2em] uppercase text-indigo-500 mb-3">
-                The Protocol Nodes
+                The Semantic Nodes
               </span>
               <h2 className="font-extrabold text-slate-900 leading-tight tracking-tight"
                 style={{ fontSize: 'clamp(1.8rem,4vw,3rem)', letterSpacing: '-0.02em' }}>
