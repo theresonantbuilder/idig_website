@@ -104,7 +104,6 @@ export default function HomeSignalDriven() {
               style={{ fontSize: 'clamp(1rem,2.2vw,1.2rem)' }}>
               i-DIG.io is an applied experiment in mapping human communication as dimensional
               vectors — where meaning is defined by resonance, not extraction.
-              Three active nodes. One open protocol.
             </p>
           </div>
         </section>
