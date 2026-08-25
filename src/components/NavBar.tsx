@@ -29,7 +29,7 @@ export default function NavBar() {
 
         {/* Tagline — absolutely centered */}
         <span className="hidden md:block absolute left-1/2 -translate-x-1/2 text-lg text-slate-500 font-medium pointer-events-none select-none">
-          Signal-Driven Discovery &amp; Matching
+          Semantic Engine for Discovery &amp; Matching
         </span>
 
         {/* Hamburger — always visible on the right */}

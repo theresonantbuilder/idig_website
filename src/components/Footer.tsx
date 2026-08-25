@@ -47,7 +47,7 @@ export default function Footer({ variant = 'dark' }: Props) {
             i-DIG.io
           </a>
           <p className={`text-xs mt-0.5 ${dark ? 'text-slate-600' : 'text-slate-500'}`}>
-            Signal-Driven Discovery &amp; Matching
+            Semantic Engine for Discovery &amp; Matching
           </p>
         </div>
 
