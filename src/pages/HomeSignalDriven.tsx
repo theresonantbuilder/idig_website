@@ -161,9 +161,9 @@ export default function HomeSignalDriven() {
                   clicked is a proxy for what you need. It isn't.
                 </p>
                 <p>
-                  The iDIG Protocol is built around a different premise. Meaning is not a fixed
-                  point — it is a <strong className="text-slate-200">direction</strong>. Shaped by
-                  context, interference, and the specific state of the person observing it.
+                  The iDIG Semantic Engine is built around a different premise. Meaning is not a
+                  fixed point — it is a <strong className="text-slate-200">direction</strong>. Shaped
+                  by context, interference, and the specific state of the person observing it.
                   Quantum Social Science and Hilbert Space mathematics give us the geometry to
                   model this — and LLMs give us the language enrichment to apply it at scale.
                 </p>
@@ -179,8 +179,8 @@ export default function HomeSignalDriven() {
               {[
                 { color: '#818CF8', label: 'Observer-First Discovery',   desc: 'The person\'s current state of curiosity, need, or intent is the entry point — not a demographic profile or a search keyword.' },
                 { color: '#38BDF8', label: 'Vectors, Not Tags',          desc: 'Content, talent, and community resources are mapped as high-dimensional vectors — capturing nuance that flat metadata systematically strips away.' },
-                { color: '#A78BFA', label: 'Open Protocol Architecture', desc: 'iDIG is transitioning to a nonprofit open protocol — a neutral layer anyone can build on, designed to let genuine resonance outpace algorithmic noise.' },
-                { color: '#34D399', label: 'Asset-Light Deployment',     desc: 'Each node proves the protocol in a real-world domain. The math that works for cinema works for hiring, and for navigating a mental health system.' },
+                { color: '#A78BFA', label: 'A Semantic Engine, Not a Platform', desc: 'iDIG\'s core is a semantic engine — a shared resonance layer other builders and nodes can plug into, designed to let genuine alignment outpace algorithmic noise.' },
+                { color: '#34D399', label: 'Asset-Light Deployment',     desc: 'Each node proves the engine in a real-world domain. The math that works for cinema works for hiring, and for mapping a subject like history or a trade skill.' },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3.5 p-4 rounded-xl"
                   style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}>
