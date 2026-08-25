@@ -94,24 +94,6 @@ export default function HomeSignalDriven() {
         }}>
           <DotGrid />
 
-          <div className="relative max-w-3xl mx-auto mb-10">
-            <style>{`@keyframes signalSweep { 0% { background-position: 0% 50%; } 100% { background-position: 300% 50%; } }`}</style>
-            <div style={{
-              background: 'linear-gradient(90deg, #080F1E, #4F46E5, #0EA5E9, #4F46E5, #080F1E)',
-              backgroundSize: '300% 100%',
-              animation: 'signalSweep 5s linear infinite',
-              borderRadius: '999px',
-              padding: '1px',
-              display: 'inline-block',
-            }}>
-              <div className="rounded-full px-6 py-2" style={{ background: '#080F1E' }}>
-                <span className="text-[0.72rem] font-bold tracking-[0.2em] uppercase text-white">
-                  An Open Protocol for Human Resonance
-                </span>
-              </div>
-            </div>
-          </div>
-
           <div className="relative">
             <h1 className="font-extrabold text-white mb-6 leading-tight tracking-tight"
               style={{ fontSize: 'clamp(2.2rem,5.5vw,4rem)', letterSpacing: '-0.03em' }}>
