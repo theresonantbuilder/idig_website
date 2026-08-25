@@ -102,7 +102,7 @@ export default function HomeSignalDriven() {
             </h1>
             <p className="text-slate-400 max-w-2xl mx-auto leading-relaxed"
               style={{ fontSize: 'clamp(1rem,2.2vw,1.2rem)' }}>
-              i-DIG.io is an applied experiment in mapping human communication as Hilbert Space
+              i-DIG.io is an applied experiment in mapping human communication as dimensional
               vectors — where meaning is defined by resonance, not extraction.
               Three active nodes. One open protocol.
             </p>
