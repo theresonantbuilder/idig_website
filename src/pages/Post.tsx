@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useLocation, useParams } from 'wouter';
+import { Link, useLocation, useParams } from 'wouter';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import DOMPurify from 'dompurify';
@@ -199,7 +199,9 @@ export default function Post() {
                 <span className={`text-xs font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full border ${TYPE_COLORS[post.type]}`}>
                   {post.type}
                 </span>
-                <span className="text-sm text-slate-500">{formatDate(post.date)} &middot; J. Paul Duplantis</span>
+                <span className="text-sm text-slate-500">
+                  {formatDate(post.date)} &middot; <Link href="/about" className="hover:text-amber-400 transition">J. Paul Duplantis</Link>
+                </span>
               </div>
               <ArticleShare summary={post.summary} />
             </div>
