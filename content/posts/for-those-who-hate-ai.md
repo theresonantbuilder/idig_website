@@ -6,9 +6,9 @@ summary: "The backlash against generative AI often mistakes the tool for the han
 audioUrl: "https://f004.backblazeb2.com/file/ForthosewhohateAI/For+those+Who+Hate+AI+-+Paul+Narration.wav"
 audioLabel: "Read by J. Paul Duplantis"
 discussionUrl: "https://f004.backblazeb2.com/file/ForthosewhohateAI/For+those+Who+Hate+AI++Gemini+Notebook+Debate.m4a"
-discussionLabel: "Gemini Notebook Debate"
+discussionLabel: "Gemini AI Notebook Debate"
 videoUrl: "https://f004.backblazeb2.com/file/ForthosewhohateAI/For+Those+Who+Hate+AI+-+Gemini+Video+Explainer.mp4"
-videoLabel: "Gemini Video Explainer"
+videoLabel: "Gemini AI Video Explainer"
 draft: false
 tags: ["AI", "generative AI", "human agency", "open source", "creativity", "copyright"]
 ---
