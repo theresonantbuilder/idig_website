@@ -75,6 +75,76 @@
 
     ============================================================ -->
 
+    <!-- EPISODE 16 — For Those Who Hate AI: Listen to Essay -->
+    <item>
+      <title>For Those Who Hate AI: In Defense of Human Agency — Read by J. Paul Duplantis</title>
+      <link>https://i-dig.io/theresonantbuilders/for-those-who-hate-ai</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/for-those-who-hate-ai-essay</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        The backlash against generative AI often mistakes the tool for the hand that wields it.
+        A case for treating AI as a paintbrush rather than a thief — why training data isn't
+        theft, why centralized control is the real threat, and why hating the tech is a
+        distraction from what it could become.
+
+        Read by J. Paul Duplantis.
+
+        Read the full essay, watch the Gemini video explainer, and join the conversation at:
+        https://i-dig.io/theresonantbuilders/for-those-who-hate-ai
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>The backlash against generative AI often mistakes the tool for the hand that wields it. A case for treating AI as a paintbrush rather than a thief.</itunes:summary>
+      <itunes:duration>0:00</itunes:duration>
+      <itunes:episode>16</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/ForthosewhohateAI/For+those+Who+Hate+AI+-+Paul+Narration.wav" length="0" type="audio/wav"/>
+    </item>
+
+    <!-- EPISODE 17 — For Those Who Hate AI: Gemini Notebook Debate -->
+    <item>
+      <title>For Those Who Hate AI: In Defense of Human Agency — Gemini Notebook Debate</title>
+      <link>https://i-dig.io/theresonantbuilders/for-those-who-hate-ai</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/for-those-who-hate-ai-discussion</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        A Gemini Notebook debate on the essay "For Those Who Hate AI: In Defense of Human
+        Agency" — two voices exploring training data, human agency, centralized AI control,
+        and whether hating the technology is a distraction from what it could become.
+
+        Read the full essay at:
+        https://i-dig.io/theresonantbuilders/for-those-who-hate-ai
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>A Gemini Notebook debate on For Those Who Hate AI — training data, human agency, and centralized AI control.</itunes:summary>
+      <itunes:duration>0:00</itunes:duration>
+      <itunes:episode>17</itunes:episode>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/ForthosewhohateAI/For+those+Who+Hate+AI++Gemini+Notebook+Debate.m4a" length="0" type="audio/mp4"/>
+    </item>
+
+    <!-- EPISODE 18 — For Those Who Hate AI: Gemini Video Explainer -->
+    <item>
+      <title>For Those Who Hate AI: In Defense of Human Agency — Gemini Video Explainer</title>
+      <link>https://i-dig.io/theresonantbuilders/for-those-who-hate-ai</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/for-those-who-hate-ai-video</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        A Gemini-generated video explainer for the essay "For Those Who Hate AI: In Defense
+        of Human Agency."
+
+        Read the full essay at:
+        https://i-dig.io/theresonantbuilders/for-those-who-hate-ai
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>A Gemini-generated video explainer for For Those Who Hate AI: In Defense of Human Agency.</itunes:summary>
+      <itunes:episode>18</itunes:episode>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/ForthosewhohateAI/For+Those+Who+Hate+AI+-+Gemini+Video+Explainer.mp4" length="0" type="video/mp4"/>
+    </item>
+
     <!-- EPISODE 13 — The Geometry of Stories and Discovery: Audio Narration -->
     <item>
       <title>The Geometry of Stories and Discovery — Audio Narration by Eleven Labs</title>
