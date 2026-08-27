@@ -2,7 +2,7 @@
 title: "For Those Who Hate AI: In Defense of Human Agency"
 date: "2026-08-26"
 type: "essay"
-summary: "A recap of the essay: Is training an AI model on human language really theft, or is it doing what every human mind already does — learning, inferring, and building on what came before? If AI is just a paintbrush, why do we blame the brush instead of the hand holding it? And if the real danger isn't the technology but who controls it, what should we actually be fighting to keep sovereign?"
+summary: "Is training an AI model on human language really theft, or is it doing what every human mind already does — learning, inferring, and building on what came before? If AI is just a paintbrush, why do we blame the brush instead of the hand holding it? And if the real danger isn't the technology but who controls it, what should we actually be fighting to keep sovereign?"
 audioUrl: "https://f004.backblazeb2.com/file/ForthosewhohateAI/For+those+Who+Hate+AI+-+Paul+Narration.wav"
 audioLabel: "Read by J. Paul Duplantis"
 discussionUrl: "https://f004.backblazeb2.com/file/ForthosewhohateAI/For+those+Who+Hate+AI++Gemini+Notebook+Debate.m4a"
