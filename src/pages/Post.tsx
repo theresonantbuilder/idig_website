@@ -199,7 +199,7 @@ export default function Post() {
                 <span className={`text-xs font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full border ${TYPE_COLORS[post.type]}`}>
                   {post.type}
                 </span>
-                <span className="text-sm text-slate-500">{formatDate(post.date)}</span>
+                <span className="text-sm text-slate-500">{formatDate(post.date)} &middot; J. Paul Duplantis</span>
               </div>
               <ArticleShare summary={post.summary} />
             </div>
