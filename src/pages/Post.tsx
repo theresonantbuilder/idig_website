@@ -204,7 +204,12 @@ export default function Post() {
               <ArticleShare summary={post.summary} />
             </div>
             <h1 className="text-3xl md:text-4xl font-light text-white leading-tight mb-4">{post.title}</h1>
-            {post.summary && post.type !== 'commentary' && <p className="text-lg text-slate-400 mb-8">{post.summary}</p>}
+            {post.summary && post.type !== 'commentary' && (
+              <div className="mb-8">
+                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">Recap — the questions this essay raises</p>
+                <p className="text-lg text-slate-400 italic">{post.summary}</p>
+              </div>
+            )}
           </div>
 
           {/* iDIG Movies demo callout */}
