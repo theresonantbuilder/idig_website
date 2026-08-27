@@ -79,6 +79,10 @@ As far as all that could go wrong when AI becomes super-intelligent, I don't kno
 
 Let's get to work and build amazing things for people of all walks of life to harness. To build to lift ourselves and others into a more purposeful societal connection. Yes, there are threats. Yes, there are problems with the fundamentals of the technology. But hating on the tech is not a solution. It is a distraction on what this technology could become if we use it purposefully.
 
+---
+
+*J. Paul Duplantis — Observer, Builder, and founder of i-DIG.io*
+
 *I wrote every word of this essay but engaged with Gemini for feedback on my approach.*
 
 ![For Those Who Hate AI](https://f004.backblazeb2.com/file/ForthosewhohateAI/For+those+who+hate+AI.png)
