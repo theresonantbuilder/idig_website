@@ -32,7 +32,11 @@ const PROJECTS = [
     status: 'Active Build — iDIG Media Protocol',
     title: 'iDIG Movies',
     description: 'Cinema as the first proof of concept for the iDIG Protocol. Films mapped as vectors of narrative texture, emotional resonance, and thematic depth — surfacing what genuinely aligns with who you are right now.',
+    // /movies is proxied to a separate app via a vercel.json rewrite, not a wouter
+    // route here — needs a real browser navigation, or the rewrite never fires
+    // and the URL bar changes with nothing behind it (same fix as NavBar.tsx).
     path: '/movies',
+    fullReload: true,
     cta: 'Access the Live iDIG Movies Demo →',
   },
   {
@@ -125,7 +129,10 @@ export default function HomeSignalDriven() {
               {PROJECTS.map(p => (
                 <button
                   key={p.path}
-                  onClick={() => { window.scrollTo(0, 0); navigate(p.path); }}
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    if (p.fullReload) { window.location.href = p.path; } else { navigate(p.path); }
+                  }}
                   className="text-left bg-white rounded-2xl p-7 hover:shadow-md transition-all duration-200"
                   style={{ border: '1px solid rgba(15,23,42,0.08)', borderTop: `3px solid ${p.accent}` }}
                 >
