@@ -4,7 +4,10 @@ import { useLocation } from 'wouter';
 const NAV_ITEMS = [
   { label: 'About J. Paul',        path: '/about' },
   { label: 'The Resonant Builders', path: '/theresonantbuilders' },
-  { label: 'iDIG Movies',          path: '/idigmovies' },
+  // /movies is proxied to a separate app via a vercel.json rewrite, not a wouter
+  // route here — needs a real browser navigation (fullReload), not client-side
+  // History API routing, or the rewrite never fires and the page renders blank.
+  { label: 'iDIG Movies',          path: '/movies', fullReload: true },
   { label: 'HiringSignals.ai',          path: '/hiringsignals' },
   { label: 'Subject Explorer',          path: '/subjectexplorer' },
 ];
@@ -57,7 +60,10 @@ export default function NavBar() {
                   return (
                     <button
                       key={item.path}
-                      onClick={() => { navigate(item.path); setOpen(false); }}
+                      onClick={() => {
+                        if (item.fullReload) { window.location.href = item.path; } else { navigate(item.path); }
+                        setOpen(false);
+                      }}
                       className={`w-full text-left px-5 py-3.5 text-sm font-medium transition
                         ${active
                           ? 'text-blue-600 bg-blue-50'
