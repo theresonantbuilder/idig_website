@@ -20,7 +20,8 @@ function App() {
       <Switch>
         <Route path="/" component={HomeSignalDriven} />
         <Route path="/about" component={AboutPaul} />
-        <Route path="/movies">{() => { window.location.href = 'https://idig-movies-production-demo.vercel.app/'; return null; }}</Route>
+        {/* /movies and /movies/* are proxied straight to idig-movies-production-demo.vercel.app
+            via a vercel.json rewrite — this app's router never sees those requests. */}
         <Route path="/hiringsignals" component={HiringSignals} />
         <Route path="/subjectexplorer" component={SubjectExplorer} />
         <Route path="/theresonantbuilders" component={TheResonantBuilders} />
