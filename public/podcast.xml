@@ -75,6 +75,79 @@
 
     ============================================================ -->
 
+    <!-- EPISODE 19 — As We May Choose: Listen to Essay -->
+    <item>
+      <title>As We May Choose — Read by J. Paul Duplantis</title>
+      <link>https://i-dig.io/theresonantbuilders/as-we-may-choose</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/as-we-may-choose-essay</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        Vannevar Bush imagined technology that would extend human thought. Eighty years later
+        we've solved the problem he set out to solve — finding information — but lost something
+        along the way: the trails we follow are now laid by algorithms optimized for someone
+        else's outcome, not our own curiosity. A case for building communication technology
+        that makes the path visible again, and puts the choice of which trail to follow back
+        in our hands.
+
+        Read by J. Paul Duplantis.
+
+        Read the full essay, listen to the Gemini Notebook AI debate, watch the video explainer,
+        and join the conversation at:
+        https://i-dig.io/theresonantbuilders/as-we-may-choose
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>Vannevar Bush imagined technology that would extend human thought. Eighty years later we've solved the problem of finding information — and lost the trail. A case for building communication technology that reveals the path instead of quietly redirecting it.</itunes:summary>
+      <itunes:duration>0:00</itunes:duration>
+      <itunes:episode>19</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/aswemaychoose/As+We+May+Choose-Paul+Narration.wav" length="0" type="audio/wav"/>
+    </item>
+
+    <!-- EPISODE 20 — As We May Choose: Gemini Notebook AI Debate -->
+    <item>
+      <title>As We May Choose — Gemini Notebook AI Debate</title>
+      <link>https://i-dig.io/theresonantbuilders/as-we-may-choose</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/as-we-may-choose-discussion</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        A Gemini Notebook AI debate on the essay "As We May Choose" — two voices exploring
+        Vannevar Bush's original vision for associative trails, how algorithms came to lay
+        those trails for their own ends, and what it would take to hand the map back to
+        the person following it.
+
+        Read the full essay at:
+        https://i-dig.io/theresonantbuilders/as-we-may-choose
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>A Gemini Notebook AI debate on As We May Choose — associative trails, algorithmic influence, and reclaiming agency over discovery.</itunes:summary>
+      <itunes:duration>0:00</itunes:duration>
+      <itunes:episode>20</itunes:episode>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/aswemaychoose/As+We+May+Choose+-+Gemini+Notebook+Debate.m4a" length="0" type="audio/mp4"/>
+    </item>
+
+    <!-- EPISODE 21 — As We May Choose: Gemini Notebook Video Explainer -->
+    <item>
+      <title>As We May Choose — Gemini Notebook Video Explainer</title>
+      <link>https://i-dig.io/theresonantbuilders/as-we-may-choose</link>
+      <guid isPermaLink="false">https://i-dig.io/theresonantbuilders/as-we-may-choose-video</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[
+        A Gemini Notebook-generated video explainer for the essay "As We May Choose."
+
+        Read the full essay at:
+        https://i-dig.io/theresonantbuilders/as-we-may-choose
+
+        Subscribe to The Resonant Builders at https://i-dig.io/theresonantbuilders
+      ]]></description>
+      <itunes:summary>A Gemini Notebook-generated video explainer for As We May Choose.</itunes:summary>
+      <itunes:episode>21</itunes:episode>
+      <itunes:episodeType>bonus</itunes:episodeType>
+      <enclosure url="https://f004.backblazeb2.com/file/aswemaychoose/As_We_May_Choose-Video+Explainer.mp4" length="0" type="video/mp4"/>
+    </item>
+
     <!-- EPISODE 16 — For Those Who Hate AI: Listen to Essay -->
     <item>
       <title>For Those Who Hate AI: In Defense of Human Agency — Read by J. Paul Duplantis</title>
