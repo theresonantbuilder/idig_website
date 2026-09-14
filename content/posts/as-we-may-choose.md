@@ -88,3 +88,5 @@ As we may choose.
 ---
 
 *J. Paul Duplantis — Observer, Builder, and founder of i-DIG.io*
+
+![As We May Choose](/images/as-we-may-choose.png)
