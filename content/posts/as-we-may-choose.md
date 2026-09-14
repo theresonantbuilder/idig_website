@@ -3,6 +3,12 @@ title: "As We May Choose"
 date: "2026-09-14"
 type: "essay"
 summary: "To prevent a future where we lose control over our own experiences, we must build communication technology that lets us discover who we are more than influence us on what to think."
+audioUrl: "https://f004.backblazeb2.com/file/aswemaychoose/As+We+May+Choose-Paul+Narration.wav"
+audioLabel: "Read by J. Paul Duplantis"
+discussionUrl: "https://f004.backblazeb2.com/file/aswemaychoose/As+We+May+Choose+-+Gemini+Notebook+Debate.m4a"
+discussionLabel: "Gemini Notebook AI Debate"
+videoUrl: "https://f004.backblazeb2.com/file/aswemaychoose/As_We_May_Choose-Video+Explainer.mp4"
+videoLabel: "Gemini Notebook Video Explainer"
 draft: false
 tags: ["agency", "Vannevar Bush", "internet history", "quantum cognition", "discovery", "iDIG"]
 ---
