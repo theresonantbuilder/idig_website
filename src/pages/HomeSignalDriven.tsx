@@ -41,7 +41,7 @@ const PROJECTS = [
   },
   {
     accent: '#7C3AED',
-    status: 'Open Experiment — Talent Alignment',
+    status: 'In Development',
     title: 'i-dig.io/Hiring',
     description: 'Treating talent as a signal to be discovered, not a resource to be siloed. An open-source protocol for resonant talent alignment that maps professional identity across three dimensions.',
     path: '/Hiring',
@@ -49,7 +49,7 @@ const PROJECTS = [
   },
   {
     accent: '#F59E0B',
-    status: 'Concept Phase — Not Yet in Development',
+    status: 'In Development',
     title: 'i-dig.io/Knowledge',
     description: 'Discover any subject — Generative AI, the War of 1812, plumbing — the way you discover a movie. The Semantic Engine maps its themes and builds enriched trails that deepen understanding as you explore.',
     path: '/Knowledge',
