@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   // History API routing, or the rewrite never fires and the page renders blank.
   { label: 'iDIG Movies',          path: '/Movies', fullReload: true },
   { label: 'HiringSignals.ai',          path: '/Hiring' },
-  { label: 'Subject Explorer',          path: '/Knowledge' },
+  { label: 'iDIG Knowledge',          path: '/Knowledge' },
 ];
 
 export default function NavBar() {

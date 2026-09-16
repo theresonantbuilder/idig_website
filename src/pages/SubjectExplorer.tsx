@@ -71,7 +71,7 @@ export default function SubjectExplorer() {
 
             <p className="text-slate-400 max-w-xl mx-auto leading-relaxed mb-10"
               style={{ fontSize: 'clamp(1rem,2.2vw,1.25rem)' }}>
-              Subject Explorer applies the iDIG Semantic Engine to any body of
+              iDIG Knowledge applies the iDIG Semantic Engine to any body of
               knowledge — Generative AI, the War of 1812, plumbing — mapping it
               as a field of themes and building enriched trails that deepen
               meaning and understanding as you explore.
@@ -86,7 +86,7 @@ export default function SubjectExplorer() {
         {/* ══ CONCEPT DISCLAIMER BAR ════════════════════════════════════════ */}
         <div className="bg-orange-50 border-b border-orange-200 py-3 px-8 text-center">
           <p className="m-0 text-[0.83rem] text-orange-900 leading-relaxed">
-            <strong>This is a concept, not a product.</strong> Subject Explorer is
+            <strong>This is a concept, not a product.</strong> iDIG Knowledge is
             not yet in active development. It builds on the same Semantic Engine
             proving itself in iDIG Movies, and is next on the roadmap.
           </p>
@@ -165,7 +165,7 @@ export default function SubjectExplorer() {
             </p>
             <p className="text-slate-400 max-w-lg mx-auto leading-relaxed mb-10 text-lg">
               If a subject has themes, causes, tensions, and adjacent ideas —
-              and nearly every subject does — Subject Explorer is designed to
+              and nearly every subject does — iDIG Knowledge is designed to
               map it the same way.
             </p>
             <div className="inline-block rounded-xl p-5 max-w-xl text-left"
@@ -176,7 +176,7 @@ export default function SubjectExplorer() {
                 not by indexing keywords."
               </p>
               <p className="mt-2.5 mb-0 text-[0.78rem] text-slate-600">
-                — Subject Explorer, early concept notes
+                — iDIG Knowledge, early concept notes
               </p>
             </div>
           </div>
@@ -189,7 +189,7 @@ export default function SubjectExplorer() {
               <Tag color="#4F46E5">The Semantic Engine — Applied</Tag>
               <h2 className="font-extrabold text-slate-900 mb-4 leading-tight tracking-tight"
                 style={{ fontSize: 'clamp(1.8rem,4vw,3rem)', letterSpacing: '-0.03em' }}>
-                How Subject Explorer maps a subject.
+                How iDIG Knowledge maps a subject.
               </h2>
               <p className="text-slate-500 max-w-lg mx-auto leading-relaxed text-lg">
                 Rather than indexing pages, the concept explores how a subject can
@@ -253,7 +253,7 @@ export default function SubjectExplorer() {
                 them alone.
               </p>
               <p className="text-slate-500 leading-relaxed m-0">
-                Subject Explorer proposes treating each subject as a landscape,
+                iDIG Knowledge proposes treating each subject as a landscape,
                 not a page — a trail that carries a person from a first question
                 to genuine depth, one resonant step at a time.
               </p>
@@ -306,7 +306,7 @@ export default function SubjectExplorer() {
                 A list of links versus<br />a trail of meaning.
               </h2>
               <p className="text-slate-400 max-w-xl mx-auto leading-relaxed text-lg">
-                The shift Subject Explorer is designed around — from ranking
+                The shift iDIG Knowledge is designed around — from ranking
                 pages to mapping understanding.
               </p>
             </div>
@@ -331,7 +331,7 @@ export default function SubjectExplorer() {
                 <div className="flex items-center gap-2.5 mb-4">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#F59E0B] shrink-0"
                     style={{ boxShadow: '0 0 12px #F59E0B' }} />
-                  <span className="text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-[#FCD34D]">Subject Explorer, Proposed</span>
+                  <span className="text-[0.68rem] font-extrabold tracking-[0.2em] uppercase text-[#FCD34D]">iDIG Knowledge, Proposed</span>
                 </div>
                 <h4 className="font-bold text-white text-lg mb-3">Theme mapped. Context preserved.</h4>
                 <p className="text-sm text-slate-400 leading-relaxed m-0">
@@ -346,7 +346,7 @@ export default function SubjectExplorer() {
               style={{ background: 'rgba(255,255,255,0.03)', border: '1px dashed rgba(245,158,11,0.3)' }}>
               <p className="m-0 text-sm text-[#FCD34D] leading-relaxed">
                 <strong>Proposed model — not yet implemented.</strong> This
-                describes the hypothesis Subject Explorer is designed to test once
+                describes the hypothesis iDIG Knowledge is designed to test once
                 development begins.
               </p>
             </div>
@@ -378,7 +378,7 @@ export default function SubjectExplorer() {
                 Not yet in development.<br />Next after the Semantic Engine matures.
               </h2>
               <p className="text-slate-500 leading-relaxed mb-4">
-                Subject Explorer builds directly on the same Semantic Engine
+                iDIG Knowledge builds directly on the same Semantic Engine
                 architecture proving itself in iDIG Movies. It moves from concept
                 toward active build once that core infrastructure is further along.
               </p>
@@ -420,11 +420,11 @@ export default function SubjectExplorer() {
               If a subject you care about<br />deserves a better trail —<br />we want to hear from you.
             </h2>
             <p className="text-slate-400 mb-10 leading-relaxed text-lg">
-              Subject Explorer is not yet in development. If you're an educator,
+              iDIG Knowledge is not yet in development. If you're an educator,
               a lifelong learner, or a builder who sees where this could go,
               tell us what subject you'd want to explore first.
             </p>
-            <ContactForm subject="Subject Explorer Inquiry" />
+            <ContactForm subject="iDIG Knowledge Inquiry" />
             <p className="mt-6 text-xs text-slate-700 italic">
               Concept phase — not yet in active development. Nothing here is final.
             </p>
