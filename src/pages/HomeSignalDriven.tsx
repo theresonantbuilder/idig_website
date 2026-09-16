@@ -29,7 +29,7 @@ function DotGrid({ glowW = '800px', glowH = '500px' }: { glowW?: string; glowH?:
 const PROJECTS = [
   {
     accent: '#0EA5E9',
-    status: 'Active Build — iDIG Media Protocol',
+    status: 'Active Build',
     title: 'i-dig.io/Movies',
     description: 'Cinema as the first proof of concept for the iDIG Protocol. Films mapped as vectors of narrative texture, emotional resonance, and thematic depth — surfacing what genuinely aligns with who you are right now.',
     // /movies is proxied to a separate app via a vercel.json rewrite, not a wouter
