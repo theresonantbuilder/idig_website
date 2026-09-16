@@ -8,7 +8,7 @@ const NAV_ITEMS = [
   // route here — needs a real browser navigation (fullReload), not client-side
   // History API routing, or the rewrite never fires and the page renders blank.
   { label: 'iDIG Movies',          path: '/Movies', fullReload: true },
-  { label: 'HiringSignals.ai',          path: '/Hiring' },
+  { label: 'IDIG Hiring',          path: '/Hiring' },
   { label: 'iDIG Knowledge',          path: '/Knowledge' },
 ];
 
