@@ -139,7 +139,8 @@ export default function HomeSignalDriven() {
                   <span className="inline-block text-xs font-extrabold tracking-[0.18em] uppercase mb-4" style={{ color: p.accent }}>
                     {p.status}
                   </span>
-                  <h3 className="font-bold text-slate-900 text-2xl mb-3">{p.title}</h3>
+                  <h3 className="font-bold text-slate-900 text-2xl mb-1">{p.title}</h3>
+                  <p className="font-mono text-xs text-slate-400 mb-3">i-dig.io{p.path}</p>
                   <p className="text-base text-slate-500 leading-relaxed mb-6">{p.description}</p>
                   <span className="text-sm font-semibold" style={{ color: p.accent }}>{p.cta}</span>
                 </button>
