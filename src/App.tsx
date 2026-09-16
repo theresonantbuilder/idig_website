@@ -22,8 +22,8 @@ function App() {
         <Route path="/about" component={AboutPaul} />
         {/* /movies and /movies/* are proxied straight to idig-movies-production-demo.vercel.app
             via a vercel.json rewrite — this app's router never sees those requests. */}
-        <Route path="/hiringsignals" component={HiringSignals} />
-        <Route path="/subjectexplorer" component={SubjectExplorer} />
+        <Route path="/Hiring" component={HiringSignals} />
+        <Route path="/Knowledge" component={SubjectExplorer} />
         <Route path="/theresonantbuilders" component={TheResonantBuilders} />
         <Route path="/theresonantbuilders/:slug" component={Post} />
       </Switch>

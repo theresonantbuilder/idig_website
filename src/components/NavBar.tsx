@@ -7,9 +7,9 @@ const NAV_ITEMS = [
   // /movies is proxied to a separate app via a vercel.json rewrite, not a wouter
   // route here — needs a real browser navigation (fullReload), not client-side
   // History API routing, or the rewrite never fires and the page renders blank.
-  { label: 'iDIG Movies',          path: '/movies', fullReload: true },
-  { label: 'HiringSignals.ai',          path: '/hiringsignals' },
-  { label: 'Subject Explorer',          path: '/subjectexplorer' },
+  { label: 'iDIG Movies',          path: '/Movies', fullReload: true },
+  { label: 'HiringSignals.ai',          path: '/Hiring' },
+  { label: 'Subject Explorer',          path: '/Knowledge' },
 ];
 
 export default function NavBar() {

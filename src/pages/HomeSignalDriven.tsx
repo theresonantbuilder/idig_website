@@ -35,7 +35,7 @@ const PROJECTS = [
     // /movies is proxied to a separate app via a vercel.json rewrite, not a wouter
     // route here — needs a real browser navigation, or the rewrite never fires
     // and the URL bar changes with nothing behind it (same fix as NavBar.tsx).
-    path: '/movies',
+    path: '/Movies',
     fullReload: true,
     cta: 'Access the Live iDIG Movies Demo →',
   },
@@ -44,7 +44,7 @@ const PROJECTS = [
     status: 'Open Experiment — Talent Alignment',
     title: 'HiringSignals.ai',
     description: 'Treating talent as a signal to be discovered, not a resource to be siloed. An open-source protocol for resonant talent alignment that maps professional identity across three dimensions.',
-    path: '/hiringsignals',
+    path: '/Hiring',
     cta: 'Explore HiringSignals →',
   },
   {
@@ -52,7 +52,7 @@ const PROJECTS = [
     status: 'Concept Phase — Not Yet in Development',
     title: 'Subject Explorer',
     description: 'Discover any subject — Generative AI, the War of 1812, plumbing — the way you discover a movie. The Semantic Engine maps its themes and builds enriched trails that deepen understanding as you explore.',
-    path: '/subjectexplorer',
+    path: '/Knowledge',
     cta: 'Explore the Concept →',
   },
 ];
