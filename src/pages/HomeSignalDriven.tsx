@@ -30,7 +30,7 @@ const PROJECTS = [
   {
     accent: '#0EA5E9',
     status: 'Active Build — iDIG Media Protocol',
-    title: 'iDIG Movies',
+    title: 'i-dig.io/Movies',
     description: 'Cinema as the first proof of concept for the iDIG Protocol. Films mapped as vectors of narrative texture, emotional resonance, and thematic depth — surfacing what genuinely aligns with who you are right now.',
     // /movies is proxied to a separate app via a vercel.json rewrite, not a wouter
     // route here — needs a real browser navigation, or the rewrite never fires
@@ -42,7 +42,7 @@ const PROJECTS = [
   {
     accent: '#7C3AED',
     status: 'Open Experiment — Talent Alignment',
-    title: 'HiringSignals.ai',
+    title: 'i-dig.io/Hiring',
     description: 'Treating talent as a signal to be discovered, not a resource to be siloed. An open-source protocol for resonant talent alignment that maps professional identity across three dimensions.',
     path: '/Hiring',
     cta: 'Explore HiringSignals →',
@@ -50,7 +50,7 @@ const PROJECTS = [
   {
     accent: '#F59E0B',
     status: 'Concept Phase — Not Yet in Development',
-    title: 'Subject Explorer',
+    title: 'i-dig.io/Knowledge',
     description: 'Discover any subject — Generative AI, the War of 1812, plumbing — the way you discover a movie. The Semantic Engine maps its themes and builds enriched trails that deepen understanding as you explore.',
     path: '/Knowledge',
     cta: 'Explore the Concept →',
@@ -139,8 +139,7 @@ export default function HomeSignalDriven() {
                   <span className="inline-block text-xs font-extrabold tracking-[0.18em] uppercase mb-4" style={{ color: p.accent }}>
                     {p.status}
                   </span>
-                  <h3 className="font-bold text-slate-900 text-2xl mb-1">{p.title}</h3>
-                  <p className="font-mono text-xs text-slate-400 mb-3">i-dig.io{p.path}</p>
+                  <h3 className="font-bold text-slate-900 text-2xl mb-3">{p.title}</h3>
                   <p className="text-base text-slate-500 leading-relaxed mb-6">{p.description}</p>
                   <span className="text-sm font-semibold" style={{ color: p.accent }}>{p.cta}</span>
                 </button>
