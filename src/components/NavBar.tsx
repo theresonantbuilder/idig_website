@@ -1,85 +1,52 @@
-import { useState } from 'react';
-import { useLocation } from 'wouter';
+import { EXPLORING_ORIGIN } from '../lib/site';
 
-const NAV_ITEMS = [
-  { label: 'About J. Paul',        path: '/about' },
-  { label: 'The Resonant Builders', path: '/theresonantbuilders' },
-  // /movies is proxied to a separate app via a vercel.json rewrite, not a wouter
-  // route here — needs a real browser navigation (fullReload), not client-side
-  // History API routing, or the rewrite never fires and the page renders blank.
-  { label: 'iDIG Movies',          path: '/Movies', fullReload: true },
-  { label: 'IDIG Hiring',          path: '/Hiring' },
-  { label: 'iDIG Knowledge',          path: '/Knowledge' },
+// Header and menu copied from iDIG Exploring (idig_exploring/dev_server/build_pages.py + build_home.py) so the blog looks the same.
+// Exploring's pages are plain links (real page loads); only The Resonant Builders is this site.
+const MENU = [
+  { label: 'About',                 href: `${EXPLORING_ORIGIN}/about/` },
+  { label: 'Settings & usage',      href: `${EXPLORING_ORIGIN}/settings/` },
+  { label: 'Export',                href: `${EXPLORING_ORIGIN}/explorations/?export=1` },
+  { label: 'Import',                href: `${EXPLORING_ORIGIN}/explorations/?import=1` },
+  { label: 'The Resonant Builders', href: '/theresonantbuilders' },
+  { label: 'License the Engine',    href: `${EXPLORING_ORIGIN}/license/` },
 ];
 
+const CSS = `
+.site-nav{border-bottom:1px solid #e2e8f0;background:#fff;font:18px/1.6 ui-sans-serif,system-ui,sans-serif;color:#16202e}
+.site-nav *{box-sizing:border-box}
+.site-nav-inner{max-width:1224px;margin:0 auto;height:80px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;position:relative}
+.site-nav .logo{font-weight:700;font-size:1.5rem;letter-spacing:-.025em;color:#1e293b;text-decoration:none;white-space:nowrap}
+.site-nav .logo span{color:#2563eb}
+@media(min-width:900px){.site-nav .logo{font-size:1.875rem}}
+@media(max-width:520px){.site-nav .logo{font-size:1.3rem}}
+.site-nav .hdr-tagline{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;white-space:nowrap;text-align:center;font-size:1rem;font-weight:600;letter-spacing:.01em;color:#5b6676}
+@media(max-width:700px){.site-nav .hdr-tagline{display:none}}
+.site-nav details.menu{position:relative}
+.site-nav details.menu summary{list-style:none;cursor:pointer;width:40px;height:40px;display:flex;flex-direction:column;gap:6px;align-items:center;justify-content:center;border-radius:8px}
+.site-nav details.menu summary::-webkit-details-marker{display:none}
+.site-nav details.menu summary:hover{background:#f1f5f9}
+.site-nav details.menu summary span{display:block;width:20px;height:2px;background:#334155}
+.site-nav details.menu nav{position:absolute;right:0;top:100%;margin-top:8px;width:224px;background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;box-shadow:0 20px 25px -5px rgba(0,0,0,.1);z-index:50}
+.site-nav details.menu nav a{display:block;padding:14px 20px;font-size:14px;font-weight:500;color:#334155;text-decoration:none}
+.site-nav details.menu nav a:hover{background:#f8fafc}
+`;
+
 export default function NavBar() {
-  const [location, navigate] = useLocation();
-  const [open, setOpen] = useState(false);
-
   return (
-    <nav className="fixed w-full bg-white/90 backdrop-blur-md border-b border-slate-200 z-50">
-      <div className="relative max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-
-        {/* Logo */}
-        <div
-          onClick={() => navigate('/')}
-          className="flex items-center cursor-pointer select-none group"
-        >
-          <div className="font-bold text-2xl md:text-3xl tracking-tight text-slate-800 group-hover:opacity-80 transition">
-            i-DIG<span className="text-blue-600">.io</span>
-          </div>
+    <header className="site-nav">
+      <style>{CSS}</style>
+      <div className="site-nav-inner">
+        <div className="nav-left">
+          <a className="logo" href={`${EXPLORING_ORIGIN}/`}>i-DIG<span>.io</span></a>
         </div>
-
-        {/* Tagline — absolutely centered */}
-        <span className="hidden md:block absolute left-1/2 -translate-x-1/2 text-lg text-slate-500 font-medium pointer-events-none select-none">
-          Semantic Engine for Discovery &amp; Matching
-        </span>
-
-        {/* Hamburger — always visible on the right */}
-        <div className="relative">
-          <button
-            onClick={() => setOpen(o => !o)}
-            className="flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-lg hover:bg-slate-100 transition"
-            aria-label="Toggle menu"
-            aria-expanded={open}
-          >
-            <span className={`block w-5 h-0.5 bg-slate-700 transition-all duration-300 ${open ? 'rotate-45 translate-y-2' : ''}`} />
-            <span className={`block w-5 h-0.5 bg-slate-700 transition-all duration-300 ${open ? 'opacity-0' : ''}`} />
-            <span className={`block w-5 h-0.5 bg-slate-700 transition-all duration-300 ${open ? '-rotate-45 -translate-y-2' : ''}`} />
-          </button>
-
-          {/* Dropdown */}
-          {open && (
-            <>
-              {/* Click-away overlay */}
-              <div className="fixed inset-0 z-10" onClick={() => setOpen(false)} />
-              <div className="absolute right-0 top-full mt-2 w-56 bg-white border border-slate-200 rounded-xl shadow-xl overflow-hidden z-20">
-                {NAV_ITEMS.map(item => {
-                  const active = location === item.path ||
-                    (item.path !== '/' && location.startsWith(item.path));
-                  return (
-                    <button
-                      key={item.path}
-                      onClick={() => {
-                        if (item.fullReload) { window.location.href = item.path; } else { navigate(item.path); }
-                        setOpen(false);
-                      }}
-                      className={`w-full text-left px-5 py-3.5 text-sm font-medium transition
-                        ${active
-                          ? 'text-blue-600 bg-blue-50'
-                          : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'
-                        }`}
-                    >
-                      {item.label}
-                    </button>
-                  );
-                })}
-              </div>
-            </>
-          )}
-        </div>
-
+        <p className="hdr-tagline">Optimized for Intention, not Attention</p>
+        <details className="menu">
+          <summary aria-label="Menu"><span /><span /><span /></summary>
+          <nav>
+            {MENU.map(item => <a key={item.label} href={item.href}>{item.label}</a>)}
+          </nav>
+        </details>
       </div>
-    </nav>
+    </header>
   );
 }

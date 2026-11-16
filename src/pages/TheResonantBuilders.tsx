@@ -85,7 +85,7 @@ export default function TheResonantBuilders() {
 
       <NavBar />
 
-      <main className="pt-20">
+      <main>
 
         {/* ══ HERO — dark ═══════════════════════════════════════════════════ */}
         <section className="relative overflow-hidden text-center" style={{
@@ -251,7 +251,7 @@ export default function TheResonantBuilders() {
 
       </main>
 
-      <Footer variant="light" />
+      <Footer />
 
     </div>
   );

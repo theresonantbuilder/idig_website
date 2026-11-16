@@ -1,11 +1,8 @@
 import { useEffect } from 'react';
 import { Switch, Route, useLocation } from 'wouter';
-import HomeSignalDriven from "./pages/HomeSignalDriven";
+import Moving from "./pages/Moving";
 import TheResonantBuilders from "./pages/TheResonantBuilders";
 import Post from "./pages/Post";
-import AboutPaul from "./pages/AboutPaul";
-import HiringSignals from "./pages/HiringSignals";
-import SubjectExplorer from "./pages/SubjectExplorer";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -18,14 +15,12 @@ function App() {
     <>
       <ScrollToTop />
       <Switch>
-        <Route path="/" component={HomeSignalDriven} />
-        <Route path="/about" component={AboutPaul} />
-        {/* /movies and /movies/* are proxied straight to idig-movies-production-demo.vercel.app
-            via a vercel.json rewrite — this app's router never sees those requests. */}
-        <Route path="/Hiring" component={HiringSignals} />
-        <Route path="/Knowledge" component={SubjectExplorer} />
+        {/* i-dig.io is the blog plus a "moving" page until the new site goes live. /movies and /exploring/* are proxied
+            by vercel.json rewrites and never reach this router. Any other address shows the moving page. */}
+        <Route path="/" component={Moving} />
         <Route path="/theresonantbuilders" component={TheResonantBuilders} />
         <Route path="/theresonantbuilders/:slug" component={Post} />
+        <Route component={Moving} />
       </Switch>
     </>
   );

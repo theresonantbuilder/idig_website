@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useLocation, useParams } from 'wouter';
+import { useLocation, useParams } from 'wouter';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import DOMPurify from 'dompurify';
@@ -181,7 +181,7 @@ export default function Post() {
 
       <NavBar />
 
-      <main className="pt-28 pb-20">
+      <main className="pt-10 pb-20">
         <div className="max-w-3xl mx-auto px-6">
 
           {/* Back link */}
@@ -200,7 +200,7 @@ export default function Post() {
                   {post.type}
                 </span>
                 <span className="text-sm text-slate-500">
-                  {formatDate(post.date)} &middot; <Link href="/about" className="hover:text-amber-400 transition">J. Paul Duplantis</Link>
+                  {formatDate(post.date)} &middot; J. Paul Duplantis
                 </span>
               </div>
               <ArticleShare summary={post.summary} />
